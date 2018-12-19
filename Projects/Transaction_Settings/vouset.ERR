@@ -1,0 +1,30 @@
+Form d:\...\12 point of sale\svn project\transaction_settings\vouwiz.scx has the following errors:
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    Unknown NEWENCRY - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\...\12 point of sale\svn project\transaction_settings\entry_sel.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Program d:\...\12 point of sale\svn project\transaction_settings\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form d:\...\12 point of sale\svn project\transaction_settings\frmuomchk.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form d:\...\12 point of sale\svn project\transaction_settings\frmpickup.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEJOUR_OP - Undefined
+
+Form d:\...\12 point of sale\svn project\transaction_settings\frmtranfor.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form d:\...\12 point of sale\svn project\transaction_settings\frmautoposting.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\...\12 point of sale\svn project\transaction_settings\frminvsr.scx has the following errors:
+    Unknown BARSTAT - Undefined
+

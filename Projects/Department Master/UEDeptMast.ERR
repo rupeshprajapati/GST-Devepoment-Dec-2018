@@ -1,0 +1,21 @@
+Form d:\svn development\department master\deptmast.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UDAPPMASTFINALUPDATE - Undefined
+    Unknown UDTRIGMASTFINALUPDATE - Undefined
+    Unknown UETRIGMASTFINALUPDATE - Undefined
+    Application UDAPPMASTROLLBACK - Undefined
+    Program UDTRIGMASTROLLBACK - Undefined
+    Proc./Func. UETRIGMASTROLLBACK - Undefined
+    Application UDAPPMASTTABLEUPDATE - Undefined
+    Program UDTRIGMASTTABLEUPDATE - Undefined
+    Proc./Func. UETRIGMASTTABLEUPDATE - Undefined
+    Proc./Func. LOCATE - Undefined
+    Program VU_UDFS - Undefined
+    File VUICON.ICO - Undefined
+    Unknown UEJOUR_OP - Undefined
+    Proc./Func. UEEXTRA - Undefined
+    Unknown UEGETPOP - Undefined
+
+Program d:\svn development\department master\dpchoice.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+

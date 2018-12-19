@@ -1,0 +1,82 @@
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe.config
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.exe
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\DataAccess-Net.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\uBaseForm.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\udclsDGVNumericColumn.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\udSelectPop.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\udclsUDF.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\udDataTableQuery.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\udCrViewer.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\udReportList.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\stdole.dll
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\bin\Debug\udReportList.pdb
+D:\vuPrj\DotNet Project\DotNet 2016\uGST_GSTR1_Json_Generation\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe.config
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\stdole.dll
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\UdReportList.dll
+D:\RRG\02 Project Work\02 UGST_GSTR1_JSON_GENRATION\New folder\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\udCrViewer.dll
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe.config
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\udDataTableQuery.dll
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\stdole.dll
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe.config
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\stdole.dll
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG\02 Project Work\Sprint 2\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe.config
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\stdole.dll
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\RRG-New\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe.config
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.exe
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Debug\stdole.dll
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\02 RRG-New\Bug\02 Bug - 31625  Required JSON Process for GSTR 1 report\01 Projects\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe.config
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.exe
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\bin\Debug\uGST_GSTR1_Json_Generation.pdb
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\bin\Debug\stdole.dll
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.exe
+D:\02 RRG-New\01 Installer BUG\Project\uGST_GSTR1_Json_Generation\obj\Debug\uGST_GSTR1_Json_Generation.pdb

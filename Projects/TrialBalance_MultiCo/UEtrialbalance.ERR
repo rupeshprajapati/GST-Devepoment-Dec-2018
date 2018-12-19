@@ -1,0 +1,13 @@
+Program d:\...\trialbalance_multico\working folder for bug-31208\trialmain.prg has the following errors:
+    Unknown UETRIG_MULTICOFINSTMNT - Undefined
+
+Program d:\...\trialbalance_multico\working folder for bug-31208\makeacmast.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+
+Form d:\1 development\trialbalance_multico\working folder for bug-31208\finalacc.scx has the following errors:
+    Application UECRVIEWER - Undefined
+    Unknown BARSTAT - Undefined
+
+Visual Class Library d:\1 development\trialbalance_multico\working folder for bug-31208\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+

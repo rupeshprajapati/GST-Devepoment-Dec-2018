@@ -1,0 +1,25 @@
+Form e:\svnprojects\bug-32062 installer 2.1.0\pickup\formpickup.scx has the following errors:
+    Form UEETPAGEPOP - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UEENTRYSELECT - Undefined
+    Unknown UDAPPPICKUPINIT - Undefined
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    Unknown UDTRIGPICKUPINIT - Undefined
+    Unknown UETRIGPICKUPINIT - Undefined
+    Unknown UEPICKUPSPLIT - Undefined
+    Unknown VUFIND - Undefined
+
+Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\pickup\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Program e:\svnprojects\bug-32062 installer 2.1.0\pickup\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\pickup\pickclass.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form e:\svnprojects\bug-32062 installer 2.1.0\pickup\frmdatafilt.scx has the following errors:
+    Visual Class Library XTRA - Undefined
+

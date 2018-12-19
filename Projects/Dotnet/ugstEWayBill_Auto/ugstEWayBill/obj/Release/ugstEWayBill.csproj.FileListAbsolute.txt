@@ -1,0 +1,176 @@
+D:\vuPrj\DotNet Project\DotNet 2016\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\vuPrj\DotNet Project\DotNet 2016\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\vuPrj\DotNet Project\DotNet 2016\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\vuPrj\DotNet Project\DotNet 2016\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\vuPrj\DotNet Project\DotNet 2016\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\EWay\API\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\EWay\API\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\EWay\API\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\Newtonsoft.Json.dll
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\Udyog.QRCode.dll
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\Udyog.QRCode.pdb
+D:\EWay\API\ugstEWayBill\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\EWay\API\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\EWay\API\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\EWay\API\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\bin\Release\Newtonsoft.Json.dll
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\1 Development\Dotnet\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\test1\ugstEWayBill\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\test1\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\test1\ugstEWayBill\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\Newtonsoft.Json.dll
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\uBaseForm.dll
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\Udyog.QRCode.pdb
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\EWay\API\Backup\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\Newtonsoft.Json.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\uBaseForm.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\Udyog.QRCode.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\Udyog.QRCode.pdb
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\udReportList.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\udCrViewer.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.Windows.Forms.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\udDataTableQuery.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.Shared.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\Microsoft.Office.Interop.Outlook.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.ReportSource.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\stdole.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\office.dll
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.CrystalReports.Engine.xml
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.Windows.Forms.xml
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.Shared.xml
+D:\EWay\API\ugstEWayBill_Final\ugstEWayBill\bin\Release\CrystalDecisions.ReportSource.xml
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\Newtonsoft.Json.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\uBaseForm.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\udReportList.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\Udyog.QRCode.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\udCrViewer.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.Windows.Forms.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\udDataTableQuery.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.Shared.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\Microsoft.Office.Interop.Outlook.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.ReportSource.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\stdole.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\office.dll
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\Udyog.QRCode.pdb
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.CrystalReports.Engine.xml
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.Windows.Forms.xml
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.Shared.xml
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\bin\Release\CrystalDecisions.ReportSource.xml
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\EWay\API\ugstEWayBill_Final_new\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\02 RRG-New\01 Installer BUG\Project\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Newtonsoft.Json.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\uBaseForm.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\udReportList.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.QRCode.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\udCrViewer.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.Windows.Forms.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\udDataTableQuery.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.Shared.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Microsoft.Office.Interop.Outlook.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.ReportSource.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\stdole.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\office.dll
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.QRCode.pdb
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.CrystalReports.Engine.xml
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.Windows.Forms.xml
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.Shared.xml
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.ReportSource.xml
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\01 RRG\01 Bug Work\09 Bug 31844\SvnDownload\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.dll
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.pdb
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.exe
+D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.pdb

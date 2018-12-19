@@ -1,0 +1,8 @@
+Program e:\...\bug-32062 installer 2.1.0\udappvoufinalupdate\udappvoufinalupdate.prg has the following errors:
+    Proc./Func. VOUFINALUPDATE - Undefined
+    Program MAINPRG - Undefined
+    Unknown ISUNDERIMPORT - Undefined
+    Unknown CHECKBATCHNO - Undefined
+    Unknown GENBATCHNO - Undefined
+    Unknown UDAPPVOUFINALUPDATE_MLACOND - Undefined
+

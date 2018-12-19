@@ -1,0 +1,16 @@
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Debug\Store Room Master.exe.config
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store Room Master.csprojResolveAssemblyReference.cache
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Interop.ueconnect.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store Room Master.csproj.ResolveComReference.cache
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store_Room_Master.frmStoreRoom.resources
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store_Room_Master.frmValidInTran.resources
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store_Room_Master.Properties.Resources.resources
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store Room Master.csproj.GenerateResource.Cache
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Debug\Store Room Master.exe
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Debug\Store Room Master.pdb
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Debug\DataAccess-Net.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Debug\GetInfo.DLL
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Debug\uBaseForm.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Debug\udSelectPop.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store Room Master.exe
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Debug\Store Room Master.pdb

@@ -1,0 +1,12 @@
+Program e:\svnprojects\ent installer 2.0.0\serialize inventory\ueserializeinv.prg has the following errors:
+    Visual Class Library VOUCLASS - Undefined
+
+Form e:\svnprojects\ent installer 2.0.0\serialize inventory\uefrmbatchserialno.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library e:\svnprojects\ent installer 2.0.0\serialize inventory\batchserialstk.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form e:\...\ent installer 2.0.0\serialize inventory\uefrmbatchserialnostkresrv.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+

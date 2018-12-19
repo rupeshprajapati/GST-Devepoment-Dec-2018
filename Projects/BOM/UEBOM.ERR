@@ -1,0 +1,21 @@
+Form d:\workinggst\bom\bom_240918\frmbom.scx has the following errors:
+    Application UDAPPSUBBOMADD - Undefined
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    Program UDAPPSUBBOMADD - Undefined
+    Proc./Func. UETRIGSUBBOMADD - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown BARSTAT - Undefined
+    Proc./Func. UECRVIEWER - Undefined
+    Proc./Func. UEEXTRA - Undefined
+
+Program d:\workinggst\bom\bom_240918\mainbom.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Visual Class Library e:\u6\udyogerp\class\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Form d:\workinggst\bom\bom_240918\uefrmbyproduct.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Visual Class Library SQLCONNECTION - Undefined
+

@@ -1,0 +1,15 @@
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\bin\Release\UdyogDataOperation.dll
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\bin\Release\UdyogDataOperation.pdb
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\obj\Release\ResolveAssemblyReference.cache
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\obj\Release\UdyogDataOperation.dll
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\obj\Release\UdyogDataOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\bin\Release\UdyogDataOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\bin\Release\UdyogDataOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Release\ResolveAssemblyReference.cache
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Release\UdyogDataOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Release\UdyogDataOperation.pdb
+E:\SVNProjects\Bug-30938,31390,31306\UdyogMaterialRequirementPlanning\UdyogDataOperation\bin\Release\UdyogDataOperation.dll
+E:\SVNProjects\Bug-30938,31390,31306\UdyogMaterialRequirementPlanning\UdyogDataOperation\bin\Release\UdyogDataOperation.pdb
+E:\SVNProjects\Bug-30938,31390,31306\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Release\UdyogDataOperation.csprojResolveAssemblyReference.cache
+E:\SVNProjects\Bug-30938,31390,31306\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Release\UdyogDataOperation.dll
+E:\SVNProjects\Bug-30938,31390,31306\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Release\UdyogDataOperation.pdb

@@ -1,0 +1,10 @@
+Form e:\prajakta\projects\installer erp 2.0.0.0\uebackup\frmbackup.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Application ZIPUNZIP - Undefined
+
+Program e:\prajakta\projects\installer erp 2.0.0.0\uebackup\mainprgbackup.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form e:\prajakta\projects\installer erp 2.0.0.0\uebackup\frmrestore.scx has the following errors:
+    Proc./Func. ZIPUNZIP - Undefined
+

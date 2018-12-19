@@ -1,0 +1,11 @@
+Program e:\svnprojects\std installer 2.0.0.0\cheque printing\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form e:\svnprojects\std installer 2.0.0.0\cheque printing\frmchequeprint.scx has the following errors:
+    Application UECRVIEWER - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown BARSTAT - Undefined
+
+Visual Class Library e:\svnprojects\std installer 2.0.0.0\cheque printing\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

@@ -1,0 +1,23 @@
+Form d:\workinggst\account allocation\frmalloc.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Visual Class Library SQLCONNECTION - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UDAPPALLOCATE - Undefined
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    Unknown UDTRIGALLOCATE - Undefined
+    Unknown UETRIGALLOCATE - Undefined
+    Unknown CHECK_ADVANCEALLOCATION - Undefined
+
+Program d:\workinggst\account allocation\progalloc.prg has the following errors:
+    Unknown UDAPPALLOCATE - Undefined
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    Unknown UDTRIGALLOCATE - Undefined
+    Unknown UETRIGALLOCATE - Undefined
+    Unknown APPVERCHK - Undefined
+
+Form d:\workinggst\account allocation\frmtaxalloc.scx has the following errors:
+    Unknown GET_PAYMENTDETAILS - Undefined
+    Unknown GET_TAXALLOCATION - Undefined
+

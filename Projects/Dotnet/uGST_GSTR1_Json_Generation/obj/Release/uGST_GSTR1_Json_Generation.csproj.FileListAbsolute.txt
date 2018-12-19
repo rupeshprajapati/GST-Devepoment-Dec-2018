@@ -1,0 +1,5 @@
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Release\uGST_GSTR1_Json_Generation.csprojResolveAssemblyReference.cache
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Release\uGST_GSTR1_Json_Generation.frmMain.resources
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Release\uGST_GSTR1_Json_Generation.Properties.Resources.resources
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\obj\Release\uGST_GSTR1_Json_Generation.csproj.GenerateResource.Cache
+D:\RRG\02 Project Work\03 UGST_GSTR1_JSON_GENRATION-Done\uGST_GSTR1_Json_Generation_24May18\uGST_GSTR1_Json_Generation\bin\Release\uGST_GSTR1_Json_Generation.exe.config

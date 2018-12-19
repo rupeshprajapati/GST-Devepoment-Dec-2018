@@ -1,0 +1,36 @@
+Form d:\1 development\transaction_settings\working folder for bug-31943\vouwiz.scx has the following errors:
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    Unknown NEWENCRY - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+    File NXTREC_S.GIF - Undefined
+    File NXTREC_S-OFF.GIF - Undefined
+    File PRVREC_S1.GIF - Undefined
+    File LSTREC_S-OFF.GIF - Undefined
+    File PRVREC_S.GIF - Undefined
+    File PRVREC_S-OFF.GIF - Undefined
+    File FIRST.GIF - Undefined
+    File FRSREC_S-OFF.GIF - Undefined
+    File FOLDER_OPEN.GIF - Undefined
+
+Program d:\1 development\transaction_settings\working folder for bug-31943\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form d:\...\transaction_settings\working folder for bug-31943\frmuomchk.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form d:\...\transaction_settings\working folder for bug-31943\frmpickup.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEJOUR_OP - Undefined
+
+Form d:\...\transaction_settings\working folder for bug-31943\frmautoposting.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\1 development\transaction_settings\working folder for bug-31943\frminvsr.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form d:\...\transaction_settings\working folder for bug-31943\frmtranfor.scx has the following errors:
+    Unknown BARSTAT - Undefined
+

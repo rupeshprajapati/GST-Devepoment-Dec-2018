@@ -1,0 +1,9 @@
+Visual Class Library e:\svnprojects\ent installer 2.0.0\stockreservation\vu_stockreserve.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form e:\svnprojects\ent installer 2.0.0\stockreservation\uefrmstockreserve.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Unknown BARSTAT - Undefined
+    Visual Class Library VOUCLASS - Undefined
+    Visual Class Library BATCHSERIALSTK - Undefined
+

@@ -1,0 +1,19 @@
+Program d:\svngst\menu settings\maincom.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Program d:\svngst\menu settings\addnode.prg has the following errors:
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+
+Program d:\svngst\menu settings\nodefind.prg has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form d:\svngst\menu settings\frmdevgrid.scx has the following errors:
+    Visual Class Library _CONTROLS - Undefined
+
+Form d:\svngst\menu settings\cm_menu.scx has the following errors:
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    File DROPFLDR.ICO - Undefined
+    Unknown NEWENCRY - Undefined
+
