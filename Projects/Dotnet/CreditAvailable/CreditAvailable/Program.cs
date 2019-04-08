@@ -16,8 +16,9 @@ namespace CreditAvailable
            
             if (args.Length <= 0)
             {
-       //  args = new string[] { "1", "T021819", @"AIPLDTM024\SQLExpress", "sa", "sa1985", "^21380", "ADMIN", @"D:\UdyogERP\Bmp\Icon_VudyogGST.ico", "VudyogGST", "VudyogGST.EXE", "5852", "udPID5852DTM20161110115010" };
+                //  args = new string[] { "1", "T021819", @"AIPLDTM024\SQLExpress", "sa", "sa1985", "^21380", "ADMIN", @"D:\UdyogERP\Bmp\Icon_VudyogGST.ico", "VudyogGST", "VudyogGST.EXE", "5852", "udPID5852DTM20161110115010" };
                 //  args = new string[] { "1", "T011617", @"AIPLDTM024\SQLExpress", "sa", "sa1985", "^21380", "ADMIN", @"C:\VudyogGST\Bmp\Icon_VudyogGST.ico", "VudyogGST", "VudyogGST.EXE", "5852", "udPID5852DTM20161110115010" };
+                  //args = new string[] { "12", "I041819", @"AIPLDTM001\SQLEXPRESS2014", "sa", "sa1985", "^21380", "ADMIN", @"D:\UdyogERPENT2.1.0\Bmp\Icon_VudyogGST.ico", "UdyogERPENT", "UdyogERPENT.EXE", "5852", "udPID5852DTM20161110115010" };
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

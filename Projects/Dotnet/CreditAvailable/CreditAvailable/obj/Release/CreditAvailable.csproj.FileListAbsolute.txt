@@ -64,3 +64,12 @@ E:\Prajakta\Projects\Installer ERP 2.0.0.0\CreditAvailable\CreditAvailable\obj\R
 E:\Prajakta\Projects\Installer ERP 2.0.0.0\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.csproj.GenerateResource.Cache
 E:\Prajakta\Projects\Installer ERP 2.0.0.0\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.exe
 E:\Prajakta\Projects\Installer ERP 2.0.0.0\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.pdb
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\bin\Release\CreditAvailable.exe.config
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\bin\Release\CreditAvailable.exe
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\bin\Release\CreditAvailable.pdb
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.csprojResolveAssemblyReference.cache
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.Form1.resources
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.Properties.Resources.resources
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.csproj.GenerateResource.Cache
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.exe
+E:\SVNProjects\AU 2.1.2\CreditAvailable\CreditAvailable\obj\Release\CreditAvailable.pdb
