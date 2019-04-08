@@ -443,6 +443,7 @@ BEGIN
 				left join lcode l on (a.entry_ty=l.entry_ty)
 				WHERE a.ac_name IN('Central GST Payable A/C','State GST Payable A/C','Integrated GST Payable A/C','Compensation Cess Payable A/C')
 				and ((case when l.Bcode_nm<>'' then l.Bcode_nm else (case when l.ext_vou=1 then '' else l.entry_ty end) end) not in ('GA','GB','PT','BP','CP') or a.entry_ty in ('RV','UB'))
+				and l.entry_ty<>'GA'  --Added by Priyanka B on 12022019 for Bug-32273
 				AND (Case when YEAR(a.u_cldt)>2000 then a.u_cldt else a.date end) <= @EDATE
 				and (a.entry_ty+QUOTENAME(a.tran_cd)) not in (select (mv.entry_all+quotename(mv.main_tran)) from mainall_vw mv inner join bpmain b on (b.entry_ty=mv.entry_ty and b.tran_cd=mv.tran_cd))
 		UNION ALL
@@ -462,7 +463,11 @@ BEGIN
 				and b.entry_ty IN ('GB')
 				AND b.date <= @EDATE
 				and (b.entry_ty+QUOTENAME(b.tran_cd)) not in (select (mv.entry_ty+quotename(mv.tran_cd)) from mainall_vw mv inner join bpmain b on (b.entry_ty=mv.entry_ty and b.tran_cd=mv.tran_cd))
+					
+
+			delete from #TBL1 where (entry_ty='GD' and amt_ty='DR') or (entry_ty='GC' and amt_ty='CR')  --Added by Priyanka B on 27032019 for Bug-32311
 			
+
 		SELECT @IGST_PAY= SUM(CASE WHEN ac_name ='Integrated GST Payable A/C' THEN (case when amt_ty ='cr'  then + AMOUNT else -AMOUNT  end)  ELSE 0.00 END)
 				,@SGST_PAY= SUM(CASE WHEN ac_name ='State GST Payable A/C' THEN (case when amt_ty ='cr'  then + AMOUNT else -AMOUNT  end) ELSE 0.00 END)
 				,@CGST_PAY= SUM(CASE WHEN ac_name ='Central GST Payable A/C' THEN (case when amt_ty ='cr'  then + AMOUNT else -AMOUNT  end) ELSE 0.00 END)
@@ -628,13 +633,36 @@ BEGIN
 	and ac.date<=@date
 	and l.entry_ty in ('D6','GD')
 	and rm.AGAINSTGS in ('SERVICE PURCHASE BILL','PURCHASES')
-	order by rm.date,rm.inv_no
-		
+	order by rm.date,rm.inv_no		
+
 	Update #tmpsdata3B set amount=a.amount-b.amount 
 		from #tmpsdata3B a 
 		inner join #debit3B b on (a.entry_ty=b.rentry_ty and a.tran_cd=b.itref_tran and a.ac_id=b.ac_id and a.serty=b.serty)
 		
-	Delete from #tmpsdata3B where amount<=0
+	--Added by Priyanka B on 27032019 for Bug-32311 Start
+	declare @cnt int
+	select @cnt=count(*) from #tmpsdata3B a 
+
+	select sum(b.amount) as amount,b.typ,b.ac_id,b.date
+	into #a
+	from #debit3B b 
+	where b.rentry_ty+quotename(b.itref_tran) not in (select a.entry_ty+quotename(a.tran_cd) from #tmpsdata3B a)	
+	group by b.ac_id,b.typ,b.date
+
+	if @cnt=0
+	begin
+		Insert into #tmpsdata3B
+		select sel=cast(0 as bit),'',0,'','',-a.amount,0,'',a.typ,'','','',a.date,0,'',a.ac_id,'',0,0,0,'' from #a a
+	end
+	else
+	begin
+		update b set b.amount = isnull(b.amount,0)-isnull(a.amount,0) from #a a inner join #tmpsdata3B b on (a.typ=b.typ and a.ac_id=b.ac_id)
+		where a.date between @sdate and @edate
+	end
+	--Added by Priyanka B on 27032019 for Bug-32311 End	
+		
+	--Delete from #tmpsdata3B where amount<=0   --Commented by Priyanka B on 27032019 for Bug-32311
+	Delete from #tmpsdata3B where amount<=0 and date < @sdate  --Modified by Priyanka B on 27032019 for Bug-32311	
 	
 	SET @IGST_PAY = 0
 	SET @CGST_PAY = 0

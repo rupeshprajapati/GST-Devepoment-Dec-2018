@@ -31,7 +31,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,isnull(d.IGST_PER,0)as IGST_PER ,isnull(D.IGST_AMT,0) as IGST_AMT,ORG_INVNO=H.inv_no, ORG_DATE=H.date,h.EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT ,isnull(D.GRO_AMT,0) as GRO_AMT
 ,isnull(h.net_amt,0) as net_amt,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt 
-,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME
+,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME
 ,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -71,7 +74,9 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,ORG_DATE=(case when ISNULL(AMD.date,'') <> ''  then  AMD.date else H.date  end),h.EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT 
 ,isnull(D.GRO_AMT,0) as GRO_AMT,isnull(h.net_amt,0) as net_amt,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt
-,isnull(d.comrpcess,0) as cessr_amt,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc 
+,isnull(d.comrpcess,0) as cessr_amt,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
 ,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -109,8 +114,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,isnull(d.CGST_PER,0) as CGST_PER,isnull(D.CGST_AMT,0) as CGST_AMT,isnull(d.SGST_PER,0)as SGST_PER,isnull(D.SGST_AMT,0) as SGST_AMT
 ,isnull(d.IGST_PER,0) as IGST_PER,isnull(D.IGST_AMT,0) as IGST_AMT,ORG_INVNO=d.SBILLNO, d.SBDATE  as ORG_DATE,''as expotype
 ,0.00 as CGSRT_AMT, 0.00 as SGSRT_AMT,0.00 as IGSRT_AMT,isnull(D.GRO_AMT,0) as GRO_AMT,isnull(h.net_amt,0) as net_amt
-,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt,0.00 as cessr_amt,H.u_VESSEL as SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr
-,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
+,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt,0.00 as cessr_amt,H.u_VESSEL as SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
 ,RevCharge = '','' AS AGAINSTGS
@@ -150,8 +157,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,isnull(d.CGST_PER,0) as CGST_PER,isnull(D.CGST_AMT,0) as CGST_AMT,isnull(d.SGST_PER,0)as SGST_PER,isnull(D.SGST_AMT,0) as SGST_AMT
 ,isnull(d.IGST_PER,0) as IGST_PER,isnull(D.IGST_AMT,0) as IGST_AMT,ORG_INVNO=d.SBILLNO, d.SBDATE  as ORG_DATE,''as expotype
 ,0.00 as CGSRT_AMT, 0.00 as SGSRT_AMT,0.00 as IGSRT_AMT,isnull(D.GRO_AMT,0) as GRO_AMT,isnull(h.net_amt,0) as net_amt
-,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt,0.00 as cessr_amt,H.u_VESSEL as SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr
-,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
+,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt,0.00 as cessr_amt,H.u_VESSEL as SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
 ,RevCharge = '','' AS AGAINSTGS,AmendDate = (case when DATEDIFF(MM,H.DATE,H.AmendDAte) > 0 then h.AmendDate else ''  end )
@@ -191,7 +200,9 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,isnull(d.IGST_PER,0) as IGST_PER,isnull(D.IGST_AMT,0) as IGST_AMT,ORG_INVNO=H.inv_no, ORG_DATE=H.date,h.EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT ,isnull(D.GRO_AMT,0) as GRO_AMT
 ,isnull(h.net_amt,0) as net_amt,'0' as cessrate,0.00 as cess_amt,0.00 as cessr_amt,'' AS SBBILLNO ,'' as SBDATE,D.LineRule,h.inv_sr,h.l_yn
-,IT.s_unit as uqc ,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
 ,RevCharge = '','' AS AGAINSTGS,AmendDate = (case when DATEDIFF(MM,H.DATE,H.AmendDAte) > 0 then h.AmendDate else ''  end )
@@ -230,7 +241,9 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,ORG_DATE=(case when ISNULL(AMD.date,'') <> ''  then  AMD.date else H.date  end),h.EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT ,isnull(D.GRO_AMT,0) as GRO_AMT
 ,isnull(h.net_amt,0) as net_amt,'0' as cessrate,0.00 as cess_amt,0.00 as cessr_amt,'' AS SBBILLNO ,'' as SBDATE,D.LineRule,h.inv_sr,h.l_yn
-,IT.s_unit as uqc ,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
 ,RevCharge = '','' AS AGAINSTGS,AmendDate = (case when DATEDIFF(MM,H.DATE,H.AmendDAte) > 0 then h.AmendDate else ''  end )
@@ -268,7 +281,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,0.00 as Q
 ,isnull(d.IGST_PER,0)as IGST_PER,isnull(D.IGST_AMT,0) as IGST_AMT,ORG_INVNO=d.SBILLNO, d.SBDATE  as ORG_DATE,'' as EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT,isnull(D.GRO_AMT,0)as GRO_AMT 
 ,isnull(h.net_amt,0) as net_amt,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME
+,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME
 ,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -309,7 +325,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,0.00 as Q
 ,ORG_DATE=(case when ISNULL(AMD.SBDATE,'') <> ''  then  AMD.SBDATE else D.SBDATE  end),'' as EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT,isnull(D.GRO_AMT,0)as GRO_AMT 
 ,isnull(h.net_amt,0) as net_amt,d.CCESSRATE as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME
+,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME
 ,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -349,7 +368,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,0.00 as Q
 ,isnull(d.IGST_PER,0) as IGST_PER,isnull(D.IGST_AMT,0) as IGST_AMT,ORG_INVNO=d.SBILLNO, d.SBDATE  as ORG_DATE,'' as EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT,isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT,isnull(D.GRO_AMT,0) as GRO_AMT
 ,isnull(h.net_amt,0) as net_amt,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME
+,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME
 ,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -391,7 +413,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,0.00 as Q
 ,ORG_DATE=(case when ISNULL(AMD.SBDATE,'') <> ''  then  AMD.SBDATE else D.SBDATE  end),'' as EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT,isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT,isnull(D.GRO_AMT,0) as GRO_AMT
 ,isnull(h.net_amt,0) as net_amt,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME
+,rtrim(ltrim(H.u_VESSEL)) AS SBBILLNO ,H.U_SBDT AS SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME
 ,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -432,9 +457,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,ORG_INVNO=SPACE(50), cast('' as datetime ) as ORG_DATE,'' as EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT , isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT ,isnull(D.GRO_AMT,0) as GRO_AMT,isnull(h.net_amt,0) as net_amt
 ,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,'' AS SBBILLNO ,'' SBDATE,D.LineRule
-,h.inv_sr,h.l_yn
-,IT.s_unit as uqc ,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
+,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
 ,RevCharge = '',h.AGAINSTGS
@@ -468,9 +494,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,ORG_INVNO=SPACE(50), cast('' as datetime ) as ORG_DATE,'' as EXPOTYPE
 ,isnull(D.CGSRT_AMT,0) as CGSRT_AMT , isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT ,isnull(D.GRO_AMT,0) as GRO_AMT,isnull(h.net_amt,0) as net_amt
 ,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,'' AS SBBILLNO ,'' SBDATE,D.LineRule
-,h.inv_sr,h.l_yn
-,IT.s_unit as uqc ,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
+,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
 ,RevCharge = '',h.AGAINSTGS
@@ -505,7 +532,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,ORG_INVNO=SPACE(50), cast('' as datetime ) as ORG_DATE,'' as EXPOTYPE,isnull(D.CGSRT_AMT,0) as CGSRT_AMT
 , isnull(D.SGSRT_AMT,0)as SGSRT_AMT ,isnull(D.IGSRT_AMT,0) as IGSRT_AMT ,isnull(D.GRO_AMT,0)as GRO_AMT 
 ,isnull(h.net_amt,0) as net_amt,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME,
+,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,
 (CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -533,7 +563,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY,isn
 ,ORG_INVNO=SPACE(50), cast('' as datetime ) as ORG_DATE,'' as EXPOTYPE,isnull(D.CGSRT_AMT,0) as CGSRT_AMT
 , isnull(D.SGSRT_AMT,0)as SGSRT_AMT ,isnull(D.IGSRT_AMT,0) as IGSRT_AMT ,isnull(D.GRO_AMT,0)as GRO_AMT 
 ,isnull(h.net_amt,0) as net_amt,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt,isnull(d.comrpcess,0) as cessr_amt
-,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME,
+,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME,
 (CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -562,7 +595,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY
 , ORG_DATE=(Select date from brmain where inv_no=h.paymentno union all Select date from crmain where inv_no=h.paymentno)
 ,'' as EXPOTYPE,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT  
 ,isnull(D.GRO_AMT,0) as GRO_AMT,isnull(h.net_amt,0)as net_amt,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt
-,isnull(d.comrpcess,0) as cessr_amt,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME
+,isnull(d.comrpcess,0) as cessr_amt,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME
 ,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111
@@ -599,7 +635,10 @@ SELECT  H.Entry_ty, H.Tran_cd, D.ITSERIAL, H.INV_NO, H.DATE,D .IT_CODE,D.QTY
 , ORG_DATE=(Select date from brmain where inv_no=h.paymentno union all Select date from crmain where inv_no=h.paymentno)
 ,'' as EXPOTYPE,isnull(D.CGSRT_AMT,0) as CGSRT_AMT, isnull(D.SGSRT_AMT,0) as SGSRT_AMT,isnull(D.IGSRT_AMT,0) as IGSRT_AMT  
 ,isnull(D.GRO_AMT,0) as GRO_AMT,isnull(h.net_amt,0)as net_amt,d.ccessrate as cessrate,isnull(d.compcess,0) as cess_amt
-,isnull(d.comrpcess,0) as cessr_amt,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn,IT.s_unit as uqc ,IT.IT_NAME
+,isnull(d.comrpcess,0) as cessr_amt,'' AS SBBILLNO ,'' SBDATE,D.LineRule,h.inv_sr,h.l_yn
+--,IT.s_unit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.rateunit as uqc --Commented by Priyanka B on 11012019 for Bug-32062
+,IT.IT_NAME
 ,(CASE WHEN IT.Isservice = 0 THEN 'Goods' WHEN IT.Isservice = 1 THEN 'Services' ELSE '' END) AS Isservice
 --, IT.HSNCODE  --Commented by Priyanka B on 04012018 for Bug-31111
 , hsncode =(CASE WHEN IT.Isservice = 0 THEN IT.HSNCODE  WHEN IT.Isservice = 1 THEN IT.ServTCode ELSE '' END)  --Modified by Priyanka B on 04012018 for Bug-31111

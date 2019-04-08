@@ -41,6 +41,7 @@ Begin
 	,partynm=cast('' as varchar(100))
 	,vehicleType=Cast('' as varchar(30))				--Added By Shrikant S. on 18/05/2018 for Bug-31516
 	,mainHsnCode=Cast('' as varchar(30))				--Added By Shrikant S. on 18/05/2018 for Bug-31516
+	,tran_cd=Cast(0 as int)  --Added by Priyanka B on 14022019 for Bug-31844
 	into #eWayBill where 1=2
 	
 	If (@TrnName='Sales')
@@ -53,6 +54,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				--	Added by Shrikant S. on 21/03/2018 for Bug-31385
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=sm.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From stitem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516'
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From StMain m'
 		Set @SqlCommand=@SqlCommand+' Left Join StMainAdd sm on (m.Tran_cd=sm.Tran_Cd)'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'
@@ -85,6 +87,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				--	Added by Shrikant S. on 21/03/2018 for Bug-31385
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=m.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From dcitem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516'
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From DCMain m'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'
 		Set @SqlCommand=@SqlCommand+' Left outer join shipto Cons_sp ON (Cons_sp.ac_id = m.Cons_id and Cons_sp.shipto_id = m.scons_id)'
@@ -118,6 +121,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				--	Added by Shrikant S. on 21/03/2018 for Bug-31385
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=m.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From ptitem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516'
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From PTMain m'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'
 		Set @SqlCommand=@SqlCommand+' Left outer join shipto Cons_sp ON (Cons_sp.ac_id = m.Cons_id and Cons_sp.shipto_id = m.scons_id)'
@@ -149,6 +153,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=m.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From aritem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516'
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From ARMain m'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'
 		Set @SqlCommand=@SqlCommand+' Left outer join shipto Cons_sp ON (Cons_sp.ac_id = m.Cons_id and Cons_sp.shipto_id = m.scons_id)'
@@ -179,6 +184,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				--	Added by Shrikant S. on 21/03/2018 for Bug-31385
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=m.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From iiitem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516'
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From IIMain m'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'
 		Set @SqlCommand=@SqlCommand+' Left outer join shipto Cons_sp ON (Cons_sp.ac_id = m.Cons_id and Cons_sp.shipto_id = m.scons_id)'
@@ -211,6 +217,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				--	Added by Shrikant S. on 21/03/2018 for Bug-31385
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=m.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From iritem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From IRMain m'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'		
 		Set @SqlCommand=@SqlCommand+' Left outer join shipto Cons_sp ON (Cons_sp.ac_id = m.Cons_id and Cons_sp.shipto_id = m.scons_id)'
@@ -243,6 +250,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				--	Added by Shrikant S. on 21/03/2018 for Bug-31385
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=m.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From cnitem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From CNMain m'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'
 		Set @SqlCommand=@SqlCommand+' Left outer join shipto Cons_sp ON (Cons_sp.ac_id = m.Cons_id and Cons_sp.shipto_id = m.scons_id)'
@@ -272,6 +280,7 @@ Begin
 		--Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then isnull(Cons_sp.ac_name,'''') else isnull(Cons_ac.ac_name,'''') end)'				--	Added by Shrikant S. on 21/03/2018 for Bug-31385
 		Set @SqlCommand=@SqlCommand+' ,partynm=(case WHEN isnull(m.scons_id, 0) > 0 then (case when isnull(Cons_sp.ac_name,'''')='''' then  isnull(Cons_ac.ac_name,'''') else isnull(Cons_sp.ac_name,'''') end) else isnull(Cons_ac.ac_name,'''') end)'		--Added by Shrikant S. on 22/06/2018 for Sprint 1.0.1
 		Set @SqlCommand=(@SqlCommand)+',vehicleType=m.cargo_typ,mainHsnCode=(Select Top 1 ISNULL(Hsncode,'''') From sritem a inner join it_mast b on (a.it_code=b.it_code) where a.ismainhsn=1 and a.Tran_cd=m.tran_cd) '	--Added By Shrikant S. on 18/05/2018 for Bug-31516'
+		Set @SqlCommand=(@SqlCommand)+',m.tran_cd'  --Added by Priyanka B on 14022019 for Bug-31844
 		Set @SqlCommand=@SqlCommand+' From SRMain m'
 		Set @SqlCommand=@SqlCommand+' inner Join Lcode l on (m.Entry_Ty=l.Entry_TY)'
 		Set @SqlCommand=@SqlCommand+' Left outer join shipto Cons_sp ON (Cons_sp.ac_id = m.Cons_id and Cons_sp.shipto_id = m.scons_id)'
@@ -306,6 +315,7 @@ Begin
 	,transporterName,transporterId,transDocNo,transDocDate
 	,partynm
 	,vehicleType=ISNULL(vehicleType,''),mainHsnCode=isnull(mainHsnCode,'')				--Added By Shrikant S. on 18/05/2018 for Bug-31516
+	,tran_cd  --Added by Priyanka B on 14022019 for Bug-31844
 	From #eWayBill Order By convert(datetime,DocDt,105) asc,DocNo asc					--Added by Shrikant S. on 13/07/2018 for Sprint 1.0.2
 	--From #eWayBill Order By DocDt asc,DocNo asc				--Commented by Shrikant S. on 13/07/2018 for Sprint 1.0.2
 

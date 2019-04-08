@@ -52,6 +52,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	,Cons_location =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end)
 	,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else  buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM STMAIN H LEFT OUTER JOIN
 	  STITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -101,6 +102,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	,Cons_location =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end)
 	,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else  buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM STMAIN H LEFT OUTER JOIN
 	  STITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -145,6 +147,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	  ,Cons_location =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end)
 	  ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	  ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	  ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM  SRMAIN H LEFT OUTER JOIN
 	  SrITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -194,6 +197,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	 ,Cons_location =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end )
 	 ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	 ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	 ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM  SRMAIN H LEFT OUTER JOIN
 	  SrITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -237,6 +241,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	 ,Cons_location =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end )
 	 ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	 ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	 ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else  buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM  SBMAIN H LEFT OUTER JOIN
 	  SBITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -282,6 +287,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	 ,Cons_location =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end )
 	 ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	 ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	 ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM  SBMAIN H LEFT OUTER JOIN
 	  SBITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -330,6 +336,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	 ,Cons_ac_name =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end )
 	 ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	 ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	 ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else  buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM DNMAIN H LEFT OUTER JOIN
 	  DNITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -382,6 +389,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	 ,Cons_location =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end )
 	 ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	 ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	 ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else  buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM DNMAIN H LEFT OUTER JOIN
 	  DNITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -431,6 +439,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	 ,Cons_ac_name =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end )
 	 ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	 ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	 ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else  buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM CNMAIN H LEFT OUTER JOIN
 	  CNITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN
@@ -484,6 +493,7 @@ SET DATEFORMAT dmy SELECT * into #TMPTBL_1 FROM (  --Modified by Priyanka B on 0
 	 ,Cons_ac_name =(case when buyer_ac.i_tax=Cons_ac.i_tax then (case WHEN isnull(H.scons_id, 0) > 0 then  Cons_sp.Location_Id else  Cons_ac.city end) else( case WHEN isnull(H.sAc_id, 0) > 0 then  buyer_sp.Location_Id else  buyer_ac.city end) end )
 	 ,ECOMMAC_NM=isnull(e.gstin,'')  --Added by Priyanka B on 07032018 for Bug-31206
 	 ,cast(0 as decimal(3,2)) as Diff_Per  --Added by Priyanka B on 01082018 for Bug-31736
+	 ,buyer_ac_name=case WHEN isnull(H.sAc_id, 0) > 0 then (case WHEN isnull(H.scons_id, 0) > 0 then buyer_sp.mailname else  buyer_sp.ac_name end) else  buyer_ac.ac_name end  --Added by Priyanka B on 30102018 for Bug-32024
 	FROM CNMAIN H LEFT OUTER JOIN
 	  CNITEM D ON (H.ENTRY_TY = D .ENTRY_TY AND H.TRAN_CD = D .TRAN_CD) LEFT OUTER JOIN
 	  IT_MAST IT ON (D .IT_CODE = IT.IT_CODE) LEFT OUTER JOIN

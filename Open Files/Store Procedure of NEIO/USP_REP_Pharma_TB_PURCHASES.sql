@@ -48,21 +48,22 @@ from ptmain m
 inner join ptitem i on (m.entry_ty=i.entry_ty and m.tran_cd=i.tran_cd)
 inner join ac_mast ac on (m.ac_id=ac.ac_id)
 inner join it_mast on (i.it_code=it_mast.it_code)
-inner join pretsalt_master ps on (it_mast.prSalt=ps.Salt)
+--inner join pretsalt_master ps on (it_mast.prSalt=ps.Salt)
 inner join lcode l on (m.entry_ty=l.entry_ty)
 where 1=2
 
 SET @SQLCOMMAND='INSERT INTO #tbpurchases 
 	Select 0 as srno,it_mast.it_name,i.batchno,i.qty,ac.state,ac.city
-	,(case when upper(ac.st_type) in (''INTERSTATE'') then cast(i.qty as varchar) else '''' end)  as others
+	,(case when upper(ac.st_type) in (''INTERSTATE'',''OUT OF COUNTRY'') then cast(i.qty as varchar) else '''' end)  as others
 	from ptmain m
 	inner join ptitem i on (m.entry_ty=i.entry_ty and m.tran_cd=i.tran_cd)
 	inner join ac_mast ac on (m.ac_id=ac.ac_id)
 	inner join it_mast on (i.it_code=it_mast.it_code)
-	inner join pretsalt_master ps on (it_mast.prSalt=ps.Salt)
+	--inner join pretsalt_master ps on (it_mast.prSalt=ps.Salt)
 	inner join lcode l on (m.entry_ty=l.entry_ty)'
 SET @SQLCOMMAND=RTRIM(@SQLCOMMAND)+' '+RTRIM(@FCON)
-SET @SQLCOMMAND=RTRIM(@SQLCOMMAND)+' and m.entry_ty=''PK'' and ps.schedule=''TB'''
+SET @SQLCOMMAND=RTRIM(@SQLCOMMAND)+' and m.entry_ty=''PK'' and it_mast.prdisease=''TB'''
+--and ps.schedule=''TB'''
 PRINT @SQLCOMMAND
 EXECUTE SP_EXECUTESQL @SQLCOMMAND
 
