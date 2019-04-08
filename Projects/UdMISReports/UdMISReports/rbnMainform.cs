@@ -19,14 +19,18 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using DevExpress.XtraCharts;
 using System.Diagnostics;
+using DevExpress.Printing.ExportHelpers;
+using DevExpress.Export;
+using Microsoft.Office.Interop.Excel;
+
 
 namespace UdMISReports
 {
     public partial class rbnMainform : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         private SqlConnection oconn;
-        private DataTable _SettingTbl = new DataTable("ColDetView");
-        private DataTable _CompanyDetails;
+        private System.Data.DataTable _SettingTbl = new System.Data.DataTable("ColDetView");
+        private System.Data.DataTable _CompanyDetails;
         private string _currentLayout = string.Empty;
 
         private string ReportName = string.Empty;
@@ -35,8 +39,14 @@ namespace UdMISReports
         private int maxfilterFieldCount = 20;
         private string cAppPId = string.Empty;
         private string cAppName = "UdMISReports.exe";
+        private string reportCaption = "";
+        Workbook workbook;
+
+
         #region public Properties
         private int _CompId;
+        
+
         public int CompId
         {
             get
@@ -330,8 +340,8 @@ namespace UdMISReports
             }
         }
 
-        private DataTable _gridSource;
-        public DataTable GridSource
+        private System.Data.DataTable _gridSource;
+        public System.Data.DataTable GridSource
         {
             get
             {
@@ -379,7 +389,6 @@ namespace UdMISReports
             this.bsiUserName.Caption = this.bsiUserName.Caption + this.UserName;
             this.splitContainerControl1.PanelVisibility = DevExpress.XtraEditors.SplitPanelVisibility.Panel2;
             this.splitContainerControl2.PanelVisibility = DevExpress.XtraEditors.SplitPanelVisibility.Panel1;
-            MessageBox.Show(MainIcon);
         }
         #region Private Methods
         private void RefreshScreen()
@@ -402,7 +411,7 @@ namespace UdMISReports
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
             SplashScreenManager.CloseForm();
         }
@@ -414,9 +423,9 @@ namespace UdMISReports
             Value = Value.Replace("=", "|");
             return Value.Split(new char[] { '|' });
         }
-        private DataTable GetCompanyDetails()
+        private System.Data.DataTable GetCompanyDetails()
         {
-            _CompanyDetails = new DataTable();
+            _CompanyDetails = new System.Data.DataTable();
             SqlConnection oconn = new SqlConnection(SqlConnString);
             SqlDataAdapter lda = new SqlDataAdapter("Select Top 1 * From Vudyog..Co_mast Where CompId=" + this.CompId, oconn);
             lda.Fill(_CompanyDetails);
@@ -425,7 +434,7 @@ namespace UdMISReports
         private void GetDataSource(string reportId)
         {
             DataSet lds = new DataSet();
-            DataTable ldt = new DataTable();
+            System.Data.DataTable ldt = new System.Data.DataTable();
             oconn = new SqlConnection(this.SqlConnString);
             #region Fetching Report Details 
             SqlCommand cmd = new SqlCommand("Select Top 1 * From UBIReportMast Where ReportId=@ReportId", oconn);
@@ -567,11 +576,12 @@ namespace UdMISReports
             this.bbiEmailToXlsx.ItemClick += new ItemClickEventHandler(this.EmailToFile);
 
             this.pgMain.OptionsBehavior.HorizontalScrolling = PivotGridScrolling.Control;
+            
 
         }
         private void AddFieldsToPivot()
         {
-            DataTable columnDetails = new DataTable();
+            System.Data.DataTable columnDetails = new System.Data.DataTable();
             columnDetails = _SettingTbl.Clone();
 
             for (int i = 0; i < this.GridSource.Columns.Count; i++)
@@ -701,7 +711,7 @@ namespace UdMISReports
         }
         private string GetDefaultLayout()
         {
-            DataTable ldt = new DataTable();
+            System.Data.DataTable ldt = new System.Data.DataTable();
             SqlConnection oconn = new SqlConnection(SqlConnString);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = oconn;
@@ -769,7 +779,7 @@ namespace UdMISReports
             int reccount = 0;
             try
             {
-                DataTable ldt = new DataTable();
+                System.Data.DataTable ldt = new System.Data.DataTable();
                 SqlConnection oconn = new SqlConnection(SqlConnString);
                 SqlCommand cmd = new SqlCommand();
                 oconn.Open();
@@ -794,7 +804,7 @@ namespace UdMISReports
         }
         private void ApplyLayout(string layoutName)
         {
-            DataTable ldt = new DataTable();
+            System.Data.DataTable ldt = new System.Data.DataTable();
             SqlConnection oconn = new SqlConnection(SqlConnString);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = oconn;
@@ -866,7 +876,16 @@ namespace UdMISReports
                     {
                         SplashScreenManager.ShowForm(this, typeof(frmProgress), true, true, false);
                         Thread.Sleep(1);
-                        this.pgMain.ExportToXls(fileName);
+                        var pivotExportOptions = new DevExpress.XtraPivotGrid.PivotXlsExportOptions();
+                        //pivotExportOptions.ExportType = DevExpress.Export.ExportType.Default;
+                        pivotExportOptions.ExportType = DevExpress.Export.ExportType.Default;
+                        pivotExportOptions.AllowGrouping = DevExpress.Utils.DefaultBoolean.False;
+                        pivotExportOptions.AllowFixedColumnHeaderPanel = DevExpress.Utils.DefaultBoolean.False;
+                        pivotExportOptions.AllowLookupValues = DevExpress.Utils.DefaultBoolean.True;
+                        pivotExportOptions.CustomizeSheetHeader += pivotExportOptions_CustomizeSheetHeader;         //Added by Shrikant S. on 05/03/2019 for AU 2.1.1
+                        this.pgMain.ExportToXls(fileName, pivotExportOptions);
+
+                        this.WriteHeaders(fileName);                                //Added by Shrikant S. on 06/03/2019 for AU 2.1.1
                         SplashScreenManager.CloseForm();
                         this.OpenExportedFile(fileName);
                     }
@@ -878,11 +897,15 @@ namespace UdMISReports
                         SplashScreenManager.ShowForm(this, typeof(frmProgress), true, true, false);
                         Thread.Sleep(1);
                         var pivotExportOptions = new DevExpress.XtraPivotGrid.PivotXlsxExportOptions();
+                        //pivotExportOptions.ExportType = DevExpress.Export.ExportType.Default;
                         pivotExportOptions.ExportType = DevExpress.Export.ExportType.Default;
                         pivotExportOptions.AllowGrouping = DevExpress.Utils.DefaultBoolean.False;
                         pivotExportOptions.AllowFixedColumnHeaderPanel= DevExpress.Utils.DefaultBoolean.False;
+                        pivotExportOptions.AllowLookupValues= DevExpress.Utils.DefaultBoolean.True;
+                        pivotExportOptions.CustomizeSheetHeader += pivotExportOptions_CustomizeSheetHeader;         //Added by Shrikant S. on 05/03/2019 for AU 2.1.1
 
                         this.pgMain.ExportToXlsx(fileName, pivotExportOptions);
+                        this.WriteHeaders(fileName);                                //Added by Shrikant S. on 06/03/2019 for AU 2.1.1
                         SplashScreenManager.CloseForm();
                         this.OpenExportedFile(fileName);
                     }
@@ -912,6 +935,61 @@ namespace UdMISReports
             }
 
         }
+        //Added by Shrikant S. on 06/03/2019 for AU 2.1.1           //Start
+        void pivotExportOptions_CustomizeSheetHeader(DevExpress.Export.ContextEventArgs e)
+        {
+            // Create a new row. 
+            CellObject row = new CellObject();
+            // Specify row values. 
+            row.Value = this.Text;
+            // Specify row formatting. 
+            XlFormattingObject rowFormatting = new XlFormattingObject();
+            rowFormatting.Font = new XlCellFont { Bold = true, Size = 12 };
+            rowFormatting.Alignment = new DevExpress.Export.Xl.XlCellAlignment { HorizontalAlignment = DevExpress.Export.Xl.XlHorizontalAlignment.Left, VerticalAlignment = DevExpress.Export.Xl.XlVerticalAlignment.Top };
+            row.Formatting = rowFormatting;
+            // Add the created row to the output document. 
+            e.ExportContext.AddRow(new[] { row });
+            //// Add an empty row to the output document. 
+            //e.ExportContext.AddRow();
+            //// Merge cells of two new rows.  
+            //e.ExportContext.MergeCells(new DevExpress.Export.Xl.XlCellRange(new DevExpress.Export.Xl.XlCellPosition(0, 0), new DevExpress.Export.Xl.XlCellPosition(5, 1)));
+        }
+        private void WriteHeaders(string xlsxFileName)
+        {
+            List<PivotGridField> fldList = this.pgMain.GetFieldsByArea(PivotArea.RowArea);
+
+            Microsoft.Office.Interop.Excel.Application oXL = null;
+            Microsoft.Office.Interop.Excel.Workbook oWB = null;
+            Microsoft.Office.Interop.Excel.Worksheet oSheet = null;
+
+            try
+            {
+                oXL = new Microsoft.Office.Interop.Excel.Application();
+                oWB = oXL.Workbooks.Open(xlsxFileName, ReadOnly:false, Editable:true);
+                oSheet = (Microsoft.Office.Interop.Excel.Worksheet)oWB.Worksheets.Item[1];
+                for (int i = 0; i < fldList.Count; i++)
+                {
+                    Microsoft.Office.Interop.Excel.Range row1 = oSheet.Rows.Cells[3, i+1];
+                    row1.Value = fldList[i].Caption;
+                    
+                }
+                oWB.Save();
+
+                oXL.Application.ActiveWorkbook.Save();
+                oXL.Application.Quit();
+                oXL.Quit();
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(oWB);
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(oXL);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+ 
+        }
+        //Added by Shrikant S. on 06/03/2019 for AU 2.1.1           //End
+
+
         private void OpenExportedFile(string fileName)
         {
             if (MessageBox.Show("Do you want to open this file?", "Export To...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -926,7 +1004,7 @@ namespace UdMISReports
                 }
                 catch
                 {
-                    MessageBox.Show(this, "Cannot find an application on your system suitable for openning the file with exported data.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(this, "Cannot find an application on your system suitable for openning the file with exported data.",System.Windows.Forms.Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -947,6 +1025,7 @@ namespace UdMISReports
                 dlg.InitialDirectory = (this.AppPath);
                 dlg.DefaultExt = exportTo;
                 //dlg.CheckFileExists = true;
+                dlg.FileName = this.Text;               //Added by Shrikant S. on 05/03/2019 for AU 2.1.1
                 dlg.Filter = filterFile;
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
@@ -1015,7 +1094,16 @@ namespace UdMISReports
                             {
                                 SplashScreenManager.ShowForm(this, typeof(frmProgress), true, true, false);
                                 Thread.Sleep(1);
-                                this.pgMain.ExportToXls(fileName);
+                                var pivotExportOptions = new DevExpress.XtraPivotGrid.PivotXlsExportOptions();
+                                //pivotExportOptions.ExportType = DevExpress.Export.ExportType.Default;
+                                pivotExportOptions.ExportType = DevExpress.Export.ExportType.Default;
+                                pivotExportOptions.AllowGrouping = DevExpress.Utils.DefaultBoolean.False;
+                                pivotExportOptions.AllowFixedColumnHeaderPanel = DevExpress.Utils.DefaultBoolean.False;
+                                pivotExportOptions.AllowLookupValues = DevExpress.Utils.DefaultBoolean.True;
+                                pivotExportOptions.CustomizeSheetHeader += pivotExportOptions_CustomizeSheetHeader;         //Added by Shrikant S. on 05/03/2019 for AU 2.1.1
+                                this.pgMain.ExportToXls(fileName, pivotExportOptions);
+
+                                this.WriteHeaders(fileName);                                //Added by Shrikant S. on 06/03/2019 for AU 2.1.1
                                 SplashScreenManager.CloseForm();
                             }
                             break;
@@ -1025,13 +1113,16 @@ namespace UdMISReports
                             {
                                 SplashScreenManager.ShowForm(this, typeof(frmProgress), true, true, false);
                                 Thread.Sleep(1);
-                                //DevExpress.Export.ExportSettings.DefaultExportType = DevExpress.Export.ExportType.DataAware;
                                 var pivotExportOptions = new DevExpress.XtraPivotGrid.PivotXlsxExportOptions();
                                 pivotExportOptions.ExportType = DevExpress.Export.ExportType.Default;
                                 pivotExportOptions.AllowGrouping = DevExpress.Utils.DefaultBoolean.False;
                                 pivotExportOptions.AllowFixedColumnHeaderPanel = DevExpress.Utils.DefaultBoolean.False;
+                                pivotExportOptions.AllowLookupValues = DevExpress.Utils.DefaultBoolean.True;
+                                pivotExportOptions.CustomizeSheetHeader += pivotExportOptions_CustomizeSheetHeader;         //Added by Shrikant S. on 05/03/2019 for AU 2.1.1
 
                                 this.pgMain.ExportToXlsx(fileName, pivotExportOptions);
+                                this.WriteHeaders(fileName);                                //Added by Shrikant S. on 06/03/2019 for AU 2.1.1
+
                                 SplashScreenManager.CloseForm();
                             }
                             break;
@@ -1058,9 +1149,42 @@ namespace UdMISReports
                     }
                     if (fileName.Length > 0)
                     {
-                        frmSendMail frmsend = new frmSendMail(SqlConnString, fileName, ReportName, UserName);
-                        frmsend.LookAndFeel.SetSkinStyle(this.pgMain.LookAndFeel.SkinName);
-                        frmsend.ShowDialog();
+                        string defaSetting = this.GetDefaultEmailSetting();
+
+                        if (defaSetting != "SMTP")
+                        {
+                            try
+                            {
+                                var oApp = new Microsoft.Office.Interop.Outlook.Application();
+                                Microsoft.Office.Interop.Outlook._NameSpace ns = oApp.GetNamespace("MAPI");
+                                //var f = ns.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox);
+                                //Thread.Sleep(5000); // a bit of startup grace time.
+                                
+                                var mailItem = (Microsoft.Office.Interop.Outlook._MailItem)oApp.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType.olMailItem);
+                                mailItem.BodyFormat = Microsoft.Office.Interop.Outlook.OlBodyFormat.olFormatHTML;
+                                mailItem.Subject = "Reports : " + ReportName;
+                                StringBuilder mailbody = new StringBuilder();
+
+
+                                mailItem.HTMLBody = "<html><body> Dear Sir / Madam, <br> <br> Please Find the Attached Report:" + ReportName + ".</b> <br><br><br> Thanks & Regards,<br> " + UserName + "</body></html>";
+                                mailItem.To = "";
+                                mailItem.Attachments.Add(fileName, Microsoft.Office.Interop.Outlook.OlAttachmentType.olByValue, 1, Path.GetFileName(fileName));
+                                mailItem.Display(true);
+                                //mailItem.Send();
+                            }
+                            catch (Exception)
+                            {
+                                defaSetting = "SMTP";
+                            }
+                        }
+                        if (defaSetting == "SMTP")
+                        {
+                            frmSendMail frmsend = new frmSendMail(SqlConnString, fileName, ReportName, UserName);
+                            frmsend.LookAndFeel.SetSkinStyle(this.pgMain.LookAndFeel.SkinName);
+                            frmsend.ShowDialog();
+                        }
+
+
                     }
                 }
                 catch (Exception ex)
@@ -1070,6 +1194,25 @@ namespace UdMISReports
                 }
             }
         }
+
+        private string GetDefaultEmailSetting()
+        {
+            string retvalue = string.Empty;
+            System.Data.DataTable ldt = new System.Data.DataTable();
+            SqlConnection oconn = new SqlConnection(SqlConnString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = oconn;
+            cmd.CommandText = "select * from emailsettings";
+            SqlDataAdapter lda = new SqlDataAdapter(cmd);
+            lda.Fill(ldt);
+
+            if (ldt.Columns.Contains("IsSMTPDefa"))
+            {
+                retvalue=((ldt.Rows.Count > 0 ?Convert.ToBoolean(ldt.Rows[0]["IsSMTPDefa"]) : false)?"SMTP":"");
+            }
+            return retvalue;
+        }
+
         private void CheckBarItem_CheckedChanged(object sender, EventArgs e)
         {
             this.pgMain.OptionsView.ShowColumnGrandTotals = this.bciShowColGrandTotal.Checked;
@@ -1145,7 +1288,7 @@ namespace UdMISReports
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, this.ApplText, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
             SplashScreenManager.CloseForm();
 
@@ -1156,7 +1299,7 @@ namespace UdMISReports
             if (MessageBox.Show(this, "Do you really want to exit?", this.ApplText, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 this.mDeleteProcessIdRecord();
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
         }
 
@@ -1204,7 +1347,7 @@ namespace UdMISReports
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
             SplashScreenManager.CloseForm();
         }
@@ -1412,7 +1555,7 @@ namespace UdMISReports
                 diagram.RuntimeZooming = true;
                 diagram.RuntimeScrolling = true;
             }
-            foreach (Series series in chartMain.Series)
+            foreach (DevExpress.XtraCharts.Series series in chartMain.Series)
                 UpdateSeriesTransparency(series.View);
             UpdateSeriesTransparency(chartMain.SeriesTemplate.View);
         }

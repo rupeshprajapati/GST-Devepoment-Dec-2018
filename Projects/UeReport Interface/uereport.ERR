@@ -17,10 +17,10 @@ Form d:\svngst\uereport interface\vureport.scx has the following errors:
     Application UEBALANCELIST - Undefined
     Application UESTKITEMMONTHLYSUMMARY - Undefined
     Unknown UEGETPOP - Undefined
+    Unknown BARSTAT - Undefined
     Proc./Func. UDAPPREPINIT - Undefined
     Proc./Func. UDTRIGREPINIT - Undefined
     Proc./Func. UETRIGREPINIT - Undefined
-    Unknown BARSTAT - Undefined
 
 Form d:\svngst\uereport interface\vuadv.scx has the following errors:
     Unknown UEGETPOP - Undefined

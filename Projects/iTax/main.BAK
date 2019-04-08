@@ -220,7 +220,9 @@ mvu_Backimg  = Iif(Empty(lcBackimg),'',lcBackimg)
 
 mvu_two		 = GetPrivStr([Settings],"Position", "", @mvu_one, Len(mvu_one), iniFilePath)
 lnPosition   = Left(mvu_one,mvu_two)
-mvu_Position = Iif(Empty(lcBackimg),1,Val(lnPosition))
+*!*	mvu_Position = Iif(Empty(lcBackimg),1,Val(lnPosition))  &&Commented by Priyanka B on 19122018 for Bug-32062
+mvu_Position = IIF(INLIST(Val(lnPosition),0,1,2),Val(lnPosition),1)  &&Modified by Priyanka B on 19122018 for Bug-32062
+
 
 *!*	Backimage = Itaxback.Tif
 *!*	Position  = 1
@@ -1039,13 +1041,13 @@ Procedure doRegistration
 			If !Inlist(dec(NewDecry(GlobalObj.getpropertyval("UdProdCode"),'Ud*yog+1993')),'VudyogMFG','VudyogTRD','VudyogServiceTax')		&&Changes done by Vasant on 22/02/2011 as per TKT-6371 for Changing Demo Days for VU10 (Standard/Professional/Enterprise)
 				&&vasant16/11/2010	Changes done for VU 10 (Standard/Professional/Enterprise)
 
-				***** Changed by Sachin N. S. on 24/11/2018 for Installer 2.0.1 -- Start
+				***** Changed by Sachin N. S. on 24/11/2018 for Bug-32062 -- Start
 				If !Inlist(dec(NewDecry(GlobalObj.getpropertyval("UdProdCode"),'Ud*yog+1993')),'uERPStd','uERPSilvPro','uERPGoldPro','uERPEnt','uERPSdk')
 					lnEvalPerd = 27
 				Else
 					lnEvalPerd = 10
 				Endif
-				***** Changed by Sachin N. S. on 24/11/2018 for Installer 2.0.1 -- End
+				***** Changed by Sachin N. S. on 24/11/2018 for Bug-32062 -- End
 			Else
 				lnEvalPerd = 9
 			Endif

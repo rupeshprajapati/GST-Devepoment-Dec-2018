@@ -1,16 +1,12 @@
-Program e:\suraj\gst\working bugs\28404\svn & weekly folder updates\orderzoom\runme.prg has the following errors:
+Program e:\svnprojects\bug-32272\orderzoom\runme.prg has the following errors:
     Unknown APPVERCHK - Undefined
 
-Form e:\...\gst\working bugs\28404\svn & weekly folder updates\orderzoom\frmhelp.scx has the following errors:
+Form e:\svnprojects\bug-32272\orderzoom\frmhelp.scx has the following errors:
     Unknown BARSTAT - Undefined
 
-Form e:\...\working bugs\28404\svn & weekly folder updates\orderzoom\frmorder.scx has the following errors:
+Form e:\svnprojects\bug-32272\orderzoom\frmorder.scx has the following errors:
     Unknown BARSTAT - Undefined
-    Proc./Func. TOUEVOUCHER - Undefined
-    Application UECRVIEWER - Undefined
-    Proc./Func. UEMAILING - Undefined
 
-Form e:\...\working bugs\28404\svn & weekly folder updates\orderzoom\frmfilter.scx has the following errors:
+Form e:\svnprojects\bug-32272\orderzoom\frmfilter.scx has the following errors:
     Unknown BARSTAT - Undefined
-    Unknown UEGETPOP - Undefined
 

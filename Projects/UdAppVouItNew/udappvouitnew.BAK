@@ -74,11 +74,11 @@ Endif
 
 If Not('vutex' $ vchkprod)
 &&Added by Priyanka B on 01122018 for Pharma Retails Installer Start
-	If Inlist(main_vw.Entry_ty,'PK')
+	If Inlist(main_vw.Entry_ty,'PK','SK')
 		If Empty(item_vw.Item)
 			_curfrmobj = _Screen.ActiveForm
 
-			SQLQuery="select top 1 RTRIM(ware_nm) as Ware_nm from warehouse where rtrim(ltrim(ware_nm)) != '' and validity like '%PK%'";
+			SQLQuery="select top 1 RTRIM(ware_nm) as Ware_nm from warehouse where rtrim(ltrim(ware_nm)) != '' and validity like '%"+main_vw.Entry_ty+"%'";
 				+" and (actdeact=0 or (actdeact=1 and cast(deactivefrom as date) > ?main_vw.date)) order by case when ware_nm='Common Store' then 'a' else 'b' end"
 			nRet = _curfrmobj.sqlconobj.DataConn([EXE],Company.DbName,SQLQuery,[tmp_warenm],"_curfrmobj.nHandle",_curfrmobj.DataSessionId,.F.)
 			If nRet <= 0
@@ -173,6 +173,13 @@ Endif
 If Inlist(.pcVtype,'E1','S1','IB','J7','BP','BR','CP','CR','C6','D6','P7','P8','S7','S8','S4','S5','S9','S3')  && Added by Prajakta B. on 24/07/2017 for GST
 	Select item_vw
 	Replace item_vw.qty With 1,item_vw.rate With 1 In item_vw
+
+&&Added by Priyanka B on 30032019 for Bug-32067 Start
+	If .pcVtype="IB"
+		Replace item_vw.qty With 0.01,item_vw.rate With 0.01 In item_vw
+	Endif
+&&Added by Priyanka B on 30032019 for Bug-32067 End
+
 *	,Sr_Sr With Subs(Item_vw.Sr_Sr,1,2)+'TTT' In item_vw
 Endif
 && Added by Shrikant S. on 04/10/2016 for GST		&& End

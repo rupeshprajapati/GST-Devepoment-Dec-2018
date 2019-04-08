@@ -2,7 +2,8 @@ Lparameters oFrmpara
 
 &&Added by Priyanka B on 04122018 for Bug-31930 Start
 oFrm=_Screen.ActiveForm
-If (Inlist(main_vw.entry_ty,"PU") And ("phrmretlr" $ vchkprod))
+*!*	If (Inlist(main_vw.entry_ty,"PU") And ("phrmretlr" $ vchkprod))  &&Commented by Priyanka B on 05012019 for Bug-32119
+If (Inlist(main_vw.entry_ty,"PU","RA") And ("phrmretlr" $ vchkprod))  &&Modified by Priyanka B on 05012019 for Bug-32119
 	If Type('main_vw.ISEXPDSTK')="L" And main_vw.ISEXPDSTK=.T.
 		If oFrm.Addmode Or oFrm.Editmode
 			Select Detail

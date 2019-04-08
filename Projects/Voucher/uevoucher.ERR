@@ -1,4 +1,4 @@
-Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\voucher.scx has the following errors:
+Form e:\svnprojects\au 2.1.2\voucher\voucher.scx has the following errors:
     Unknown CHKRIGHT - Undefined
     Visual Class Library VOUCLASS - Undefined
     Application UDAPPVOUITEMNEW - Undefined
@@ -84,6 +84,7 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\voucher.scx has the follow
     Unknown UDTRIGVOUITEMGETPOP - Undefined
     Unknown UETRIGVOUITEMGETPOP - Undefined
     Unknown ISUNDEREXPORT - Undefined
+    Unknown ISSERVITEM - Undefined
     Proc./Func. UELASTDEAL - Undefined
     Application UDAPPVOUGENREFRESH - Undefined
     Program UDTRIGVOUGENREFRESH - Undefined
@@ -160,10 +161,10 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\voucher.scx has the follow
     Application UEGSTREVERSALPAYMENT - Undefined
     Application UEGSTDEPOSITDETAILS - Undefined
 
-Program e:\svnprojects\bug-32062 installer 2.1.0\voucher\voucher.prg has the following errors:
+Program e:\svnprojects\au 2.1.2\voucher\voucher.prg has the following errors:
     Unknown APPVERCHK - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\frmprint.scx has the following errors:
+Form e:\svnprojects\au 2.1.2\voucher\frmprint.scx has the following errors:
     Unknown CHKRIGHT - Undefined
     Unknown NEWDECRY - Undefined
     Unknown DEC - Undefined
@@ -172,15 +173,15 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\frmprint.scx has the follo
     Proc./Func. UETRIGVOUPRINTING - Undefined
     Proc./Func. UECRVIEWER - Undefined
 
-Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\voucher\toolclass.vcx has the following errors:
+Visual Class Library e:\svnprojects\au 2.1.2\voucher\toolclass.vcx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\uefrmservicetaxdet.scx has the following errors:
+Form e:\svnprojects\au 2.1.2\voucher\uefrmservicetaxdet.scx has the following errors:
     Visual Class Library VOUCLASS - Undefined
     Unknown UEGETPOP - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\uefrmcogsalloc.scx has the following errors:
+Form e:\svnprojects\au 2.1.2\voucher\uefrmcogsalloc.scx has the following errors:
     Unknown NEWDECRY - Undefined
     Unknown DEC - Undefined
     Unknown BARSTAT - Undefined
@@ -189,11 +190,11 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\uefrmcogsalloc.scx has the
     Unknown UDTRIGCOGSALLOC - Undefined
     Unknown UETRIGCOGSALLOC - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\uefrmservicetaxadj.scx has the following errors:
+Form e:\svnprojects\au 2.1.2\voucher\uefrmservicetaxadj.scx has the following errors:
     Visual Class Library VOUCLASS - Undefined
     Unknown UEGETPOP - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\voucher\uefrmservicetaxpay.scx has the following errors:
+Form e:\svnprojects\au 2.1.2\voucher\uefrmservicetaxpay.scx has the following errors:
     Visual Class Library VOUCLASS - Undefined
     Unknown UEGETPOP - Undefined
 

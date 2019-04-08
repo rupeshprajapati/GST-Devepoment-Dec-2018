@@ -1,4 +1,4 @@
-Form d:\1 development\transaction_settings\working folder for bug-31943\vouwiz.scx has the following errors:
+Form e:\svnprojects\bug-32210\new projects\transaction_settings\vouwiz.scx has the following errors:
     Unknown NEWDECRY - Undefined
     Unknown DEC - Undefined
     Unknown NEWENCRY - Undefined
@@ -14,23 +14,27 @@ Form d:\1 development\transaction_settings\working folder for bug-31943\vouwiz.s
     File FRSREC_S-OFF.GIF - Undefined
     File FOLDER_OPEN.GIF - Undefined
 
-Program d:\1 development\transaction_settings\working folder for bug-31943\main.prg has the following errors:
+Program e:\svnprojects\bug-32210\new projects\transaction_settings\main.prg has the following errors:
     Unknown APPVERCHK - Undefined
 
-Form d:\...\transaction_settings\working folder for bug-31943\frmuomchk.scx has the following errors:
+Form e:\svnprojects\bug-32210\new projects\transaction_settings\frmuomchk.scx has the following errors:
     Unknown BARSTAT - Undefined
 
-Form d:\...\transaction_settings\working folder for bug-31943\frmpickup.scx has the following errors:
+Form e:\svnprojects\bug-32210\new projects\transaction_settings\frmpickup.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEJOUR_OP - Undefined
 
-Form d:\...\transaction_settings\working folder for bug-31943\frmautoposting.scx has the following errors:
+Form e:\svnprojects\bug-32210\new projects\transaction_settings\frmautoposting.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
 
-Form d:\1 development\transaction_settings\working folder for bug-31943\frminvsr.scx has the following errors:
+Form e:\svnprojects\bug-32210\new projects\transaction_settings\frminvsr.scx has the following errors:
     Unknown BARSTAT - Undefined
 
-Form d:\...\transaction_settings\working folder for bug-31943\frmtranfor.scx has the following errors:
+Form e:\svnprojects\bug-32210\new projects\transaction_settings\frmtranfor.scx has the following errors:
     Unknown BARSTAT - Undefined
+
+Form e:\...\bug-32210\new projects\transaction_settings\frmitemwiseautotran.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
 

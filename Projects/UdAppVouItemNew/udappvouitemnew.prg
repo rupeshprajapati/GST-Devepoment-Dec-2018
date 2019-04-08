@@ -73,13 +73,18 @@ Endif
 && Comment by Ajay Jaiswal on 23/02/2012 : This same code is also used in EXIM module
 *!*	IF (.pcvtype="IP")		&& Commented By Shrikant S. on 08/01/2014		for Bug-20752
 *!*	If Inlist(.pcvtype,"IP","OP")	&& Added By Shrikant S. on 08/01/2014		for Bug-20752 && Commented By Kishor A. on 30/09/2015 for Bug-27021
-If Inlist(.pcvtype,"IP","OP","AR")			&& Added By Kishor A. on 30/09/2015 for Bug-27021
+*!*	If Inlist(.pcvtype,"IP","OP","AR")			&& Added By Kishor A. on 30/09/2015 for Bug-27021   &&Commented by Priyanka B on 23012019 for Bug-32210
+If Inlist(.pcvtype,"IP","OP","AR","Q2")			&& Added By Kishor A. on 30/09/2015 for Bug-27021   &&Modified by Priyanka B on 23012019 for Bug-32210
 	With .voupage.page1.grditem
 		For tcnt = 1 To .ColumnCount Step 1
 			colcontrolsource = "upper(alltrim(.column"+Alltrim(Str(tcnt))+".controlsource))"
 			ccond            = &colcontrolsource
 			If Alltrim(ccond) = 'ITEM_VW.U_FORPICK'
-				colwidth = ".column"+Alltrim(Str(tcnt))+".width = 50"
+				If (Main_vw.entry_ty=="Q2")
+					colwidth = ".column"+Alltrim(Str(tcnt))+".width = 70"
+				Else
+					colwidth = ".column"+Alltrim(Str(tcnt))+".width = 50"
+				Endif
 				withcol  = ".column"+Alltrim(Str(tcnt))
 				&colwidth
 				With &withcol
@@ -89,11 +94,16 @@ If Inlist(.pcvtype,"IP","OP","AR")			&& Added By Kishor A. on 30/09/2015 for Bug
 					.CurrentControl = "cmdpick"
 					.cmdpick.Visible = .T.
 					.Sparse = .F.
-					&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& Start
+&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& Start
 					If (Main_vw.entry_ty=="OP")
 						.cmdpick.Caption="IP Pickup"
 					Endif
-					&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& End
+&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& End
+&&Added by Priyanka B on 23012019 for Bug-32210 Start
+					If (Main_vw.entry_ty=="Q2")
+						.cmdpick.Caption="PQ Pickup"
+					ENDIF
+&&Added by Priyanka B on 23012019 for Bug-32210 End
 				Endwith
 			Endif
 		Endfor
@@ -167,7 +177,7 @@ Endif
 Select lcode_vw
 If Type("lcode_vw.intrtrn")<>'U'
 	If lcode_vw.INTRTRN =.T.
-		&& Added by Kishor A For bug-27300 on 01/12/2015 Endif
+&& Added by Kishor A For bug-27300 on 01/12/2015 Endif
 		If Inlist(Main_vw.entry_ty,"II") And Not('vutex' $ vchkprod)
 			With .voupage.page1.grditem
 				For tcnt = 1 To .ColumnCount Step 1
@@ -343,11 +353,11 @@ Endif
 
 If Type('_Screen.ActiveForm.pcvtype')<>'U'
 
-	*!*		If Inlist(_Screen.ActiveForm.pcvtype,'E1','S1','IB','J6','BP','BR','CP','CR','C6','D6','RV','J8') And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)    && Added by Shrikant S. on 06/02/2017 for GST  &&Commented by Priyanka B on 13042018 for AU 13.0.6
-	*!*		If Inlist(.pcvtype,'E1','S1','IB','J6','BP','BR','CP','CR','C6','D6','RV','J8') And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)    && Added by Shrikant S. on 06/02/2017 for GST  &&Modified by Priyanka B on 13042018 for AU 13.0.6
+*!*		If Inlist(_Screen.ActiveForm.pcvtype,'E1','S1','IB','J6','BP','BR','CP','CR','C6','D6','RV','J8') And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)    && Added by Shrikant S. on 06/02/2017 for GST  &&Commented by Priyanka B on 13042018 for AU 13.0.6
+*!*		If Inlist(.pcvtype,'E1','S1','IB','J6','BP','BR','CP','CR','C6','D6','RV','J8') And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)    && Added by Shrikant S. on 06/02/2017 for GST  &&Modified by Priyanka B on 13042018 for AU 13.0.6
 	If Inlist(.pcvtype,'E1','S1','IB','J6','BP','BR','CP','CR','C6','D6','RV','J8') And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode) And (_Screen.ActiveForm.pcvtype=Main_vw.entry_ty)   && Added by Shrikant S. on 11/05/2018 for Installer 1.0.0
-		*!*		If Inlist(_Screen.ActiveForm.pcvtype,'E1','S1','IB','J6','BP','BR','CP','CR','C6','D6','RV','J8','P7','P8','S7','S8','S3','S4','S5','S9')And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)				 && Added by Prajakta B. on 24/07/2017 for GST
-		*!*	If Inlist(Main_vw.Entry_ty,'E1','S1','IB','J6','BP','BR','CP','CR','GC','GD','C6','D6') And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)				&& Added by Shrikant S. on 06/02/2017 for GST
+*!*		If Inlist(_Screen.ActiveForm.pcvtype,'E1','S1','IB','J6','BP','BR','CP','CR','C6','D6','RV','J8','P7','P8','S7','S8','S3','S4','S5','S9')And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)				 && Added by Prajakta B. on 24/07/2017 for GST
+*!*	If Inlist(Main_vw.Entry_ty,'E1','S1','IB','J6','BP','BR','CP','CR','GC','GD','C6','D6') And (_Screen.ActiveForm.addmode Or _Screen.ActiveForm.editmode)				&& Added by Shrikant S. on 06/02/2017 for GST
 		If Type('_Screen.ActiveForm.voupage.page1.grditem')<>'U'  &&Added by Priyanka B on 17042018 for AU 13.0.6
 			With _Screen.ActiveForm
 				tot_grd_col=.voupage.page1.grditem.ColumnCount
@@ -355,20 +365,20 @@ If Type('_Screen.ActiveForm.pcvtype')<>'U'
 					Do Case
 						Case .voupage.page1.grditem.Columns(i).header1.Caption='Quantity'
 							.voupage.page1.grditem.Columns(i).Visible=.F.
-							*!*					IF Inlist(Main_vw.Entry_ty,'GC','GD','C6','D6')
-							*!*						.voupage.page1.grditem.Columns(i).Visible=.T.
-							*!*						.voupage.page1.grditem.Columns(i).Enabled=.F.
-							*!*					endif
+*!*					IF Inlist(Main_vw.Entry_ty,'GC','GD','C6','D6')
+*!*						.voupage.page1.grditem.Columns(i).Visible=.T.
+*!*						.voupage.page1.grditem.Columns(i).Enabled=.F.
+*!*					endif
 						Case .voupage.page1.grditem.Columns(i).header1.Caption='Rate'
 							.voupage.page1.grditem.Columns(i).Visible=.F.
-							*!*					IF Inlist(Main_vw.Entry_ty,'GC','GD','C6','D6')
-							*!*						.voupage.page1.grditem.Columns(i).Visible=.T.
-							*!*					endif
+*!*					IF Inlist(Main_vw.Entry_ty,'GC','GD','C6','D6')
+*!*						.voupage.page1.grditem.Columns(i).Visible=.T.
+*!*					endif
 
 						Case Upper(.voupage.page1.grditem.Columns(i).ControlSource)='ITEM_VW.U_ASSEAMT'
-							*!*					If Inlist(_Screen.ActiveForm.pcvtype,"IB","J6","E1","S1","C6","D6")		&& Commented by Shrikant S. on 06/02/2017 for GST
+*!*					If Inlist(_Screen.ActiveForm.pcvtype,"IB","J6","E1","S1","C6","D6")		&& Commented by Shrikant S. on 06/02/2017 for GST
 							If Inlist(_Screen.ActiveForm.pcvtype,"IB","J6","J8")		&& Added by Shrikant S. on 06/02/2017 for GST
-								*!*					If Inlist(_Screen.ActiveForm.pcvtype,"IB","J6","E1","S1")					&& Added by Shrikant S. on 06/02/2017 for GST
+*!*					If Inlist(_Screen.ActiveForm.pcvtype,"IB","J6","E1","S1")					&& Added by Shrikant S. on 06/02/2017 for GST
 								.voupage.page1.grditem.Columns(i).Visible=.F.
 							Endif
 							If Inlist(_Screen.ActiveForm.pcvtype,"C6","D6")
@@ -382,12 +392,12 @@ If Type('_Screen.ActiveForm.pcvtype')<>'U'
 
 						Case Upper(.voupage.page1.grditem.Columns(i).ControlSource)="ITEM_VW.STAXAMT"
 							.voupage.page1.grditem.Columns(i).ReadOnly=.T.
-							&& Added by Shrikant S. on 13/07/2018 for Bug-31518		&& Start
+&& Added by Shrikant S. on 13/07/2018 for Bug-31518		&& Start
 						Case Alltrim(Upper(.voupage.page1.grditem.Columns(i).ControlSource))="ITEM_VW.FCRATE"
 							If Inlist(_Screen.ActiveForm.pcvtype,'BP','BR','CP','CR')
 								.voupage.page1.grditem.Columns(i).Visible=.F.
 							Endif
-							&& Added by Shrikant S. on 13/07/2018 for Bug-31518		&& End
+&& Added by Shrikant S. on 13/07/2018 for Bug-31518		&& End
 
 					Endcase
 				Endfor
@@ -399,7 +409,7 @@ Endif
 
 && Added by Shrikant S. on 23/02/2017 for GST		&& Start
 If Type('_Screen.ActiveForm.pcvtype')<>'U'
-	*!*		If Inlist(_Screen.ActiveForm.pcvtype,'GD','GC')  &&Commented by Priyanka B on 13042018 for AU 13.0.6
+*!*		If Inlist(_Screen.ActiveForm.pcvtype,'GD','GC')  &&Commented by Priyanka B on 13042018 for AU 13.0.6
 	If Inlist(.pcvtype,'GD','GC')  &&Modified by Priyanka B on 13042018 for AU 13.0.6
 		If Type('_Screen.ActiveForm.voupage.page1.grditem')<>'U'  &&Added by Priyanka B on 17042018 for AU 13.0.6
 			With _Screen.ActiveForm
@@ -408,10 +418,10 @@ If Type('_Screen.ActiveForm.pcvtype')<>'U'
 					Do Case
 						Case Upper(.voupage.page1.grditem.Columns(i).ControlSource)='ITEM_VW.RATE'
 							.voupage.page1.grditem.Columns(i).header1.Caption='Diff. Rate'
-							&& Commented by Suraj K. Date on 22-01-2018 for Bug-30639  STart
-							*!*					Case .voupage.page1.grditem.Columns(i).header1.Caption='Quantity'			&& Added by Shrikant S. on 12/08/2017 for GST
-							*!*						.voupage.page1.grditem.Columns(i).Enabled=.F.							&& Added by Shrikant S. on 12/08/2017 for GST
-							&& Commented by Suraj K. Date on 22-01-2018 for Bug-30639   End
+&& Commented by Suraj K. Date on 22-01-2018 for Bug-30639  STart
+*!*					Case .voupage.page1.grditem.Columns(i).header1.Caption='Quantity'			&& Added by Shrikant S. on 12/08/2017 for GST
+*!*						.voupage.page1.grditem.Columns(i).Enabled=.F.							&& Added by Shrikant S. on 12/08/2017 for GST
+&& Commented by Suraj K. Date on 22-01-2018 for Bug-30639   End
 					Endcase
 				Endfor
 			Endwith
@@ -422,7 +432,7 @@ Endif
 
 && Added by Shrikant S. on 19/06/2017 for GST		&& Start
 If Type('_Screen.ActiveForm.pcvtype')<>'U'
-	*!*		If Inlist(_Screen.ActiveForm.pcvtype,'UB')  &&Commented by Priyanka B on 13042018 for AU 13.0.6
+*!*		If Inlist(_Screen.ActiveForm.pcvtype,'UB')  &&Commented by Priyanka B on 13042018 for AU 13.0.6
 	If Inlist(.pcvtype,'UB')  &&Modified by Priyanka B on 13042018 for AU 13.0.6
 		If Type('_Screen.ActiveForm.voupage.page1.grditem')<>'U'  &&Added by Priyanka B on 17042018 for AU 13.0.6
 			With _Screen.ActiveForm
@@ -443,7 +453,7 @@ Endif
 If Inlist(.pcvtype,'RN') And ([vuexc] $ vchkprod)
 	.cmdSelectBom.Top = .cmdnarration.Top+.cmdnarration.Height+5
 	.cmdSelectBom.Left = .cmdnarration.Left
-	*		.cmdbom.TOP   = (.voupage.TOP - .cmdbom.HEIGHT)
+*		.cmdbom.TOP   = (.voupage.TOP - .cmdbom.HEIGHT)
 Endif
 && Added by Shrikatn S. on 19/07/2016 for Bug-28289		&& End
 
@@ -452,7 +462,7 @@ Endif
 If Inlist(.pcvtype,'PK') 				&& Added by Shrikant S. on 24/11/2018 for Auto updater 2.0.1
 	.cmdcsv.Top = .txtInvoiceNo.Top
 	.cmdcsv.Left = .txtInvoiceNo.Left + .txtInvoiceNo.Width +20
-ENDIF
+Endif
 If Inlist(.pcvtype,'SK') 				&& Added by Shrikant S. on 24/11/2018 for Auto updater 2.0.1
 	.cmdcsv.Top = .txtDate.Top
 	.cmdcsv.Left = .txtDate.Left + .txtDate.Width +20
@@ -524,6 +534,34 @@ Endif
 ***** Changed by Sachin N. S. on 24/11/2018 for Bug-31943 -- End
 ***** Added by Sachin N. S. on 01/04/2016 for Bug-27503 -- End
 
+&&Added by Priyanka B on 24012019 for Bug-32210 Start
+If Type('_Screen.ActiveForm.pcvtype')<>'U'
+	Select lcode_vw
+*!*		If Type("lcode_vw.iautotran")<>'U'
+	If Type("lcode_vw.vendor")<>'U'
+*!*			If !Empty(lcode_vw.iautotran)
+		If !Empty(lcode_vw.vendor)
+			tcol = 4
+			.voupage.page1.grditem.Columns(tcol+1).AddObject('cmdBom','cmdVendDtls')
+*!*			.Voupage.Page1.Grditem.Columns(tcol+1).cmdBom.Picture = apath+Iif(.pcVtype='ST' Or .pcVtype='IP','bmp\finish_item.gif','bmp\raw_material.gif')
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.Picture = apath+'bmp\raw_material.gif'
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.Caption=	"Select"
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.PicturePosition= 2
+			.voupage.page1.grditem.Columns(tcol+1).CurrentControl='cmdBom'
+			.voupage.page1.grditem.Columns(tcol+1).header1.Caption="Vendor Details"
+			.voupage.page1.grditem.Columns(tcol+1).header1.Alignment= 2
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.Enabled=.T.
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.Themes=.F.
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.Visible=.T.
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.Height=.voupage.page1.grditem.RowHeight
+			.voupage.page1.grditem.Columns(tcol+1).cmdbom.ToolTipText = "Select"
+			.voupage.page1.grditem.Columns(tcol+1).Sparse=.F.
+			.voupage.page1.grditem.Columns(tcol+1).Width = 100
+		Endif
+	Endif
+Endif
+&&Added by Priyanka B on 24012019 for Bug-32210 End
+
 
 * Changes done as per --> CR_KOEL_0005A_Form_To_Record_Pre_Shipment_Info
 * Date : 08/11/2012
@@ -559,7 +597,7 @@ Define Class cmdclass As CommandButton
 	ForeColor = Rgb(0,0,0)
 
 	Procedure Click()
-		&& Added By Pankaj B. on 14-03-2015 for Bug-25542 Start
+&& Added By Pankaj B. on 14-03-2015 for Bug-25542 Start
 		curObj = _Screen.ActiveForm
 
 		lcStr = "Select type From it_mast where it_code= ?Item_vw.it_code"
@@ -569,33 +607,38 @@ Define Class cmdclass As CommandButton
 		Endif
 		nretval=curObj.sqlconobj.sqlconnclose("curObj.nHandle")
 
+&&Added by Priyanka B on 23012019 for Bug-32210 Start
+		If Main_vw.entry_ty="Q2" And This.Caption="PQ Pickup"
+			Do Form uefrm_itempickupQ2_PQ With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
+		Endif
+&&Added by Priyanka B on 23012019 for Bug-32210 End
 
-		*!*		IF this.Caption="Pickup" And !Inlist(UPPER(ipmast_vw.Type),"FINISHED","SEMI FINISHED") && Commented Kishor A. for bug-27021 on 30/09/2015
+*!*		IF this.Caption="Pickup" And !Inlist(UPPER(ipmast_vw.Type),"FINISHED","SEMI FINISHED") && Commented Kishor A. for bug-27021 on 30/09/2015
 		If This.Caption="Pickup" And !Inlist(Upper(ipmast_vw.Type),"FINISHED","SEMI FINISHED") And !Main_vw.entry_ty="AR" && Added by Kishor A. for bug-27021
 			Do Form uefrm_itempickup With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
 		Endif
 
-		&& Added by Kishor A. for bug-27021 on 30/09/2015 Start..
+&& Added by Kishor A. for bug-27021 on 30/09/2015 Start..
 		If Inlist(Main_vw.entry_ty,'AR')
 			Do Form uefrm_itpopickup With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
 			Thisform.ItemGrdBefCalc(4)
 		Endif
-		&& Added by Kishor A. for bug-27021 on 30/09/2015 End..
+&& Added by Kishor A. for bug-27021 on 30/09/2015 End..
 
-		*!*		IF this.Caption="Pickup" And Inlist(UPPER(ipmast_vw.Type),"FINISHED","SEMI FINISHED") && Commented Kishor A. for bug-27021 on 30/09/2015
+*!*		IF this.Caption="Pickup" And Inlist(UPPER(ipmast_vw.Type),"FINISHED","SEMI FINISHED") && Commented Kishor A. for bug-27021 on 30/09/2015
 		If This.Caption="Pickup" And Inlist(Upper(ipmast_vw.Type),"FINISHED","SEMI FINISHED") And !Main_vw.entry_ty="AR" && Added by Kishor A. for bug-27021
-			*!*			Do Form uefrm_OpStItemAllocation With Thisform.DataSessionId,Thisform.addmode,Thisform.editmode,Thisform			&& Commented by Shrikant S. on 02/02/2017 for GST
+*!*			Do Form uefrm_OpStItemAllocation With Thisform.DataSessionId,Thisform.addmode,Thisform.editmode,Thisform			&& Commented by Shrikant S. on 02/02/2017 for GST
 			Do Form uefrm_itempickup With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId						&& Added by Shrikant S. on 02/02/2017 for GST
 		Endif
-		&& Added By Pankaj B. on 14-03-2015 for Bug-25542 End
+&& Added By Pankaj B. on 14-03-2015 for Bug-25542 End
 
-		&& Comented By Pankaj B. on 14-03-2015 for Bug-25542 Start
-		*!*		IF this.Caption="Pickup"
-		*!*		Do Form uefrm_itempickup With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
-		*!*		ENDIF
-		&& Comented By Pankaj B. on 14-03-2015 for Bug-25542 End
+&& Comented By Pankaj B. on 14-03-2015 for Bug-25542 Start
+*!*		IF this.Caption="Pickup"
+*!*		Do Form uefrm_itempickup With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
+*!*		ENDIF
+&& Comented By Pankaj B. on 14-03-2015 for Bug-25542 End
 
-		** Birendra : Added Below on 14/14/2011 for TKT-8452 		---Start
+** Birendra : Added Below on 14/14/2011 for TKT-8452 		---Start
 		If This.Caption="WorkOrder" And oglblprdfeat.udchkprod('AutoTran')
 			formObj=_Screen.ActiveForm
 			_malias 	= Alias()
@@ -609,27 +652,27 @@ Define Class cmdclass As CommandButton
 				Select &_malias
 			Endif
 		Endif
-		** Birendra : Added Below on 14/14/2011 for TKT-8452 		---End
-		&& Added by Shrikant S. on 28/06/2014 for Bug-23280		&& Start && Comented By Pankaj B. on 14-03-2015 for Bug-25542 Start
-		*!*		IF this.Caption="Select"
-		*!*			Do Form uefrm_itempickup_pharmaind With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
-		*!*		ENDIF
-		&& Added by Shrikant S. on 28/06/2014 for Bug-23280		&& End && Comented By Pankaj B. on 14-03-2015 for Bug-25542 End
+** Birendra : Added Below on 14/14/2011 for TKT-8452 		---End
+&& Added by Shrikant S. on 28/06/2014 for Bug-23280		&& Start && Comented By Pankaj B. on 14-03-2015 for Bug-25542 Start
+*!*		IF this.Caption="Select"
+*!*			Do Form uefrm_itempickup_pharmaind With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
+*!*		ENDIF
+&& Added by Shrikant S. on 28/06/2014 for Bug-23280		&& End && Comented By Pankaj B. on 14-03-2015 for Bug-25542 End
 
-		&& Added By Pankaj B. on 14-03-2015 for Bug-25542 Start
+&& Added By Pankaj B. on 14-03-2015 for Bug-25542 Start
 		If This.Caption="Select" And !Inlist(Upper(ipmast_vw.Type),"FINISHED","SEMI FINISHED")
 			Do Form uefrm_itempickup_pharmaind With Thisform.addmode,Thisform.editmode,Thisform.DataSessionId
 		Endif
 		If This.Caption="Select" And Inlist(Upper(ipmast_vw.Type),"FINISHED","SEMI FINISHED")
 			Do Form uefrm_OpStItemAllocation_pharmaind With Thisform.DataSessionId,Thisform.addmode,Thisform.editmode,Thisform
 		Endif
-		&& Added By Pankaj B. on 14-03-2015 for Bug-25542 End
+&& Added By Pankaj B. on 14-03-2015 for Bug-25542 End
 
-		&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& Start
+&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& Start
 		If This.Caption=="IP Pickup"
 			Do Form UEFRM_IP_ALLOCATION With _Screen.ActiveForm.DataSessionId,_Screen.ActiveForm.addmode,_Screen.ActiveForm.editmode
 		Endif
-		&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& End
+&& Added By Shrikant S. on 08/01/2014		for Bug-20752		&& End
 
 		Return
 Enddefine
@@ -652,3 +695,19 @@ Define Class cmdbtncls As CommandButton
 	Endproc
 Enddefine
 && Added by Shrikant S. on 28/06/2014 for Bug-23280		&& End
+
+&&Added by Priyanka B on 24012019 for Bug-32210 Start
+Define Class cmdVendDtls As CommandButton
+	Procedure Click
+		_malias 	= Alias()
+		_mRecNo	= Recno()
+		Do udAutoTranPickup.App With _Screen.ActiveForm.addmode,_Screen.ActiveForm.editmode,_Screen.ActiveForm.DataSessionId,Thisform
+		If !Empty(_malias)
+			Select &_malias
+		Endif
+		If Betw(_mRecNo,1,Reccount())
+			Go _mRecNo
+		Endif
+	Endproc
+Enddefine
+&&Added by Priyanka B on 24012019 for Bug-32210 End

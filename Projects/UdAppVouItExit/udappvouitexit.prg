@@ -412,7 +412,8 @@ Endif
 ******* Added by Sachin N. S. on 03/09/2015 for Bug-26722 -- End
 
 ***** Added by Sachin N. S. on 02/11/2017 for Bug-30782 -- Start
-If oGlblPrdFeat.UdChkProd('vugst')
+*!*	If oGlblPrdFeat.UdChkProd('vugst')   &&Commented by Priyanka B on 22032019 for Bug-32067
+If oGlblPrdFeat.UdChkProd('vugst') Or oGlblPrdFeat.UdChkProd('vuisd') OR oGlblPrdFeat.UdChkProd('isdkgen')   &&Modified by Priyanka B on 22032019 for Bug-32067
 	If _curvouobj.EditMode=.T.
 		cdAmendDt = Iif(Type('Main_vw.AmendDate')='T','Main_vw.AmendDate',Iif(Type('Lmc_vw.AmendDate')='T','Lmc_vw.AmendDate',Iif(Type('MainAdd_vw.AmendDate')='T','MainAdd_vw.AmendDate','')))
 		If !Empty(cdAmendDt)

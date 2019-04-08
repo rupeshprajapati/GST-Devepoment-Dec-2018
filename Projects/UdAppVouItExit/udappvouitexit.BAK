@@ -204,7 +204,8 @@ If ("vuexc" $ vchkprod  And Inlist(main_vw.entry_ty ,"LR","IL","RE")) Or ("vuinv
 			Endif
 			If lexit=.T.
 && Messagebox("Entry cannot be saved without Issue Allocation "+Iif(!Empty(Alltrim(Item_vw.Item))," for "+Alltrim(Item_vw.Item)+" and line item "+Alltrim(Item_vw.item_no),"")+"...",64,vumess) && Commented by Suraj Kumawat date on 27-05-2017 for GST ....
-				Messagebox("Entry cannot be saved without Issue Allocation "+Iif(!Empty(Alltrim(Item_vw.Item))," for "+Alltrim(Item_vw.Item)+" and line goods "+Alltrim(Item_vw.item_no),"")+"...",64,vumess) && Added by Suraj Kumawat date on 27-05-2017 for GST
+*!*					Messagebox("Entry cannot be saved without Issue Allocation "+Iif(!Empty(Alltrim(Item_vw.Item))," for "+Alltrim(Item_vw.Item)+" and line goods "+Alltrim(Item_vw.item_no),"")+"...",64,vumess) && Added by Suraj Kumawat date on 27-05-2017 for GST  &&Commented by Priyanka B on 22112018 for Bug-31874
+				Messagebox("Entry cannot be saved without Issue/Wastage/Process Loss Allocation "+Iif(!Empty(Alltrim(Item_vw.Item))," for "+Alltrim(Item_vw.Item)+" and line goods "+Alltrim(Item_vw.item_no),"")+"...",64,vumess) && Added by Suraj Kumawat date on 27-05-2017 for GST  &&Modified by Priyanka B on 22112018 for Bug-31874
 				Select Item_vw
 				Return .F.
 			Endif
@@ -411,7 +412,8 @@ Endif
 ******* Added by Sachin N. S. on 03/09/2015 for Bug-26722 -- End
 
 ***** Added by Sachin N. S. on 02/11/2017 for Bug-30782 -- Start
-If oGlblPrdFeat.UdChkProd('vugst')
+*!*	If oGlblPrdFeat.UdChkProd('vugst')   &&Commented by Priyanka B on 22032019 for Bug-32067
+If oGlblPrdFeat.UdChkProd('vugst') Or oGlblPrdFeat.UdChkProd('vuisdisdkgen')  &&Modified by Priyanka B on 22032019 for Bug-32067
 	If _curvouobj.EditMode=.T.
 		cdAmendDt = Iif(Type('Main_vw.AmendDate')='T','Main_vw.AmendDate',Iif(Type('Lmc_vw.AmendDate')='T','Lmc_vw.AmendDate',Iif(Type('MainAdd_vw.AmendDate')='T','MainAdd_vw.AmendDate','')))
 		If !Empty(cdAmendDt)

@@ -1,5 +1,6 @@
-Program d:\svngst\udappvouitemnew\udappvouitemnew.prg has the following errors:
+Program e:\svnprojects\bug-32210\udappvouitemnew\udappvouitemnew.prg has the following errors:
     Form FRM_PRESHIPMENTINFO - Undefined
+    Form UEFRM_ITEMPICKUPQ2_PQ - Undefined
     Form UEFRM_ITEMPICKUP - Undefined
     Form UEFRM_ITPOPICKUP - Undefined
     Form UEFRM_BOMDETAILSIP_AUTO - Undefined
@@ -8,4 +9,5 @@ Program d:\svngst\udappvouitemnew\udappvouitemnew.prg has the following errors:
     Form UEFRM_OPSTITEMALLOCATION_PHARMAIND - Undefined
     Form UEFRM_IP_ALLOCATION - Undefined
     Form UEFRM_BATCHSELECT - Undefined
+    Application UDAUTOTRANPICKUP - Undefined
 

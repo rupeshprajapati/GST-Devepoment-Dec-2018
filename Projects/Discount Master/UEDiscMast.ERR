@@ -1,7 +1,7 @@
-Program e:\svnprojects\bug-32062 installer 2.1.0\discount master\discmast.prg has the following errors:
+Program e:\prajakta\projects\installer erp 2.1.0.0\discount master\discmast.prg has the following errors:
     Unknown APPVERCHK - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\discount master\discmast.scx has the following errors:
+Form e:\prajakta\projects\installer erp 2.1.0.0\discount master\discmast.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UDAPPMASTFINALUPDATE - Undefined
     Unknown UDTRIGMASTFINALUPDATE - Undefined

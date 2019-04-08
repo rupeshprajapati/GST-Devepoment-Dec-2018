@@ -1,4 +1,4 @@
-Lparameters tcMenutype As String,tcType As String,tnRange As Integer, oObject as Object 
+Lparameters tcMenutype As String,tcType As String,tnRange As Integer, oObject As Object
 
 If Vartype(VuMess) <> 'C'
 	Messagebox('Internal Application Not Run Directly...',0+48,[])
@@ -8,38 +8,39 @@ Endif
 
 If !("CLSYRLIBS" $ Upper(Set("Classlib")))
 	Set Classlib To clsyrtlibs Additive
-ENDIF
+Endif
 
 Local oParaobject
 oParaobject = Createobject("Empty")
 AddProperty(oParaobject,"nRange",tnRange)
 AddProperty(oParaobject,"cMenutype",tcMenutype)
-AddProperty(oParaobject,"cType",IIF(TYPE('oObject')='O',oObject.cType,Upper(tcType)))
-AddProperty(oParaobject,"pType",IIF(TYPE('oObject')='O',oObject.pType,Upper(tcType)))&& Added by Archana on 30/05/12 for Bug-4168
+AddProperty(oParaobject,"cType",Iif(Type('oObject')='O',oObject.cType,Upper(tcType)))
+AddProperty(oParaobject,"pType",Iif(Type('oObject')='O',oObject.pType,Upper(tcType)))&& Added by Archana on 30/05/12 for Bug-4168
+AddProperty(oParaobject,"isSupply",Iif((Type('oObject')='O' And Type('oObject.isSupply')<>'U'),oObject.isSupply,.F.))  &&Added by Priyanka B on 27122018 for Bug-32062
 
 
 Do Case
-Case Upper(Alltrim(tcMenutype)) = "DIS"	&& Data Import Selection
-	oDI2Update = Createobject("DI2_Update_Class")
-	If !oDI2Update.DI2_Updates()		&& Database Updates [Start]
-		Return .F.
-	Endif								&& Database Updates [End]
-	Do Form frmselect.scx With oParaobject
-Case Upper(Alltrim(tcMenutype)) = "DIM"	&& Data Import Module
-	If Empty(tcType)
-		Return .T.
-	Endif
-	Do Form frmprocess.scx With oParaobject
-Case Upper(Alltrim(tcMenutype))="MAPPING"
-	If Empty(tcType)
-		Return .T.
-	Endif
-	Do Form frmfldMap.scx With oParaobject
-Case Upper(Alltrim(tcMenutype))="SETTING"
-	If Empty(tcType)
-		Return .T.
-	Endif
-	Do Form frmDefaultSetting.scx With oParaobject
+	Case Upper(Alltrim(tcMenutype)) = "DIS"	&& Data Import Selection
+		oDI2Update = Createobject("DI2_Update_Class")
+		If !oDI2Update.DI2_Updates()		&& Database Updates [Start]
+			Return .F.
+		Endif								&& Database Updates [End]
+		Do Form frmselect.scx With oParaobject
+	Case Upper(Alltrim(tcMenutype)) = "DIM"	&& Data Import Module
+		If Empty(tcType)
+			Return .T.
+		Endif
+		Do Form frmprocess.scx With oParaobject
+	Case Upper(Alltrim(tcMenutype))="MAPPING"
+		If Empty(tcType)
+			Return .T.
+		Endif
+		Do Form frmfldMap.scx With oParaobject
+	Case Upper(Alltrim(tcMenutype))="SETTING"
+		If Empty(tcType)
+			Return .T.
+		Endif
+		Do Form frmDefaultSetting.scx With oParaobject
 Endcase
 
 
@@ -48,49 +49,49 @@ Define Class DI2_Update_Class As Custom
 	cSqlstr = ""
 	nSession = 0
 	Procedure Init
-	If ! Pemstatus(This,"sqlconobj",5)
-		This.AddObject("sqlconobj","sqlconnudobj")
-	Endif
-	This.nSession = Set("Datasession")
+		If ! Pemstatus(This,"sqlconobj",5)
+			This.AddObject("sqlconobj","sqlconnudobj")
+		Endif
+		This.nSession = Set("Datasession")
 	Endproc
 
 	Function DI2_Updates
-	If !Used("tbl_updates")
-		Select 0
-		Use tbl_updates
-	Endif
-
-	nhandle = 0
-	Select tbl_updates
-	Go Top In tbl_updates
-	Scan For isactive
-		This.cSqlstr = Alltrim(tbl_updates.Sql_String)
-		If Empty(This.cSqlstr)
-			Loop
+		If !Used("tbl_updates")
+			Select 0
+			Use tbl_updates
 		Endif
 
-		If tbl_updates.ChkExists
-			lcSqlstr = "SELECT [Name] From Sysobjects Where Type = '"+Alltrim(tbl_updates.Type)+"' And [Name] = '"+Alltrim(tbl_updates.cName)+"'"
-			mretval = This.sqlconobj.dataconn("EXE",Alltrim(Company.Dbname),lcSqlstr,"Check_cur_vw","nhandle",This.nSession,.F.)
-			If Reccount("Check_cur_vw") = 0
+		nhandle = 0
+		Select tbl_updates
+		Go Top In tbl_updates
+		Scan For isactive
+			This.cSqlstr = Alltrim(tbl_updates.Sql_String)
+			If Empty(This.cSqlstr)
+				Loop
+			Endif
+
+			If tbl_updates.ChkExists
+				lcSqlstr = "SELECT [Name] From Sysobjects Where Type = '"+Alltrim(tbl_updates.Type)+"' And [Name] = '"+Alltrim(tbl_updates.cName)+"'"
+				mretval = This.sqlconobj.dataconn("EXE",Alltrim(Company.Dbname),lcSqlstr,"Check_cur_vw","nhandle",This.nSession,.F.)
+				If Reccount("Check_cur_vw") = 0
+					mretval = This.sqlconobj.dataconn("EXE",Alltrim(Company.Dbname),This.cSqlstr,"Check_cur_vw","nhandle",This.nSession,.F.)
+				Endif
+			Else
 				mretval = This.sqlconobj.dataconn("EXE",Alltrim(Company.Dbname),This.cSqlstr,"Check_cur_vw","nhandle",This.nSession,.F.)
 			Endif
-		Else
-			mretval = This.sqlconobj.dataconn("EXE",Alltrim(Company.Dbname),This.cSqlstr,"Check_cur_vw","nhandle",This.nSession,.F.)
+
+			If tbl_updates.closeconn
+				This.sqlconobj.sqlconnclose("nhandle")
+			Endif
+
+			Select tbl_updates
+		Endscan
+
+		This.sqlconobj.sqlconnclose("nhandle")
+
+		If Used("tbl_updates")
+			Use In tbl_updates
 		Endif
-
-		If tbl_updates.closeconn
-			This.sqlconobj.sqlconnclose("nhandle")
-		Endif
-
-		Select tbl_updates
-	Endscan
-
-	This.sqlconobj.sqlconnclose("nhandle")
-
-	If Used("tbl_updates")
-		Use In tbl_updates
-	Endif
 
 	Endfunc
 

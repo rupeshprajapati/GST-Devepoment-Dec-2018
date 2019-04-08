@@ -9,7 +9,7 @@ Parameters pRange
 If Vartype(Company) <> "O"
 	Return .F.
 Endif
-Set Step On
+
 oWSHELL = Createobject("WScript.Shell")
 If Vartype(oWSHELL) <> "O"
 	Messagebox("WScript.Shell Object Creation Error...",16,VuMess)
@@ -60,7 +60,6 @@ If (rCount>0)
 	_ShellExec ="UdAlert.exe "+Transform(tcCompId)+" "+Alltrim(tcCompdb)+" "+Alltrim(mvu_server)+" "+Alltrim(mvu_user1)+" "+Alltrim(mvu_pass1)+" "+musername+" "+Alltrim(vicopath)+" "+pApplCaption+" "+pApplName+" "+Alltrim(Str(pApplId))  +" "+Alltrim(pApplCode)++" "+Alltrim(mvu_User_Roles)
 *!*		oWSHELL.Run(_ShellExec,1,.T.)   &&Commented by Priyanka B on 01092018 for Bug-31746
 	oWSHELL.Exec(_ShellExec)  &&Modified by Priyanka B on 01092018 for Bug-31746
-*!*		oWSHELL.Run(_ShellExec,0,.T.)
 Endif
 SqlConObj = Null
 mvu_user1 = Null

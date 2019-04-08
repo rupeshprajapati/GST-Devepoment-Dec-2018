@@ -1046,7 +1046,7 @@ Procedure mfgexpdtchk		&& Procedure to Check the Manufacturing Date with Expiry 
 	Endif
 
 &&Added by Priyanka B on 05122018 for Bug-31930 Start
-	If INLIST(main_vw.entry_ty,'PK','SK')
+	If Inlist(main_vw.entry_ty,'PK','SK')
 		If Upper(Alltrim(Strextract(oobject.ucontrolsource,'.'))) = 'EXPDT'
 			_curform = _Screen.ActiveForm
 			msqlstr = "Select prExpAlertDays from it_mast where It_code=?Item_vw.It_code"
@@ -2803,10 +2803,18 @@ Procedure SerTaxRecApply
 	Endif
 && Added by Shrikant S. on 13/11/2017 for GST Bug-30825		&& End
 
+&& Added by Shrikant S. on 14/03/2019 for Bug-32266				&& Start
+
+	If Type('Lit_vw.RCMCATE')='C'
+		If !Empty(Lit_vw.RCMCATE)
+			lcserty=Alltrim(Lit_vw.RCMCATE)
+		Endif
+	Endif
+&& Added by Shrikant S. on 14/03/2019 for Bug-32266				&& End
 
 *!*	If !Empty(coadditional.TypeOrg) And !Empty(acdetalloc_vw.Serty)		&& Commented by Shrikant S. on 20/10/2016 for GST
-	If !Empty(coadditional.ConstBusi) And !Empty(lcserty)		&& Added by Shrikant S. on 20/10/2016 for GST
-
+*!*		If !Empty(coadditional.ConstBusi) And !Empty(lcserty)		&& Added by Shrikant S. on 20/10/2016 for GST		&& Commented by Shrikant S. on 28/03/2019 for Bug-32266
+	If  !Empty(lcserty)		&& Added by Shrikant S. on 28/03/2019 for Bug-32266
 *!*		_mCoSerDed_Type  = Upper(Alltrim(coadditional.TypeOrg))
 		_mCoSerDed_Type  = Upper(Alltrim(coadditional.ConstBusi))
 		_mAcSerDed_Type  = ''
@@ -2845,6 +2853,7 @@ Procedure SerTaxRecApply
 				Endif
 			Endif
 		Endif
+*MESSAGEBOX("ded_type="+_mAcSerDed_Type +"=_mSerTaxRecApply ="+TRANSFORM(_mSerTaxRecApply)+"=_SerTaxTranType ="+_SerTaxTranType +"=lcserty="+lcserty)
 	Endif
 	If _oldconval <= 0
 		=sqlconobj1.sqlconnclose("nHandle")
@@ -5490,6 +5499,7 @@ Procedure Update_category
 	Return
 
 Procedure AdvtypeSetting
+	Parameters _Object  &&Added by Priyanka B on 27032019 for Bug-32067
 
 	curObj=_Screen.ActiveForm
 	llvalid=Iif(Type('main_vw.tdspaytype')<>'U',Iif(main_vw.tdspaytype=2,.T.,.F.),.T.)
@@ -5508,10 +5518,17 @@ Procedure AdvtypeSetting
 		If itemcount> 0
 			Return .F.
 		Endif
+
+&&Added by Priyanka B on 27032019 for Bug-32067 Start
+		If Vartype(oGlblPrdFeat)='O'
+			If oGlblPrdFeat.UdChkProd('vuisd') Or oGlblPrdFeat.UdChkProd('isdkgen')
+				_Object.defahelp="PURCHASES,ISD INVOICE PASSING"
+			Endif
+		Endif
+&&Added by Priyanka B on 27032019 for Bug-32067 End
 	Else
 		Return .F.
 	Endif
-
 	Return
 
 Procedure ServiceRuleSetting
@@ -6964,6 +6981,19 @@ Procedure DebitPosting_GC
 *!*	*!*				_dacname="IGST Provisional"
 *!*	*!*			Endcase
 *!*	*!*		Endif		&& Added by Shrikant S. on 20/04/2017 for GST
+&&Added by Priyanka B on 25032019 for Bug-32067 Start
+		Case Inlist(Alltrim(main_vw.againstgs),"ISD INVOICE PASSING")
+			Do Case
+				Case _fldnm="CGST_AMT"
+					_dacname="CGST ITC"
+				Case _fldnm="SGST_AMT"
+					_dacname="SGST ITC"
+				Case _fldnm="IGST_AMT"
+					_dacname="IGST ITC"
+				Case _fldnm="COMPCESS"
+					_dacname="CCess ITC"
+			Endcase
+&&Added by Priyanka B on 25032019 for Bug-32067 End
 		Otherwise
 			_acname=main_vw.party_nm
 	Endcase
@@ -7333,7 +7363,12 @@ Procedure IsAgainstAdvance
 	Return _isadv
 
 Procedure calc_totalgst
-	Replace gro_amt With main_vw.cgst_amt+main_vw.sgst_amt+main_vw.igst_amt+main_vw.compcess,net_amt With main_vw.cgst_amt+main_vw.sgst_amt+main_vw.igst_amt+main_vw.compcess  In main_vw
+*!*	Replace gro_amt With main_vw.cgst_amt+main_vw.sgst_amt+main_vw.igst_amt+main_vw.compcess,net_amt With main_vw.cgst_amt+main_vw.sgst_amt+main_vw.igst_amt+main_vw.compcess  In main_vw  &&Commented by Priyanka B on 23032019 for Bug-32067
+&&Modified by Priyanka B on 23032019 for Bug-32067 Start
+	Replace gro_amt With main_vw.cgst_amt+main_vw.sgst_amt+main_vw.igst_amt+main_vw.compcess+main_vw.cgst_oamt+main_vw.cgst_famt+main_vw.sgst_oamt+main_vw.sgst_famt,;
+		net_amt With main_vw.cgst_amt+main_vw.sgst_amt+main_vw.igst_amt+main_vw.compcess+main_vw.cgst_oamt+main_vw.cgst_famt+main_vw.sgst_oamt+main_vw.sgst_famt In main_vw
+&&Modified by Priyanka B on 23032019 for Bug-32067 End
+
 	_Screen.ActiveForm.accountsposting()
 	Select Acdet_vw
 	mrecno=Iif(!Eof(),Recno(),0)
@@ -8618,6 +8653,7 @@ Procedure GetAllocationDetails
 && Added by Shrikant S. on 15/12/2017 for Auto updater 13.0.5		&& End
 
 
+
 	If Type('oobject')='O' And _curform.pcvtype='RV'
 		If !Empty(oobject.Value)
 			oobject.Enabled=.F.
@@ -8647,7 +8683,7 @@ Procedure GetAllocationDetails
 
 						Select main_vw
 						Gather Name oMain_vw Memo
-						Replace paymentno With oobject.Value,Cheq_no With "",tdspaytype With 2 In main_vw
+						Replace paymentno With oobject.Value,Cheq_no With "",tdspaytype With 2 ,entry_ty With _curform.pcvtype In main_vw		&& Changed by Shrikant S. on 25/03/2019 for Bug-30939
 
 						msqlstr="Select * From "+Alltrim(lcEntrytbl)+"Item Where Tran_cd=?lcTrancd and Entry_ty=?lcEntry"
 						_curretval = _curform.sqlconobj.dataconn([EXE],company.dbname,msqlstr,"_Tmpitem","_curform.nHandle",_curform.DataSessionId,.F.)
@@ -8659,9 +8695,10 @@ Procedure GetAllocationDetails
 
 								Select item_vw
 								Append Blank In item_vw
-								Replace entry_ty With main_vw.entry_ty,tran_cd With main_vw.tran_cd,Doc_no With main_vw.Doc_no,sr_sr With 'TTTTT' In item_vw
 
 								Gather Name oitem_vw Memo
+								Replace entry_ty With main_vw.entry_ty,tran_cd With main_vw.tran_cd,Date With main_vw.Date,Doc_no With main_vw.Doc_no,sr_sr With 'TTTTT' In item_vw		&& Changed by Shrikant S. on 25/03/2019 for Bug-30939
+
 								Select _Tmpitem
 							Endscan
 
@@ -8677,10 +8714,6 @@ Procedure GetAllocationDetails
 									Loop
 								Endif
 
-*!*								lncgst_adj=_Tmppay.cgst_adj
-*!*								lnsgst_adj=_Tmppay.sgst_adj
-*!*								lnigst_adj=_Tmppay.igst_adj
-*!*								lnccess_adj=_Tmppay.ccess_adj
 
 								lcitserial=_Tmppay.itserial
 								lntaxrate=_Tmppay.CGST_PER+_Tmppay.SGST_PER+_Tmppay.IGST_PER
@@ -8693,6 +8726,8 @@ Procedure GetAllocationDetails
 								lnigst_adj=Iif(_Tmppay.igst_amt<=_Tmppay.igst_alloc,_Tmppay.igst_amt,_Tmppay.igst_alloc)
 								lnccess_adj=Iif(_Tmppay.compcess<=_Tmppay.ccessalloc,_Tmppay.compcess,_Tmppay.ccessalloc)
 								lnTaxable=Iif(_Tmppay.u_asseamt<=_Tmppay.Taxable,_Tmppay.u_asseamt,_Tmppay.Taxable)
+
+
 
 								Replace _Tmppay.cgst_adj With lncgst_adj;
 									,_Tmppay.sgst_adj With lnsgst_adj;
@@ -8715,18 +8750,33 @@ Procedure GetAllocationDetails
 *!*								Delete From item_vw Where itserial In (Select itserial From _Tmppay Where (cgst_amt+sgst_amt+igst_amt+compcess)=(cgst_adj+sgst_adj+igst_adj+ccess_adj))		&& Commented by Shrikant S. on 28/08/2018 for Installer 2.0.0
 							Delete From item_vw Where itserial In (Select itserial From _Tmppay Where (cgst_amt+sgst_amt+igst_amt+compcess)=(cgst_adj+sgst_adj+igst_adj+ccess_adj))	And (cgst_amt+sgst_amt+igst_amt+compcess)>0		&& Added by Shrikant S. on 28/08/2018 for Installer 2.0.0
 
+							lnsumnet=0
 							Select item_vw
 							Scan
 								Select _Tmppay
 								Locate For itserial=item_vw.itserial
 								If Found()
-									Replace u_asseamt With u_asseamt-_Tmppay.Taxa_adj,cgst_amt With cgst_amt-_Tmppay.cgst_adj,sgst_amt With sgst_amt-_Tmppay.sgst_adj;
-										,igst_amt With igst_amt-_Tmppay.igst_adj,compcess With compcess-_Tmppay.ccess_adj In  item_vw
+&& Added by Shrikant S. on 25/03/2019 for Bug-30939		&& Start
+									lncgst_adj=_Tmppay.cgst_adj
+									lnsgst_adj=_Tmppay.sgst_adj
+									lnigst_adj=_Tmppay.igst_adj
+									lnccess_adj=_Tmppay.ccess_adj
+									lnTaxable=_Tmppay.Taxa_adj
 
-									Replace rate With u_asseamt In item_vw
+									Select item_vw
+									Replace u_asseamt With u_asseamt-lnTaxable,cgst_amt With cgst_amt-lncgst_adj,sgst_amt With sgst_amt-lnsgst_adj,igst_amt With igst_amt-lnigst_adj,compcess With compcess-lnccess_adj In item_vw
+
+									Replace rate With u_asseamt,qty With 1,staxable With u_asseamt,gstrate With _Tmppay.CGST_PER+_Tmppay.SGST_PER+_Tmppay.IGST_PER In item_vw
+									Replace gro_amt With u_asseamt+cgst_amt+ sgst_amt+ igst_amt+compcess,AMTINCGST With 0,amtexcgst With 0 In item_vw
+
+									lnsumnet=lnsumnet+item_vw.gro_amt
+&& Added by Shrikant S. on 25/03/2019 for Bug-30939		&& End
+*								_curform.itemgrdbefcalc(_curform.Voupage.Page1.Grditem.columncount)
 								Endif
+								Select item_vw
 							Endscan
-
+							Replace net_amt With lnsumnet,gro_amt With lnsumnet In main_vw					&& Added by Shrikant S. on 25/03/2019 for Bug-30939
+							_curform.voupage.Page1.txtItemTotal.Value=lnsumnet 								&& Added by Shrikant S. on 25/03/2019 for Bug-30939
 							_curform.itempage=.T.
 
 *!*							msqlstr="Select * From "+Alltrim(lcEntrytbl)+"Acdet Where Tran_cd=?lcTrancd and Entry_ty=?lcEntry"
@@ -8765,7 +8815,9 @@ Procedure GetAllocationDetails
 *!*								Endscan
 
 *!*							Endif
-							_curform.SacId=main_vw.sac_id
+*						_curform.SacId=main_vw.sac_id
+*!*							_curform.itemgrdbefcalc(_curform.Voupage.Page1.Grditem.columncount-1)
+							_curform.accountsposting()									&& Added by Shrikant S. on 25/03/2019 for Bug-30939
 							_curform.Refresh()
 						Endif
 					Endif
@@ -8777,6 +8829,7 @@ Procedure GetAllocationDetails
 		Else
 			oobject.Enabled=.T.
 		Endif
+
 	Endif
 
 	Return .T.
@@ -9612,7 +9665,8 @@ Endproc
 &&Added by Priyanka B on 04122018 for Bug-31930 Start
 Procedure EnableDisable_PU
 	curObj=_Screen.ActiveForm
-	If main_vw.entry_ty='PU'
+*!*	If main_vw.entry_ty='PU'  &&Commented by Priyanka B on 05012019 for Bug-32119
+	If Inlist(main_vw.entry_ty,'PU','RA')  &&Modified by Priyanka B on 05012019 for Bug-32119
 		If Type('main_vw.ISEXPDSTK')<>'U'
 			If main_vw.ISEXPDSTK = .F.
 				Replace main_vw.STKEXPGDAY With 0 In main_vw
@@ -9638,19 +9692,55 @@ Procedure update_expdt
 
 && Added by Shrikant S. on 14/12/2018 for Installer 2.1.0		&& Start
 Procedure SetlooseQty
-Parameters _Object
+	Parameters _Object
 
-_Object.Tag=Transform(_Object.Value)
+	_Object.Tag=Transform(_Object.Value)
 
 Endproc
 
 
 Procedure Update_LooseQtyToQty
-Parameters _Object
+	Parameters _Object
 
-If Val(_Object.Tag)# _Object.Value
-	Replace qty With qty-Val(_Object.Tag)+_Object.Value In Item_vw
-ENDIF
+	If Val(_Object.Tag)# _Object.Value
+		Replace qty With qty-Val(_Object.Tag)+_Object.Value In item_vw
+	Endif
 
-ENDPROC
+Endproc
 && Added by Shrikant S. on 14/12/2018 for Installer 2.1.0		&& End
+
+&&Added by Priyanka B on 29032019 for Bug-32067 Start
+Procedure GetPopValue
+	Parameters _Object
+
+	If Vartype(oGlblPrdFeat)='O'
+		If oGlblPrdFeat.UdChkProd('vuisd') Or oGlblPrdFeat.UdChkProd('isdkgen')
+			Do Case
+				Case Inlist(main_vw.entry_ty,"GC","GD")
+					_Object.Clear
+					_Object.AddItem("")
+					_Object.AddItem("Domestic Purchases")
+					_Object.AddItem("Branch Transfer")
+					_Object.AddItem("SEZ Developer Purchase")
+					_Object.AddItem("SEZ Unit Purchase")
+					
+				Case main_vw.entry_ty="IB"
+					_Object.Clear
+					_Object.AddItem("")
+					_Object.AddItem("Invoice Credit Mismatch")
+					_Object.AddItem("Redistribution of ITC distributed to a wrong recipient")
+					
+				Case main_vw.entry_ty="PT"
+					_Object.Clear
+					_Object.AddItem("")
+					_Object.AddItem("Branch Transfer")
+					_Object.AddItem("Consignment Transfer")
+					_Object.AddItem("Domestic Purchases")
+					_Object.AddItem("SEZ Developer Purchase")
+					_Object.AddItem("SEZ Unit Purchase")
+			Endcase
+		Endif
+	Endif
+	Return
+
+&&Added by Priyanka B on 29032019 for Bug-32067 End

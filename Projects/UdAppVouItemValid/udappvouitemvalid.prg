@@ -20,6 +20,14 @@ If Type('_curvouobj.mainalias') = 'C'
 	Endif
 Endif
 &&vasant061009
+
+&& Added by Shrikant S. on 24/01/2019 for Installer 2.0.2		&& Start
+IF TYPE('_Screen.ActiveForm.voupage.page1.grditem')='U'
+	Return
+ENDIF
+&& Added by Shrikant S. on 24/01/2019 for Installer 2.0.2		&& End
+
+
 *Set DataSession To _curvouobj.DataSessionId	&&vasant071009
 If Type('_curvouobj.PcvType') = 'C'
 	If _Screen.ActiveForm.voupage.page1.grditem.column1.text1.Value<>_Screen.ActiveForm.voupage.page1.grditem.column1.text1.Tag

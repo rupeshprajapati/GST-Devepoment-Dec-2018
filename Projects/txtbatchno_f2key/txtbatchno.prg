@@ -1,5 +1,6 @@
 Parameters oControl
 
+
 sql_con = 0
 oactive=_Screen.ActiveForm
 If Type('oactive.pcvtype')<>'U'
@@ -12,7 +13,7 @@ If Type('oactive.pcvtype')<>'U'
 		Endif
 		If (oactive.addmode Or oactive.editmode) And Upper(Alltrim(lcfld))=="BATCHNO"
 
-			msqlstr="SELECT BatchNo, MfgDt, ExpDt,BatchRate,Inc_gst,Qty,MRPInc_gst FROM pRetBatchDetails WHERE it_code = ?item_vw.it_code and BatchonHold = 0  "
+			msqlstr="SELECT BatchNo, MfgDt, ExpDt,BatchRate,Inc_gst,Qty,MRPInc_gst,PTR,PTS FROM pRetBatchDetails WHERE it_code = ?item_vw.it_code and BatchonHold = 0  "		&& Changed by Shrikant S. on 09/003/2019 for bug-32278
 			If !Inlist(oactive.pcvtype,'SV','SU','PU')
 				msqlstr=msqlstr+" "+" AND  ?Main_vw.Date BETWEEN MFGDT AND EXPDT "
 			Endif
@@ -33,11 +34,11 @@ If Type('oactive.pcvtype')<>'U'
 				lcFieldValue =""
 			Endif
 			lcField = 'BatchNo'
-			lcFields = 'BatchNo,MfgDt,ExpDt,BatchRate,Inc_gst,Qty,MRPInc_gst'
+			lcFields = 'BatchNo,MfgDt,ExpDt,BatchRate,Inc_gst,Qty,MRPInc_gst,PTR,PTS'
 			lcExfld = ''
 			lcFldsCaption = [BatchNo:Batch No.,MfgDt:Mfg. Date,ExpDt:Exp. Date,Qty:Available Stock,BatchRate:MRP]
-			lcFldRtrn =[BatchNo,MfgDt,ExpDt,BatchRate,Inc_gst,MRPInc_gst]
-			lcfldxdisp=[Inc_gst,MRPInc_gst]
+			lcFldRtrn =[BatchNo,MfgDt,ExpDt,BatchRate,Inc_gst,MRPInc_gst,PTR,PTS]					&& Changed by Shrikant S. on 09/003/2019 for bug-32278
+			lcfldxdisp=[Inc_gst,MRPInc_gst,PTR,PTS]													&& Changed by Shrikant S. on 09/003/2019 for bug-32278
 			sql_con = oactive.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[_lxtrtbl],"oactive.nHandle",oactive.DataSessionId)
 			If sql_con > 0 And Used('_lxtrtbl')
 				Select _lxtrtbl
@@ -62,7 +63,22 @@ If Type('oactive.pcvtype')<>'U'
 					sql_con = oactive.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[_lxtrtbl],"oactive.nHandle",oactive.DataSessionId)
 					If Used('_lxtrtbl') And Empty(Item_vw.gprate)
 						Replace gprate With _lxtrtbl.convratio * Item_vw.rate In Item_vw
-					Endif
+					ENDIF
+
+&& Added by Shrikant S. on 09/003/2019 for bug-32278			&& Start					
+					If Inlist(oactive.pcvtype,'SK')
+						If Type('Lit_vw.mrprate')='N'
+							Replace mrprate With _lxtrtbl.convratio  * lcGPopVal.batchrate In Lit_vw
+						Endif
+						If Type('Lit_vw.PTR')='N'
+							Replace PTR With _lxtrtbl.convratio * lcGPopVal.PTR In Lit_vw
+						Endif
+						If Type('Lit_vw.PTS')='N'
+							Replace PTS With _lxtrtbl.convratio * lcGPopVal.PTS In Lit_vw
+						Endif
+					ENDIF
+&& Added by Shrikant S. on 09/003/2019 for bug-32278			&& End					
+					
 				Endif
 				If Lcode_vw.Inv_stk='-'
 					If !oactive.stock_check_batchwise(Item_vw.It_code,Main_vw.Tran_cd,Item_vw.Ware_nm,{},"",Item_vw.BatchNo)

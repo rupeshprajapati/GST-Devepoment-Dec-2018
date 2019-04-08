@@ -108,23 +108,32 @@ If _curvouobj.addmode=.T. Or _curvouobj.editmode=.T.
 
 && Added by Shrikant S. on 26/10/2018 for Bug-31942		&& Start
 	llfreeqty=.F.
-	_lnfreeqty=0				&& Added by Shrikant S. on 14/12/2018	for Installer 2.1.0	
+	_lnfreeqty=0				&& Added by Shrikant S. on 14/12/2018	for Installer 2.1.0
 	If Type('Item_vw.FreeQTy')<>'U'
 		llfreeqty=Iif(item_vw.FreeQTy >0 ,.T.,.F.)
-		&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0		&& Start
+&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0		&& Start
 		If Type('Lcode_vw.gpuomapp')<>'U'
 			If Lcode_vw.gpuomapp=.T.
-				IF llfreeqty=.t.
-					_llnitemqty=Item_vw.Qty
-					IF TYPE('Item_vw.looseqty')='N'
-						_llnitemqty=_llnitemqty - Item_vw.looseqty
-					endif
-					_lnfreeqty= (_llnitemqty / Item_vw.gpQty) * item_vw.FreeQTy
-				endif
+&& Added by Shrikant S. on 24/12/2018 for Installer 2.1.0	&& Start
+				_llnitemqty=item_vw.qty
+				If Type('Item_vw.looseqty')='N'
+					_llnitemqty=_llnitemqty - item_vw.looseqty
+				Endif
+&& Added by Shrikant S. on 24/12/2018 for Installer 2.1.0	&& End
+*!*					IF llfreeqty=.t.			&& Commented by Shrikant S. on 21/12/2018 for Installer 2.1.0
+				If llfreeqty=.T. And item_vw.gpQty >0				&& Added by Shrikant S. on 21/12/2018 for Installer 2.1.0
+&& Commented by Shrikant S. on 24/12/2018 for Installer 2.1.0	&& Start
+*!*						_llnitemqty=Item_vw.Qty
+*!*						IF TYPE('Item_vw.looseqty')='N'
+*!*							_llnitemqty=_llnitemqty - Item_vw.looseqty
+*!*						endif
+&& Commented by Shrikant S. on 24/12/2018 for Installer 2.1.0	&& End
+					_lnfreeqty= (_llnitemqty / item_vw.gpQty) * item_vw.FreeQTy
+				Endif
 			Endif
-		ENDIF
-		&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0		&& End
-		
+		Endif
+&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0		&& End
+
 	Endif
 && Added by Shrikant S. on 26/10/2018 for Bug-31942		&& End
 
@@ -135,12 +144,12 @@ If _curvouobj.addmode=.T. Or _curvouobj.editmode=.T.
 &&massamt = Round((QTY*_mrprate)-(QTY*_mrprate*_mabtper)/100,2)
 *!*				massamt=QTY*Round(_mrprate-(_mabtper*_mrprate)/100,company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012		&& Commented by Shrikant S. on 26/10/2018 for Bug-31942
 *!*				massamt=Iif(llfreeqty,Qty-FreeQTy,Qty)*Round(_mrprate-(_mabtper*_mrprate)/100,company.RateDeci)		&& Added by Shrikant S. on 26/10/2018 for Bug-31942		&& Commented by Shrikant S. on 14/12/2018 for Installer 2.1.0
-			massamt=Iif(llfreeqty,Qty-_lnfreeqty,Qty)*Round(_mrprate-(_mabtper*_mrprate)/100,company.RateDeci)		&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
+			massamt=Iif(llfreeqty,qty-_lnfreeqty,qty)*Round(_mrprate-(_mabtper*_mrprate)/100,company.RateDeci)		&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
 		Else
 &&massamt = Round((QTY*_mrprate),2)
 *!*				massamt = Round((QTY*_mrprate),company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012			&& Commented by Shrikant S. on 26/10/2018 for Bug-31942
 *!*				massamt = Round((Iif(llfreeqty,Qty-FreeQTy,Qty)*_mrprate),company.RateDeci) 			&& Added by Shrikant S. on 26/10/2018 for Bug-31942			&& Commented by Shrikant S. on 14/12/2018 for Installer 2.1.0
-			massamt = Round((Iif(llfreeqty,Qty-_lnfreeqty,Qty)*_mrprate),company.RateDeci) 			&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
+			massamt = Round((Iif(llfreeqty,qty-_lnfreeqty,qty)*_mrprate),company.RateDeci) 			&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
 		Endif
 	Else
 ****** Changed By Sachin N. S. on 28/06/2010 for TKT-2669 ****** Start
@@ -149,18 +158,18 @@ If _curvouobj.addmode=.T. Or _curvouobj.editmode=.T.
 &&			massamt = Round(QTY*FCRATE,2)
 *!*					massamt = Round(QTY*FCRATE,company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012			&& Commented by Shrikant S. on 26/10/2018 for Bug-31942
 *!*					massamt = Round(Iif(llfreeqty,Qty-FreeQTy,Qty)*FCRATE,company.RateDeci) 				&& Added by Shrikant S. on 26/10/2018 for Bug-31942			&& Commented by Shrikant S. on 14/12/2018 for Installer 2.1.0
-				massamt = Round(Iif(llfreeqty,Qty-_lnfreeqty,Qty)*FCRATE,company.RateDeci) 				&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
+				massamt = Round(Iif(llfreeqty,qty-_lnfreeqty,qty)*FCRATE,company.RateDeci) 				&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
 			Else
 &&			massamt = Round((QTY*RATE)/mrateper,2)  &&change by sandeep on 22/02/12 for bug 2373
 *!*					massamt = Round((QTY*RATE)/mrateper,company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012			&& Commented by Shrikant S. on 26/10/2018 for Bug-31942
 *!*					massamt = Round((Iif(llfreeqty,Qty-FreeQTy,Qty)*RATE)/mrateper,company.RateDeci) 					&& Added by Shrikant S. on 26/10/2018 for Bug-31942		&& Commented by Shrikant S. on 14/12/2018 for Installer 2.1.0
-				massamt = Round((Iif(llfreeqty,Qty-_lnfreeqty,Qty)*RATE)/mrateper,company.RateDeci) 					&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
+				massamt = Round((Iif(llfreeqty,qty-_lnfreeqty,qty)*RATE)/mrateper,company.RateDeci) 					&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
 			Endif
 		Else
 &&		massamt = Round((QTY*RATE)/mrateper,2)  &&change by sandeep on 22/02/12 for bug 2373
 *!*				massamt = Round((QTY*RATE)/mrateper,company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012				&& Commented by Shrikant S. on 26/10/2018 for Bug-31942
 *!*				massamt = Round((Iif(llfreeqty,Qty-FreeQTy,Qty)*RATE)/mrateper,company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012					&& Added by Shrikant S. on 26/10/2018 for Bug-31942		&& Commented by Shrikant S. on 14/12/2018 for Installer 2.1.0
-			massamt = Round((Iif(llfreeqty,Qty-_lnfreeqty,Qty)*RATE)/mrateper,company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012					&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
+			massamt = Round((Iif(llfreeqty,qty-_lnfreeqty,qty)*RATE)/mrateper,company.RateDeci) &&&Added by satish pal for bug-3466 dt.12/04/2012					&& Added by Shrikant S. on 14/12/2018 for Installer 2.1.0
 		Endif
 *!*	massamt = Round(QTY*RATE,2)
 ****** Changed By Sachin N. S. on 28/06/2010 for TKT-2669 ****** End

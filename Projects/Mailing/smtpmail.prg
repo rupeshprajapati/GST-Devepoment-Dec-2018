@@ -2,9 +2,10 @@ Parameters _mailto,_mailcc,_mailsub,_mailbody,_mailatt,_Mailbcc,_showform,_curob
 
 _curvouobj = _Screen.ActiveForm
 Set DataSession To _curvouobj.DataSessionId
-
-etsql_str="Select * From eMailSettings"
-etsql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,etsql_str,[esetting],"_curvouobj.nHandle",_curvouobj.DataSessionId)
+If !Used('esetting')		&& Added by Shrikant S. on 25/09/2018 for Bug-31906
+	etsql_str="Select * From eMailSettings"
+	etsql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,etsql_str,[esetting],"_curvouobj.nHandle",_curvouobj.DataSessionId)
+ENDIF						&& Added by Shrikant S. on 25/09/2018 for Bug-31906
 
 If Reccount('esetting')<=0
 	Return "Outlook/SMTP setting not found for email."
@@ -89,6 +90,7 @@ If Type('loMsg')<>'O' And _sendmail=.T.
 		Tmp_mailatt = "<<"+Strtran(Alltrim(_mailatt),";",">><<")+">>"
 		For lnVar = 1 To Occurs("<<",Tmp_mailatt)
 			_mailatt = Strextract(Tmp_mailatt,"<<",">>",lnVar)
+			MESSAGEBOX(_mailatt)
 			If !Empty(_mailatt)
 				If File(_mailatt)
 					.addattachment(_mailatt)

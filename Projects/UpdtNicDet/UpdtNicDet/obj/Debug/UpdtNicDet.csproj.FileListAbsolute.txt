@@ -1,0 +1,8 @@
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\bin\Debug\UpdtNicDet.exe.config
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\bin\Debug\UpdtNicDet.exe
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\bin\Debug\UpdtNicDet.pdb
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\bin\Debug\GetInfo.DLL
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\bin\Debug\Udyog.Library.Common.dll
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\obj\Debug\UpdtNicDet.csprojResolveAssemblyReference.cache
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\obj\Debug\UpdtNicDet.exe
+D:\WorkingGST\UpdtNicDet\UpdtNicDet\obj\Debug\UpdtNicDet.pdb

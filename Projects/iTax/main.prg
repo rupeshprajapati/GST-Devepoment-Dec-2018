@@ -220,7 +220,9 @@ mvu_Backimg  = Iif(Empty(lcBackimg),'',lcBackimg)
 
 mvu_two		 = GetPrivStr([Settings],"Position", "", @mvu_one, Len(mvu_one), iniFilePath)
 lnPosition   = Left(mvu_one,mvu_two)
-mvu_Position = Iif(Empty(lcBackimg),1,Val(lnPosition))
+*!*	mvu_Position = Iif(Empty(lcBackimg),1,Val(lnPosition))  &&Commented by Priyanka B on 19122018 for Bug-32062
+mvu_Position = IIF(INLIST(Val(lnPosition),0,1,2),Val(lnPosition),1)  &&Modified by Priyanka B on 19122018 for Bug-32062
+
 
 *!*	Backimage = Itaxback.Tif
 *!*	Position  = 1
@@ -294,7 +296,10 @@ traperror = Createobject("traperrormsg")
 On Error traperror.errorroutine(Error(), Message( ), Message(1), Program( ), Lineno( ))
 
 lcdisplayvalue=[ ]
-
+&& added by Prajakta B. on 07/02/2019 for Bug 32229-- Start
+cProdCode = dec(NewDecry(GlobalObj.getPropertyval("UdProdCode"),'Ud*yog+1993'))
+DELETE FILE aPath+"Bmp\icon_"+cProdCode+".ico" RECYCLE   
+&& added by Prajakta B. on 07/02/2019 for Bug 32229-- End
 Do Form spl  &&ash Rpp
 Read Events
 

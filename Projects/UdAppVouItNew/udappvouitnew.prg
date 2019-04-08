@@ -173,6 +173,13 @@ Endif
 If Inlist(.pcVtype,'E1','S1','IB','J7','BP','BR','CP','CR','C6','D6','P7','P8','S7','S8','S4','S5','S9','S3')  && Added by Prajakta B. on 24/07/2017 for GST
 	Select item_vw
 	Replace item_vw.qty With 1,item_vw.rate With 1 In item_vw
+
+&&Added by Priyanka B on 30032019 for Bug-32067 Start
+	If .pcVtype='IB'
+		Replace item_vw.qty With 0.01,item_vw.rate With 0.01 In item_vw
+	Endif
+&&Added by Priyanka B on 30032019 for Bug-32067 End
+
 *	,Sr_Sr With Subs(Item_vw.Sr_Sr,1,2)+'TTT' In item_vw
 Endif
 && Added by Shrikant S. on 04/10/2016 for GST		&& End

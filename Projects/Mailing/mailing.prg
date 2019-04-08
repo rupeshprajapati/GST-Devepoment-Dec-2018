@@ -42,14 +42,40 @@ _CurrVerVal='10.0.0.0' &&[VERSIONNUMBER]
 *!*	_mailto   = Iif(!Empty(_mailto),Eval(_mailto),"")
 *!*	_mailcc   = Iif(!Empty(_mailcc),Eval(_mailcc),"")
 
+
 LOCAL llShowItem AS Boolean,lnVar AS INTEGER
 #DEFINE olMailItem  0
 *!*	loOutlook   = CREATEOBJECT('Outlook.Application')		&& Commented by Shrikant S. on 10/09/2015 for Bug-26664
 && Added by Shrikant S. on 10/09/2015 for Bug-26664		&&  Start
 _curobject=_Screen.ActiveForm
+
+Set DataSession To _curobject.DataSessionId
+
+
+etsql_str="Select * From eMailSettings"	
+etsql_con = _curobject.sqlconobj.dataconn([EXE],company.dbname,etsql_str,[esetting],"_curobject.nHandle",_curobject.DataSessionId)
+
+
 ans=.T.
-Try
-	loOutlook   = Createobject('Outlook.Application')
+
+TRY
+	&& Added by Shrikant S. on 25/09/2018 for Bug-31906		&& Start
+	llsmtp=.f.	
+	IF TYPE('esetting.issmtpdefa')<>'U'
+		IF esetting.issmtpdefa=.t.
+			llsmtp=.t.
+			ans=.f.
+		endif	
+	endif
+	
+	IF !llsmtp
+		loOutlook   = Createobject('Outlook.Application')		
+	ENDIF
+	&& Added by Shrikant S. on 25/09/2018 for Bug-31906		&& End
+	
+	
+*!*		loOutlook   = Createobject('Outlook.Application')				&& Commented by Shrikant S. on 25/09/2018 for Bug-31906
+
 Catch To oException
 *	Messagebox("Outlook setting not found.",64,VuMess)
 	ans=.F.

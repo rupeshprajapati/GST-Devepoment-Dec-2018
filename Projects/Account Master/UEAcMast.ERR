@@ -1,4 +1,4 @@
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\acmast.scx has the following errors:
+Form d:\svngst\account master\acmast.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UDAPPACSAVEBEFORE - Undefined
     Unknown NEWDECRY - Undefined
@@ -19,15 +19,15 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\account master\acmast.scx has the 
     Proc./Func. UEEXTRA - Undefined
     Proc./Func. UENRENTRY - Undefined
 
-Program e:\svnprojects\bug-32062 installer 2.1.0\account master\main.prg has the following errors:
+Program d:\svngst\account master\main.prg has the following errors:
     Unknown APPVERCHK - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\shipto.scx has the following errors:
+Form d:\svngst\account master\shipto.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
     Proc./Func. UEEXTRA - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frmgl.scx has the following errors:
+Form d:\svngst\account master\frmgl.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown NEWDECRY - Undefined
     Unknown DEC - Undefined
@@ -44,22 +44,22 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frmgl.scx has the f
     Proc./Func. UEEXTRA - Undefined
     Proc./Func. UEFIND - Undefined
 
-Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\account master\_base.vcx has the following errors:
+Visual Class Library d:\svngst\account master\_base.vcx has the following errors:
     Program SETOBJRF - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frmtdsdetail2.scx has the following errors:
+Form d:\svngst\account master\frmtdsdetail2.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frmtdsdetail1.scx has the following errors:
+Form d:\svngst\account master\frmtdsdetail1.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frmsrvdetail.scx has the following errors:
+Form d:\svngst\account master\frmsrvdetail.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
 
-Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\account master\uitools.vcx has the following errors:
+Visual Class Library d:\svngst\account master\uitools.vcx has the following errors:
     Unknown NEWDECRY - Undefined
     Unknown DEC - Undefined
     Unknown UEGETPOP - Undefined
@@ -85,13 +85,13 @@ Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\account master\uit
     Program UDTRIGETVALID - Undefined
     Program UETRIGETVALID - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frminterestperiods.scx has the following errors:
+Form d:\svngst\account master\frminterestperiods.scx has the following errors:
     Unknown BARSTAT - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frmservicedetails.scx has the following errors:
+Form d:\svngst\account master\frmservicedetails.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\account master\frmpharmaretails.scx has the following errors:
+Form d:\svngst\account master\frmpharmaretails.scx has the following errors:
     Unknown BARSTAT - Undefined
 

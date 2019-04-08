@@ -1,5 +1,5 @@
 Lparameters oFrmpara
-Set Step On
+
 &&Added by Priyanka B on 04122018 for Bug-31930 Start
 oFrm=_Screen.ActiveForm
 If (Inlist(main_vw.entry_ty,"PU") And ("phrmretlr" $ vchkprod))

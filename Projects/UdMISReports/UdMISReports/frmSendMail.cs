@@ -58,7 +58,7 @@ namespace UdMISReports
             txtSubject.Text = "Reports : " + _reportName;
             StringBuilder mailbody = new StringBuilder();
 
-            mailbody.AppendLine("Dear");
+            mailbody.AppendLine("Dear Sir / Madam,");
             mailbody.AppendLine();
             mailbody.AppendLine("Please Find the Attached Report: " + _reportName);
             mailbody.AppendLine();
@@ -274,7 +274,7 @@ namespace UdMISReports
 
             Attachment attachment = new Attachment(AttachmentLocation, System.Net.Mime.MediaTypeNames.Application.Octet);
             msg.Attachments.Add(attachment);
-
+            this.lblAttachmentFileName.Text = attachment.Name;
 
 
             //if (XSLAttachmentLocation != "" && XSLAttachmentLocation != null)

@@ -279,7 +279,6 @@ If Vartype(oglblindfeat)='O'
 					Replace Itemunit With _item.Rateunit,convunit With Iif(!Empty(item_vw.convunit),item_vw.convunit,Iif(!Empty(_item.convunit),_item.convunit,_item.Rateunit));
 						In item_vw
 				Endif
-
 				If Used('_item')
 					Use In _item
 				Endif

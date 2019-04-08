@@ -332,7 +332,8 @@ Endif
 ***** Added by Sachin N. S. on 01/04/2016 for Bug-27503 -- End
 
 ***** Added by Sachin N. S. on 30/10/2017 for Bug-30782 -- Start
-If oglblprdfeat.udchkprod('vugst')
+*!*	If oglblprdfeat.udchkprod('vugst')   &&Commented by Priyanka B on 22032019 for Bug-32067
+If oglblprdfeat.udchkprod('vugst') Or oglblprdfeat.udchkprod('vuisdisdkgen')  &&Modified by Priyanka B on 22032019 for Bug-32067
 	cdAmendDt = Iif(Type('Main_vw.AmendDate')='T','Main_vw.AmendDate',Iif(Type('Lmc_vw.AmendDate')='T','Lmc_vw.AmendDate',Iif(Type('MainAdd_vw.AmendDate')='T','MainAdd_vw.AmendDate','')))
 	If !Empty(cdAmendDt)
 		If Used('main_vw')
@@ -359,12 +360,12 @@ If Inlist(.pcvtype,'PK')
 	Endif
 	.AddObject("cmdcsv","VOUCLASS.cmdBom")
 	.cmdcsv.Picture = apath+'bmp\raw_material.gif'
-	.cmdcsv.Caption="Import CSV"
+	.cmdcsv.Caption="Import File"
 	.cmdcsv.Visible=.T.
 	.cmdcsv.Enabled=.T.
 	.cmdcsv.Width=.cmdnarration.Width
-	.cmdcsv.Top = .txtDate.Top
-	.cmdcsv.Left = .txtDate.Left + .txtDate.Width + 20
+	.cmdcsv.Top = .txtInvoiceNo.Top
+	.cmdcsv.Left = .txtInvoiceNo.Left + .txtInvoiceNo.Width + 20
 	.cmdcsv.SpecialEffect=2
 Endif
 && Added by Shrikant S. on 19/10/2018 FOR Bug-31942		&& Start
@@ -408,3 +409,41 @@ If oglblprdfeat.udchkprod('phrmretlr')
 	Endif
 Endif
 &&Added by Priyanka B on 04122018 for Bug-31930 End
+
+&&Added by Rupesh G. on 04012019 for Bug-32194 Start
+If oglblprdfeat.udchkprod('eautomob')
+	If Inlist(.pcvtype,'M3')
+		If "VOUCLASS" $ Upper(Set('classlib'))
+		Else
+			Set Classlib To vouclass Additive
+		Endif
+		.AddObject("cmdexcel","VOUCLASS.cmdBom")
+		.cmdexcel.Picture = apath+'bmp\raw_material.gif'
+		.cmdexcel.Caption="Import Excel"
+		.cmdexcel.Visible=.T.
+		.cmdexcel.Enabled=.T.
+		.cmdexcel.Width=.cmdnarration.Width
+		.cmdexcel.Top = .txtDate.Top
+		.cmdexcel.Left = .txtDate.Left + .txtDate.Width + 20
+		.cmdexcel.SpecialEffect=2
+	Endif
+Endif
+&&Added by Rupesh G. on 04012019 for Bug-32194 End
+
+&&Added by Priyanka B on 05022019 for Bug-31797 Start
+If Inlist(.pcvtype,'PT')
+	If "VOUCLASS" $ Upper(Set('classlib'))
+	Else
+		Set Classlib To vouclass Additive
+	Endif
+	.AddObject("cmdexcel","VOUCLASS.cmdBom")
+	.cmdexcel.Picture = apath+'bmp\raw_material.gif'
+	.cmdexcel.Caption="Import Excel"
+	.cmdexcel.Visible=.T.
+	.cmdexcel.Enabled=.T.
+	.cmdexcel.Width=.cmdnarration.Width
+	.cmdexcel.Top = .txtDate.Top
+	.cmdexcel.Left = .txtDate.Left + .txtDate.Width + 20
+	.cmdexcel.SpecialEffect=2
+Endif
+&&Added by Priyanka B on 05022019 for Bug-31797 End

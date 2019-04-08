@@ -103,12 +103,12 @@ If Type('_curvouobj.PCVTYPE')='C' And ([vuexc] $ vchkprod)
 				mSqlStr = _curvouobj.sqlconobj.GenDelete("QC_INSPECTION_PARAMETER","Insp_Id=?lnInsp_id")
 				sql_con = _curvouobj.sqlconobj.Dataconn([EXE],company.dbname,mSqlStr,[],;
 					"This.Parent.nHandle",_curvouobj.DataSessionId,.T.)
-					
-				***** Added by Sachin N. S. on 18/09/2018 for Bug-31756 -- Start
+
+***** Added by Sachin N. S. on 18/09/2018 for Bug-31756 -- Start
 				mSqlStr = _curvouobj.sqlconobj.GenDelete("QcSampleValue","Insp_Id=?lnInsp_id")
 				sql_con = _curvouobj.sqlconobj.Dataconn([EXE],company.dbname,mSqlStr,[],;
 					"This.Parent.nHandle",_curvouobj.DataSessionId,.T.)
-				***** Added by Sachin N. S. on 18/09/2018 for Bug-31756 -- End
+***** Added by Sachin N. S. on 18/09/2018 for Bug-31756 -- End
 			Endif
 && Added by Shrikant S. on 29/09/2014 	for Bug-23879		&& End
 			mSqlStr = _curvouobj.sqlconobj.GenDelete("qc_inspection_master","Entry_ty = ?Main_vw.Entry_ty And Tran_cd = ?Main_vw.Tran_cd")
@@ -177,7 +177,8 @@ Endif
 && Added By Shrikant S. on 29/12/2012 for Bug-2267 		&&End 	&&vasant030412
 
 && Added by Sachin N. S. on 30/10/2017 for Bug-30782 -- Start
-If oGlblPrdFeat.UdChkProd('vugst')
+*!*	If oGlblPrdFeat.UdChkProd('vugst')     &&Commented by Priyanka B on 19032019 for Bug-32067
+If oGlblPrdFeat.UdChkProd('vugst') Or oGlblPrdFeat.UdChkProd('vuisd') OR oGlblPrdFeat.UdChkProd('isdkgen')  &&Modified by Priyanka B on 19032019 for Bug-32067
 	cdAmendDt = Iif(Type('Main_vw.AmendDate')='T','Main_vw.AmendDate',Iif(Type('Lmc_vw.AmendDate')='T','Lmc_vw.AmendDate',Iif(Type('MainAdd_vw.AmendDate')='T','MainAdd_vw.AmendDate','')))
 	If !Empty(cdAmendDt)
 		If !Empty(Evaluate(cdAmendDt)) And Evaluate(cdAmendDt)!=Ctod('01/01/1900')
@@ -242,13 +243,14 @@ Endif
 
 &&Added by Priyanka B on 12122018 for Bug-31930 Start
 _curscrobj=_curvouobj
-If (_curscrobj.addmode = .F. And _curscrobj.editmode = .F. And Inlist(main_vw.entry_ty,"HS"))
+*!*	If (_curscrobj.addmode = .F. And _curscrobj.editmode = .F. And Inlist(main_vw.entry_ty,"HS"))
+If (_curscrobj.addmode = .F. And _curscrobj.editmode = .F. And Inlist(main_vw.entry_ty,"HS","PS"))		&& Changed by Sachin N. S. on 22/01/2019 for Bug-32215
 	msql_str=""
 	msql_str= "Select ISNULL(POSOUTTRAN,0) as POSOUTTRAN from dcmain where entry_ty=?main_vw.entry_ty and tran_cd=?main_vw.tran_cd"
 	etsql_con = _curvouobj.sqlconobj.Dataconn([EXE],company.dbname,msql_str,[_delPpos],"_curvouobj.nHandle",_curvouobj.DataSessionId,.T.)
 	Select _delPpos
 	If Reccount()>0
-		If _delPpos.posouttran = 1
+		If _delPpos.posouttran > 0
 			Messagebox("Cash out entry is passed against this transaction."+Chr(13)+"Cannot delete!!",0+16,vuMess)
 			Return .F.
 		Endif
@@ -259,6 +261,30 @@ If (_curscrobj.addmode = .F. And _curscrobj.editmode = .F. And Inlist(main_vw.en
 	Endif
 Endif
 &&Added by Priyanka B on 12122018 for Bug-31930 End
+
+
+&&Added by Priyanka B on 28012019 for Bug-32210 Start
+_curscrobj=_curvouobj
+If (_curscrobj.addmode = .F. And _curscrobj.editmode = .F. And Inlist(main_vw.entry_ty,"Q1","S2"))
+	msql_str=""
+	msql_str= "Select rtrim(code_nm) as tran_name From Lcode Where entry_ty=(Select top 1 rentry_ty From Autotranref Where entry_ty=?main_vw.entry_ty and tran_cd=?main_vw.tran_cd)"
+	etsql_con = _curvouobj.sqlconobj.Dataconn([EXE],company.dbname,msql_str,[_delautotran],"_curvouobj.nHandle",_curvouobj.DataSessionId,.T.)
+	Select _delautotran
+	If Reccount()>0
+		Messagebox(Alltrim(_delautotran.tran_name) + " entry is passed against this transaction."+Chr(13)+"Cannot delete!!",0+16,vuMess)
+		Return .F.
+	Endif
+
+	If Used('_delautotran')
+		Use In _delautotran
+	Endif
+Endif
+
+If ! _curscrobj.addmode And ! _curscrobj.editmode And Inlist(main_vw.entry_ty,"PQ","PO")
+	etsql_str="Delete From AutoTranRef Where REntry_ty=?Main_vw.Entry_ty and RTran_cd=?Main_vw.Tran_cd "
+	etsql_con  = _curscrobj.sqlconobj.Dataconn([EXE],company.dbname,etsql_str,"","_curscrobj.nHandle",_curscrobj.DataSessionId,.T.)
+Endif
+&&Added by Priyanka B on 28012019 for Bug-32210 End
 
 If !Empty(_Malias)
 	Select &_Malias

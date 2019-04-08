@@ -1,4 +1,4 @@
-Form e:\svnprojects\bug-32062 installer 2.1.0\item_mast\itemmas.scx has the following errors:
+Form d:\svngst\item_mast\itemmas.scx has the following errors:
     Unknown BARSTAT - Undefined
     Application UDAPPITEMNEW - Undefined
     Unknown NEWDECRY - Undefined
@@ -29,14 +29,14 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\item_mast\itemmas.scx has the foll
     Application UEITADVANCESETTING - Undefined
     Application UEDATAIMPORT - Undefined
 
-Program e:\svnprojects\bug-32062 installer 2.1.0\item_mast\ichoice.prg has the following errors:
+Program d:\svngst\item_mast\ichoice.prg has the following errors:
     Unknown APPVERCHK - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\item_mast\frmgpuomrate.scx has the following errors:
+Form d:\svngst\item_mast\frmgpuomrate.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
 
-Visual Class Library d:\udyogerpstdpr\class\vouclass.vcx has the following errors:
+Visual Class Library e:\u7\udyogerp\class\vouclass.vcx has the following errors:
     Proc./Func. UEEXTRA - Undefined
     Unknown UEGETPOP - Undefined
     Proc./Func. UENRENTRY - Undefined
@@ -79,7 +79,14 @@ Visual Class Library d:\udyogerpstdpr\class\vouclass.vcx has the following error
     Proc./Func. SAVEOPPTTAXDET - Undefined
     Application UDAPPETVALID - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\item_mast\frmpharmaretails.scx has the following errors:
+Form d:\svngst\item_mast\frmpharmaretails.scx has the following errors:
     Unknown BARSTAT - Undefined
     Unknown UEGETPOP - Undefined
+
+Form d:\svngst\item_mast\frmautomobile.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\svngst\item_mast\frmemissionvalues.scx has the following errors:
+    Unknown BARSTAT - Undefined
 

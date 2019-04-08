@@ -1,4 +1,4 @@
-Form e:\svnprojects\bug-32062 installer 2.1.0\pickup\formpickup.scx has the following errors:
+Form e:\prajakta\prajakta\priyanka\au changes\svn projects\pickup_new\formpickup.scx has the following errors:
     Form UEETPAGEPOP - Undefined
     Unknown UEGETPOP - Undefined
     Unknown BARSTAT - Undefined
@@ -11,15 +11,15 @@ Form e:\svnprojects\bug-32062 installer 2.1.0\pickup\formpickup.scx has the foll
     Unknown UEPICKUPSPLIT - Undefined
     Unknown VUFIND - Undefined
 
-Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\pickup\_base.vcx has the following errors:
+Visual Class Library e:\prajakta\prajakta\priyanka\au changes\svn projects\pickup_new\_base.vcx has the following errors:
     Program SETOBJRF - Undefined
 
-Program e:\svnprojects\bug-32062 installer 2.1.0\pickup\main.prg has the following errors:
+Program e:\prajakta\prajakta\priyanka\au changes\svn projects\pickup_new\main.prg has the following errors:
     Unknown APPVERCHK - Undefined
 
-Visual Class Library e:\svnprojects\bug-32062 installer 2.1.0\pickup\pickclass.vcx has the following errors:
+Visual Class Library e:\prajakta\prajakta\priyanka\au changes\svn projects\pickup_new\pickclass.vcx has the following errors:
     Unknown UEGETPOP - Undefined
 
-Form e:\svnprojects\bug-32062 installer 2.1.0\pickup\frmdatafilt.scx has the following errors:
+Form e:\...\prajakta\priyanka\au changes\svn projects\pickup_new\frmdatafilt.scx has the following errors:
     Visual Class Library XTRA - Undefined
 

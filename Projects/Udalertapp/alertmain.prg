@@ -44,6 +44,24 @@ rCount=0
 nhandle     = 0
 _etdatasessionid = _Screen.ActiveForm.DataSessionId
 Set DataSession To _etdatasessionid
+
+&& Added by Shrikant S. on 29/01/2019 for Bug-32155			&& Start
+StrSql="SELECT top 1 Last_Updated FROM Alert_Master WHERE Last_Updated=0 GROUP BY Last_Updated HAVING COUNT(Last_Updated) = (SELECT COUNT(*) FROM Alert_Master)"
+etsql_con = SqlConObj.dataconn([EXE],Company.Dbname,StrSql,[Alertrec_Vw],"nHandle",_etdatasessionid,.F.)
+If etsql_con >0 And Used("Alertrec_Vw")
+	Select Alertrec_Vw
+	rCount=Reccount()
+	If rCount >0
+		StrSql="Execute Usp_Alert_Execute"
+		etsql_con = SqlConObj.dataconn([EXE],Company.Dbname,StrSql,[Alertrec_Vw],"nHandle",_etdatasessionid,.F.)
+		If etsql_con <=0 
+			etsql_con = 0
+		Endif
+	Endif
+Endif
+&& Added by Shrikant S. on 29/01/2019 for Bug-32155			&& End
+
+
 StrSql="usp_alert_List '"+Alltrim(musername)+"'"
 etsql_con = SqlConObj.dataconn([EXE],Company.Dbname,StrSql,[tAlert_Vw],"nHandle",_etdatasessionid,.F.)
 If etsql_con >0 And Used("tAlert_Vw")
