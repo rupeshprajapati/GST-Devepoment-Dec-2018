@@ -1,0 +1,21 @@
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\bin\Release\udPatientMast.exe.config
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\bin\Release\udPatientMast.exe
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\bin\Release\udPatientMast.pdb
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\obj\Release\udPatientMast.Form1.resources
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\obj\Release\udPatientMast.Properties.Resources.resources
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\obj\Release\udPatientMast.csproj.GenerateResource.Cache
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\obj\Release\udPatientMast.exe
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\obj\Release\udPatientMast.pdb
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPatientMast\udPatientMast\obj\Release\udPatientMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\bin\Release\udPatientMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\bin\Release\udPatientMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\bin\Release\udPatientMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\obj\Release\udPatientMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\obj\Release\udPatientMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\obj\Release\udPatientMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\obj\Release\udPatientMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\obj\Release\udPatientMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udPatientMast\udPatientMast\obj\Release\udPatientMast.csprojResolveAssemblyReference.cache

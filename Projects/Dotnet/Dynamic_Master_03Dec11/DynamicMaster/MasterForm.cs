@@ -98,7 +98,8 @@ namespace DynamicMaster
             DataAccess_Net.clsDataAccess._password = this.pPassword;
             oDataAccess = new DataAccess_Net.clsDataAccess();
             CultureInfo ci = new CultureInfo("en-US");
-            ci.DateTimeFormat.ShortDatePattern = "MM/dd/yyyy";
+            //ci.DateTimeFormat.ShortDatePattern = "MM/dd/yyyy";  //Commented by Priyanka B on 18022019 for Bug-31844
+            ci.DateTimeFormat.ShortDatePattern = "dd/MM/yyyy";  //Modified by Priyanka B on 18022019 for Bug-31844
             Thread.CurrentThread.CurrentCulture = ci;
             //_UniqueColumns = new ArrayList();
             //_UniqueColumnCaptions = new ArrayList();
@@ -126,7 +127,8 @@ namespace DynamicMaster
             pi = Process.GetCurrentProcess().Id;
             cAppName = "udDynamicMaster.exe";
             cAppPId = Convert.ToString(Process.GetCurrentProcess().Id);
-            sqlstr = " insert into vudyog..ExtApplLog (pApplCode,CallDate,pApplNm,pApplId,pApplDesc,cApplNm,cApplId,cApplDesc) Values('" +this.pPApplCode+"','"+DateTime.Now.Date.ToString()+"','" +this.pPApplName + "'," + this.pPApplPID   + ",'" + this.pPApplText   + "','" + cAppName + "'," + cAppPId + ",'" + this.Text.Trim() + "')";
+            //sqlstr = " insert into vudyog..ExtApplLog (pApplCode,CallDate,pApplNm,pApplId,pApplDesc,cApplNm,cApplId,cApplDesc) Values('" +this.pPApplCode+"','"+DateTime.Now.Date.ToString()+"','" +this.pPApplName + "'," + this.pPApplPID   + ",'" + this.pPApplText   + "','" + cAppName + "'," + cAppPId + ",'" + this.Text.Trim() + "')";
+            sqlstr = " insert into vudyog..ExtApplLog (pApplCode,CallDate,pApplNm,pApplId,pApplDesc,cApplNm,cApplId,cApplDesc) Values('" + this.pPApplCode + "','" +DateTime.Now.Date.ToString("MM/dd/yyyy") + "','" + this.pPApplName + "'," + this.pPApplPID + ",'" + this.pPApplText + "','" + cAppName + "'," + cAppPId + ",'" + this.Text.Trim() + "')";
             oDataAccess.ExecuteSQLStatement(sqlstr, null, 20, true);
         }
         private void mDeleteProcessIdRecord()/*Added Rup 07/03/2011*/
@@ -343,7 +345,7 @@ namespace DynamicMaster
                                 break;
                             case "ccheckbox":
                                 childCtrl.DataBindings.Clear();
-
+                                childCtrl.DataBindings.Add("Checked", dsMain.Tables[0], childCtrl.Name.ToString());  //Added by Priyanka B on 18022019 for Bug-31844
                                 //if (dsMain.Tables[0].Columns["isActive"].DefaultValue is Nullable)
                                 //{
                                 //    dsMain.Tables[0].Columns["isActive"].DefaultValue = false;
@@ -351,7 +353,7 @@ namespace DynamicMaster
                                 //}
                                 //else
                                 //    dsMain.Tables[0].Columns["isActive"].DefaultValue = true;
-                               break;
+                                break;
                             case "combobox":
                                 break;
                             case "label":
@@ -1819,7 +1821,8 @@ namespace DynamicMaster
             if (this.pAddMode == true )
             {
                
-                vSaveString = " insert into " + this._TableName;
+                //vSaveString = " insert into " + this._TableName;  //Commented by Priyanka B on 18022019 for Bug-31844
+                vSaveString = "Set Dateformat dmy insert into " + this._TableName;  //Modified by Priyanka B on 18022019 for Bug-31844
                 dsMain.Tables[0].AcceptChanges();
                 foreach (DataColumn dtc1 in dsMain.Tables[0].Columns)
                 {
@@ -1884,7 +1887,8 @@ namespace DynamicMaster
             }
             if (this.pEditMode  == true)
             {
-                vSaveString = " Update " + this._TableName+" Set ";
+                //vSaveString = " Update " + this._TableName+" Set ";  //Commented by Priyanka B on 18022019 for Bug-31844
+                vSaveString = "Set Dateformat dmy Update " + this._TableName + " Set ";  //Modified by Priyanka B on 18022019 for Bug-31844
                 string vWhereCondn=string.Empty;
                 foreach (DataColumn dtc1 in dsMain.Tables[0].Columns)
                 {

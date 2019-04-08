@@ -1,0 +1,14 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\bin\Release\udPrescriptionMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\bin\Release\udPrescriptionMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\bin\Release\udPrescriptionMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\bin\Release\udclsdgvnumericcolumn.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\obj\Release\udPrescriptionMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\obj\Release\udPrescriptionMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\obj\Release\udPrescriptionMast.frmPrescriptionDetails.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\obj\Release\udPrescriptionMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\obj\Release\udPrescriptionMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\obj\Release\udPrescriptionMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udPrescriptionMast\udPrescriptionMast\obj\Release\udPrescriptionMast.pdb

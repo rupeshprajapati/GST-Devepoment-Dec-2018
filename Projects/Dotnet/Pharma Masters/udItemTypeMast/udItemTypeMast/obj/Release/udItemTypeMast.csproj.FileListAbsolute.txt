@@ -1,0 +1,18 @@
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udDiseaseMast\udDiseaseMast\bin\Release\udItemTypeMast.exe.config
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Release\udItemTypeMast.exe.config
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Release\udItemTypeMast.exe
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Release\udItemTypeMast.pdb
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.Form1.resources
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.Properties.Resources.resources
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.csproj.GenerateResource.Cache
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.exe
+C:\Users\Rupesh\Desktop\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Release\udItemTypeMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Release\udItemTypeMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Release\udItemTypeMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Release\udItemTypeMast.pdb

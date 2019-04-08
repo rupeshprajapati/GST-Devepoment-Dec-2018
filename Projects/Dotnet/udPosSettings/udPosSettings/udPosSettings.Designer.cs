@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(udPosSettings));
             this.pnlOuter = new System.Windows.Forms.Panel();
+            this.chkAskFroPrint = new System.Windows.Forms.CheckBox();
+            this.lblAskForPrint = new System.Windows.Forms.Label();
             this.chki_showdisc = new System.Windows.Forms.CheckBox();
             this.lbli_showdisc = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -106,8 +108,6 @@
             this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chkAskFroPrint = new System.Windows.Forms.CheckBox();
-            this.lblAskForPrint = new System.Windows.Forms.Label();
             this.pnlOuter.SuspendLayout();
             this.panel3.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -155,6 +155,24 @@
             this.pnlOuter.Size = new System.Drawing.Size(649, 343);
             this.pnlOuter.TabIndex = 1;
             // 
+            // chkAskFroPrint
+            // 
+            this.chkAskFroPrint.AutoSize = true;
+            this.chkAskFroPrint.Location = new System.Drawing.Point(445, 274);
+            this.chkAskFroPrint.Name = "chkAskFroPrint";
+            this.chkAskFroPrint.Size = new System.Drawing.Size(15, 14);
+            this.chkAskFroPrint.TabIndex = 57;
+            this.chkAskFroPrint.UseVisualStyleBackColor = true;
+            // 
+            // lblAskForPrint
+            // 
+            this.lblAskForPrint.AutoSize = true;
+            this.lblAskForPrint.Location = new System.Drawing.Point(301, 275);
+            this.lblAskForPrint.Name = "lblAskForPrint";
+            this.lblAskForPrint.Size = new System.Drawing.Size(64, 13);
+            this.lblAskForPrint.TabIndex = 56;
+            this.lblAskForPrint.Text = "Ask for Print";
+            // 
             // chki_showdisc
             // 
             this.chki_showdisc.AutoSize = true;
@@ -163,6 +181,7 @@
             this.chki_showdisc.Size = new System.Drawing.Size(15, 14);
             this.chki_showdisc.TabIndex = 55;
             this.chki_showdisc.UseVisualStyleBackColor = true;
+            this.chki_showdisc.Visible = false;
             // 
             // lbli_showdisc
             // 
@@ -172,6 +191,7 @@
             this.lbli_showdisc.Size = new System.Drawing.Size(144, 13);
             this.lbli_showdisc.TabIndex = 54;
             this.lbli_showdisc.Text = "Show Disc && Chrgs Line wise";
+            this.lbli_showdisc.Visible = false;
             // 
             // panel2
             // 
@@ -916,24 +936,6 @@
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
-            // 
-            // chkAskFroPrint
-            // 
-            this.chkAskFroPrint.AutoSize = true;
-            this.chkAskFroPrint.Location = new System.Drawing.Point(445, 274);
-            this.chkAskFroPrint.Name = "chkAskFroPrint";
-            this.chkAskFroPrint.Size = new System.Drawing.Size(15, 14);
-            this.chkAskFroPrint.TabIndex = 57;
-            this.chkAskFroPrint.UseVisualStyleBackColor = true;
-            // 
-            // lblAskForPrint
-            // 
-            this.lblAskForPrint.AutoSize = true;
-            this.lblAskForPrint.Location = new System.Drawing.Point(301, 275);
-            this.lblAskForPrint.Name = "lblAskForPrint";
-            this.lblAskForPrint.Size = new System.Drawing.Size(64, 13);
-            this.lblAskForPrint.TabIndex = 56;
-            this.lblAskForPrint.Text = "Ask for Print";
             // 
             // udPosSettings
             // 

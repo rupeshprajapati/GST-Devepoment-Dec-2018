@@ -78,16 +78,8 @@ D:\Development\Dotnet\udSelectPop\Update Folder\udSelectPop\obj\Debug\udSelectPo
 D:\Development\Dotnet\udSelectPop\Update Folder\udSelectPop\obj\Debug\udSelectPop.csproj.GenerateResource.Cache
 D:\Development\Dotnet\udSelectPop\Update Folder\udSelectPop\obj\Debug\udSelectPop.dll
 D:\Development\Dotnet\udSelectPop\Update Folder\udSelectPop\obj\Debug\udSelectPop.pdb
-D:\SVN Development\udSelectPop\udSelectPop\bin\Debug\udSelectPop.dll
-D:\SVN Development\udSelectPop\udSelectPop\bin\Debug\udSelectPop.pdb
-D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.SELECTPOPUP.resources
-D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.Properties.Resources.resources
-D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csproj.GenerateResource.Cache
-D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.dll
-D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.pdb
 D:\SVNGST\udSelectPop\udSelectPop\bin\Debug\udSelectPop.dll
 D:\SVNGST\udSelectPop\udSelectPop\bin\Debug\udSelectPop.pdb
-D:\SVNGST\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csprojResolveAssemblyReference.cache
 D:\SVNGST\udSelectPop\udSelectPop\obj\Debug\udSelectPop.SELECTPOPUP.resources
 D:\SVNGST\udSelectPop\udSelectPop\obj\Debug\udSelectPop.Properties.Resources.resources
 D:\SVNGST\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csproj.GenerateResource.Cache
@@ -107,3 +99,19 @@ E:\SVNProjects\From Rupesh P\From Rupesh P_31012018\References\udSelectPop\udSel
 E:\SVNProjects\From Rupesh P\From Rupesh P_31012018\References\udSelectPop\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csproj.GenerateResource.Cache
 E:\SVNProjects\From Rupesh P\From Rupesh P_31012018\References\udSelectPop\udSelectPop\udSelectPop\obj\Debug\udSelectPop.dll
 E:\SVNProjects\From Rupesh P\From Rupesh P_31012018\References\udSelectPop\udSelectPop\udSelectPop\obj\Debug\udSelectPop.pdb
+D:\SVN Development\udSelectPop\udSelectPop\bin\Debug\udSelectPop.dll
+D:\SVN Development\udSelectPop\udSelectPop\bin\Debug\udSelectPop.pdb
+D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csprojResolveAssemblyReference.cache
+D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.SELECTPOPUP.resources
+D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.Properties.Resources.resources
+D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csproj.GenerateResource.Cache
+D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.dll
+D:\SVN Development\udSelectPop\udSelectPop\obj\Debug\udSelectPop.pdb
+E:\Shrikant\pos\udSelectPop\udSelectPop\bin\Debug\udSelectPop.dll
+E:\Shrikant\pos\udSelectPop\udSelectPop\bin\Debug\udSelectPop.pdb
+E:\Shrikant\pos\udSelectPop\udSelectPop\obj\Debug\udSelectPop.SELECTPOPUP.resources
+E:\Shrikant\pos\udSelectPop\udSelectPop\obj\Debug\udSelectPop.Properties.Resources.resources
+E:\Shrikant\pos\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csproj.GenerateResource.Cache
+E:\Shrikant\pos\udSelectPop\udSelectPop\obj\Debug\udSelectPop.dll
+E:\Shrikant\pos\udSelectPop\udSelectPop\obj\Debug\udSelectPop.pdb
+E:\Shrikant\pos\udSelectPop\udSelectPop\obj\Debug\udSelectPop.csprojResolveAssemblyReference.cache

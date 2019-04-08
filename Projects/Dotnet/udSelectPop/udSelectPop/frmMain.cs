@@ -123,7 +123,8 @@ namespace udSelectPop
         }//retcolind()
         private void mReturnArray()
         {
-            if (vRetRow == null)
+            //if (vRetRow == null)              //Commented by Shrikant S. on 21/01/2019 for Installer 2.0.2
+            if (vRetRow == null || vRetRow.Index<=-1)            //Added by Shrikant S. on 21/01/2019 for Installer 2.0.2
             {
                 this.Close();
                 return;
@@ -164,16 +165,38 @@ namespace udSelectPop
             this.dgrSelect.Visible = true;
             this.txtSelect.Visible = true;
             this.btnSearchOpt.Visible = true;   /*Pratap 28-06-2012*/
-            fName = vSearchImg + @"\bmp\Searchany.bmp"; /* Added by pratap for Bug 2128 :27-06-2012 */
 
+            //Commented by Shrikant S. on 26/12/2018        //Start
+            //fName = vSearchImg + @"\bmp\Searchany.bmp"; /* Added by pratap for Bug 2128 :27-06-2012 */
+            //fName = vSearchImg + @"\bmp\Searchany.bmp"; /* Added by pratap for Bug 2128 :27-06-2012 */            
+            //if (File.Exists(fName) == true)
+            //{
+
+            //    this.btnSearchOpt.Image = Image.FromFile(fName);
+            //    this.toolTipButton.SetToolTip(this.btnSearchOpt, "Search Anywhere");
+            //    fName = string.Empty;
+
+            //}
+            //Commented by Shrikant S. on 26/12/2018        //End
+
+
+            if (vSearchOpt == false)  /* Added by pratap for Bug 2128 :27-06-2012 */
+            {
+                fName = vSearchImg + @"\bmp\Searchany.bmp";
+                this.toolTipButton.SetToolTip(this.btnSearchOpt, "Search Anywhere");
+            }
+            else
+            {
+                fName = vSearchImg + @"\bmp\IncSearch.bmp";
+                this.toolTipButton.SetToolTip(this.btnSearchOpt, "Incremental Search");
+            }
             if (File.Exists(fName) == true)
             {
 
                 this.btnSearchOpt.Image = Image.FromFile(fName);
-                this.toolTipButton.SetToolTip(this.btnSearchOpt, "Search Anywhere");
                 fName = string.Empty;
-
             }
+
         }
         private void mBindColumns1()
         {
@@ -204,6 +227,7 @@ namespace udSelectPop
 
             }
         }
+
         private void mBindColumns()
         {
             string vColNm = string.Empty, vColCap = string.Empty;
@@ -234,16 +258,20 @@ namespace udSelectPop
                         vColFound = true;
                         this.dgrSelect.Columns[vColNm].HeaderText = vColCap;
                     }
-                    this.dgrSelect.Columns[vColNm].Visible = vColFound;
+                    //this.dgrSelect.Columns[vColNm].Visible = vColFound;       // Commented by Sachin N. S. on 21/12/2018 for Bug-32062
                 }
-
+                this.dgrSelect.Columns[vColNm].Visible = vColFound;             // Added by Sachin N. S. on 21/12/2018 for Bug-32062
             }
+
+            // Added by Sachin N. S. on 21/12/2018 for Bug-32062 -- Start
+            if (this.dgrSelect.CurrentRow != null && this.vdataview.Count > 0)
+                this.dgrSelect.CurrentCell = this.dgrSelect.Rows[0].Cells[0];
+            // Added by Sachin N. S. on 21/12/2018 for Bug-32062 -- End
         }
 
         private void txtSelect_TextChanged(object sender, EventArgs e)
         {
             //string vfilt = null; //Bug-3023 Payroll
-            
             
             if (this.txtSelect.Focus() == true & (this.txtSelect.Text != ""))
             {
@@ -256,7 +284,8 @@ namespace udSelectPop
                 }
                 else
                 {
-                    vfilt = "[" + vsearchcol.Trim() + "]" + " like '" + this.txtSelect.Text.Trim() + "%'";  /*Pratap 25-06-2012 for Bug -2128 */
+                    //vfilt = "[" + vsearchcol.Trim() + "]" + " like '" + this.txtSelect.Text.Trim() + "%'";  /*Pratap 25-06-2012 for Bug -2128 */      //Commented by Shrikant S. on 26/12/2018 for Installer 2.1.0
+                    vfilt = vsearchcol.Trim() + " like '" + this.txtSelect.Text.Trim() + "%'";             //Added by Shrikant S. on 26/12/2018 for Installer 2.1.0
                 }
             }
 
@@ -341,11 +370,6 @@ namespace udSelectPop
                 this.dgrSelect.Visible = false;
 
             }//((int)e.KeyCode == 13)
-
-
-
-
-
         }
 
         private void dgrSelect_Leave(object sender, EventArgs e)
@@ -516,6 +540,13 @@ namespace udSelectPop
                 vSearchImg = value;
             }
         }
+        //Added by Shrikant S. on 26/12/2018 for Installer 2.1.0    //Start
+        public bool pSearchType
+        {
+            get { return vSearchOpt; }
+            set { vSearchOpt = value; }
+        }
+        //Added by Shrikant S. on 26/12/2018 for Installer 2.1.0    //End
         private void SELECTPOPUP_KeyDown(object sender, KeyEventArgs e)   /*Ramya Bug-2125*/
         {
             if (e.KeyCode == Keys.Escape)

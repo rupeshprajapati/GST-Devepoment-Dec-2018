@@ -1,0 +1,22 @@
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\bin\Release\udSaltMast.exe.config
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\bin\Release\udSaltMast.exe
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\bin\Release\udSaltMast.pdb
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Release\udSaltMast.Form1.resources
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Release\udSaltMast.Form_upload.resources
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Release\udSaltMast.Properties.Resources.resources
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Release\udSaltMast.csproj.GenerateResource.Cache
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Release\udSaltMast.exe
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Release\udSaltMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Release\udSaltMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Release\udSaltMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Release\udSaltMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Release\udSaltMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Release\udSaltMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Release\udSaltMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Release\udSaltMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Release\udSaltMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Release\udSaltMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Release\udSaltMast.pdb

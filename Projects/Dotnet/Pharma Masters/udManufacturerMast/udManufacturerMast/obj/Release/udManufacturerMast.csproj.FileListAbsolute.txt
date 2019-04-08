@@ -1,0 +1,22 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Release\udManufacturerMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Release\udManufacturerMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Release\udManufacturerMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\bin\Release\udManufacturerMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\bin\Release\udManufacturerMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\bin\Release\udManufacturerMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udManufacturerMast\udManufacturerMast\obj\Release\udManufacturerMast.pdb

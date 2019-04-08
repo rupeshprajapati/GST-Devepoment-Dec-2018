@@ -1,0 +1,23 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Debug\udBatchMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Debug\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Debug\udBatchMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Debug\udBatchMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Debug\udBatchMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Debug\udBatchMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Debug\udBatchMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Debug\udBatchMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Debug\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Debug\udBatchMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\bin\Debug\udBatchMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Debug\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Debug\udBatchMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\bin\Debug\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\bin\Debug\udBatchMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Debug\udBatchMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Debug\udBatchMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Debug\udBatchMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Debug\udBatchMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Debug\udBatchMast.csproj.GenerateResource.Cache

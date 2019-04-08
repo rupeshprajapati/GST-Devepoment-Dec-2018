@@ -688,7 +688,6 @@ namespace udPosSettings
                     this.chkSHWDEPT.Checked = false;
                     this.chkSHWCATE.Checked = false;
                     //this.chkCINMNDTRY.Checked = true;  //Commented by Prajakta B. on 12/12/2018
-                    this.chkCINMNDTRY.Checked = false;  //Modified by Prajakta B. on 12/12/2018
                     this.chkLSHWPARTY.Checked = false;
                     this.chkSHWWARENM.Checked = false;
    

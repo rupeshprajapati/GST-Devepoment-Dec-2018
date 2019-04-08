@@ -1,0 +1,22 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\udMarketingCompanyMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\udMarketingCompanyMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\udMarketingCompanyMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\udMarketingCompanyMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\udMarketingCompanyMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\bin\Release\udMarketingCompanyMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udMarketingCompanyMast\udMarketingCompanyMast\obj\Release\udMarketingCompanyMast.pdb

@@ -1321,22 +1321,24 @@ namespace udCashHandover
                 DtPOSmain.Tables.Add(Cashin1);
                 DtPOSmain.Tables[3].TableName = "Cashin";
 
+                //Commented by Rupesh G. on 15122018--start
                 //Added by Prajakta B. on 05122018 --Start
-                string strsql1 = "";
-                strsql1 = strsql1 + "select TotalValue,POSOUTTRAN from PSPAYDETAIL pp left join dcmain dc on pp.Entry_ty=dc.entry_ty and pp.Tran_cd=dc.tran_cd ";
-                strsql1 = strsql1 + " where pp.PayMode = 'cash' and  pp.USER_NAME ='" + this.pAppUerName + "' AND pp.[DATE] <= getdate()";
-                ps = oDataAccess.GetDataSet(strsql1, null, 20).Tables[0];
-                DataTable ps1 = ps.Copy();
-                DtPOSmain.Tables.Add(ps1);
-                DtPOSmain.Tables[4].TableName = "ps";
+                //string strsql1 = "";
+                //strsql1 = strsql1 + "select TotalValue,POSOUTTRAN from PSPAYDETAIL pp left join dcmain dc on pp.Entry_ty=dc.entry_ty and pp.Tran_cd=dc.tran_cd ";
+                //strsql1 = strsql1 + " where pp.PayMode = 'cash' and  pp.USER_NAME ='" + this.pAppUerName + "' AND pp.[DATE] <= getdate()";
+                //ps = oDataAccess.GetDataSet(strsql1, null, 20).Tables[0];
+                //DataTable ps1 = ps.Copy();
+                //DtPOSmain.Tables.Add(ps1);
+                //DtPOSmain.Tables[4].TableName = "ps";
 
-                string strsql2 = "";
-                strsql2 = strsql2 + "select tran_cd from POSCashOut where  USERNAME ='" + this.pAppUerName + "' AND [DATE] <= getdate()";
-                cashout = oDataAccess.GetDataSet(strsql2, null, 20).Tables[0];
-                DataTable cashout1 = cashout.Copy();
-                DtPOSmain.Tables.Add(cashout1);
-                DtPOSmain.Tables[5].TableName = "cashout";
+                //string strsql2 = "";
+                //strsql2 = strsql2 + "select tran_cd from POSCashOut where  USERNAME ='" + this.pAppUerName + "' AND [DATE] <= getdate()";
+                //cashout = oDataAccess.GetDataSet(strsql2, null, 20).Tables[0];
+                //DataTable cashout1 = cashout.Copy();
+                //DtPOSmain.Tables.Add(cashout1);
+                //DtPOSmain.Tables[5].TableName = "cashout";
                 //Added by Prajakta B. on 05122018 --End
+                //Commented by Rupesh G. on 15122018--END
 
                 dsMain.Tables[0].Rows[0]["Entry_Ty"] = "CO";
                 dsMain.Tables[0].Rows[0]["Date"] = this.TxtDate.Text;
@@ -1633,7 +1635,8 @@ namespace udCashHandover
                         if (PSPAY["Paymode"].ToString() == "CASH")
                         {
                             //Cash = PSPAY["Totalvalue"].ToString();  // Commented by Prajakta B. 20082018 for Installer ERP 2.0.0.0
-                            Cash = DtPOSmain.Tables["DCMAIN"].Rows[0]["NetAmount"].ToString();  // Added by Prajakta B. 20082018 for Installer ERP 2.0.0.0 // 05122018
+                            // Cash = DtPOSmain.Tables["DCMAIN"].Rows[0]["NetAmount"].ToString();  // Added by Prajakta B. 20082018 for Installer ERP 2.0.0.0 // 05122018//Commented by rupesh g on 15122018
+                            Cash = PSPAY["Totalvalue"].ToString();//Add Rupesh G. on 15122018
                         }
                     }
                 }
@@ -1660,40 +1663,43 @@ namespace udCashHandover
                         }
                         this.TxtCntrID.Text = DtPOSmain.Tables["Cashin"].Rows[0]["CNTRCODE"].ToString();
                         this.TxtCashin.Text = DtPOSmain.Tables["CashIn"].Rows[0]["Cashinamt"].ToString();
+                        this.TxtCashBills.Text = Cash;//Add By Rupesh G. on 15122018
+                         //Commented By Rupesh G. on 15122018---Start
+                           //Added By Prajakta B. on 06122018     --Start
+                           //if (DtPOSmain.Tables["ps"].Rows.Count>0 && (DtPOSmain.Tables["cashout"].Rows[0]["tran_cd"].ToString()!=DtPOSmain.Tables["ps"].Rows[0]["POSOUTTRAN"].ToString()))
 
-                        //Added By Prajakta B. on 06122018     --Start
-                        //if (DtPOSmain.Tables["ps"].Rows.Count>0 && (DtPOSmain.Tables["cashout"].Rows[0]["tran_cd"].ToString()!=DtPOSmain.Tables["ps"].Rows[0]["POSOUTTRAN"].ToString()))
+                        //if (DtPOSmain.Tables["cashout"].Rows.Count != 0)
+                        //{
+                        //    if (DtPOSmain.Tables["ps"].Rows.Count > 0 && (DtPOSmain.Tables["cashout"].Rows[0]["tran_cd"].ToString() != DtPOSmain.Tables["ps"].Rows[0]["POSOUTTRAN"].ToString()))
+                        //    {
 
-                        if(DtPOSmain.Tables["cashout"].Rows.Count!=0)
-                        {
-                            if (DtPOSmain.Tables["ps"].Rows.Count > 0 && (DtPOSmain.Tables["cashout"].Rows[0]["tran_cd"].ToString() != DtPOSmain.Tables["ps"].Rows[0]["POSOUTTRAN"].ToString()))
-                            {
+                        //        this.TxtCashBills.Text = DtPOSmain.Tables["ps"].Rows[0]["TotalValue"].ToString();
 
-                                this.TxtCashBills.Text = DtPOSmain.Tables["ps"].Rows[0]["TotalValue"].ToString();
+                        //    }
+                        //    else
+                        //    {
+                        //        this.TxtCashBills.Text = "0.00";
+                        //    }
+                        //}
+                        //else
+                        //{
+                        //    if (DtPOSmain.Tables["ps"].Rows.Count > 0)
+                        //    {
 
-                            }
-                            else
-                            {
-                                this.TxtCashBills.Text = "0.00";
-                            }
-                        }
-                        else
-                        {
-                            if (DtPOSmain.Tables["ps"].Rows.Count > 0)
-                            {
+                        //        this.TxtCashBills.Text = DtPOSmain.Tables["ps"].Rows[0]["TotalValue"].ToString();
 
-                                this.TxtCashBills.Text = DtPOSmain.Tables["ps"].Rows[0]["TotalValue"].ToString();
+                        //    }
+                        //    else
+                        //    {
+                        //        this.TxtCashBills.Text = "0.00";
+                        //    }
+                        //}
 
-                            }
-                            else
-                            {
-                                this.TxtCashBills.Text = "0.00";
-                            }
-                        }
-                       
 
 
                         //Added By Prajakta B. on 06122018     --End
+                        //Commented By Rupesh G. on 15122018---end
+
                         this.TxtUser.Text = this.pAppUerName;
                     }
                 }
@@ -1714,6 +1720,21 @@ namespace udCashHandover
         }
 
         private void TxtCashinHand_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtTotHndOvr_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
         {
 
         }

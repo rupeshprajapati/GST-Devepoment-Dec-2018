@@ -1,0 +1,26 @@
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Release\udStoreRoomMaster.exe.config
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Release\udStoreRoomMaster.exe
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Release\udStoreRoomMaster.pdb
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Release\DataAccess-Net.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Release\GetInfo.DLL
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Release\uBaseForm.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\bin\Release\udSelectPop.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\Interop.ueconnect.dll
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.csproj.ResolveComReference.cache
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.frmStoreRoom.resources
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.frmValidInTran.resources
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\Store_Room_Master.Properties.Resources.resources
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.csproj.GenerateResource.Cache
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.exe
+E:\SVNProjects\Marg Pharma\Store Room Master\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.pdb
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\bin\Release\udStoreRoomMaster.exe.config
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\bin\Release\udStoreRoomMaster.exe
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\bin\Release\udStoreRoomMaster.pdb
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\Interop.ueconnect.dll
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.csproj.ResolveComReference.cache
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.frmStoreRoom.resources
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.frmValidInTran.resources
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\Store_Room_Master.Properties.Resources.resources
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.csproj.GenerateResource.Cache
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.exe
+C:\Users\Rupesh\Desktop\Store Room Master\Store Room Master\obj\Release\udStoreRoomMaster.pdb

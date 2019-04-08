@@ -1,0 +1,26 @@
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udManufacturerMast\bin\Debug\udManufacturerMast.exe.config
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.exe
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.pdb
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udManufacturerMast\bin\Debug\udMarketingCompanyMast.exe.config
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\bin\Debug\udMarketingCompanyMast.exe.config
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.csprojResolveAssemblyReference.cache
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.Properties.Resources.resources
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.csproj.GenerateResource.Cache
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\bin\Debug\udMarketingCompanyMast.exe
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\bin\Debug\udMarketingCompanyMast.pdb
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.exe
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.pdb
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.Form1.resources
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Debug\udMarketingCompanyMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Debug\udMarketingCompanyMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Debug\udMarketingCompanyMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udMarketingCompanyMast\udMarketingCompanyMast\obj\Debug\udMarketingCompanyMast.pdb

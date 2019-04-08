@@ -1,0 +1,8 @@
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Debug\udItemTypeMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Debug\udItemTypeMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\bin\Debug\udItemTypeMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Debug\udItemTypeMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Debug\udItemTypeMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Debug\udItemTypeMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Debug\udItemTypeMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\ItemType Master\New folder\udItemTypeMast\udItemTypeMast\obj\Debug\udItemTypeMast.pdb

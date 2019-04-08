@@ -9,15 +9,6 @@ D:\1 Development\Dotnet\UdPosSettings\udPosSettings\udPosSettings\obj\Release\ud
 D:\1 Development\Dotnet\UdPosSettings\udPosSettings\udPosSettings\obj\Release\udPosSettings.csproj.GenerateResource.Cache
 D:\1 Development\Dotnet\UdPosSettings\udPosSettings\udPosSettings\obj\Release\udPosSettings.exe
 D:\1 Development\Dotnet\UdPosSettings\udPosSettings\udPosSettings\obj\Release\udPosSettings.pdb
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe.config
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.exe
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.pdb
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\bin\Release\udPosSettings.pdb
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.csprojResolveAssemblyReference.cache
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.udPosSettings.resources
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.Properties.Resources.resources
-E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.csproj.GenerateResource.Cache
 C:\Users\Rupesh\Desktop\POS PROJECTS\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe.config
 C:\Users\Rupesh\Desktop\POS PROJECTS\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe
 C:\Users\Rupesh\Desktop\POS PROJECTS\udPosSettings\udPosSettings\bin\Release\udPosSettings.pdb
@@ -36,3 +27,24 @@ D:\01 RRG\02 Project Work\10 Pharma N\Final POS PROJECTS\udPosSettings\udPosSett
 D:\01 RRG\02 Project Work\10 Pharma N\Final POS PROJECTS\udPosSettings\udPosSettings\obj\Release\udPosSettings.csproj.GenerateResource.Cache
 D:\01 RRG\02 Project Work\10 Pharma N\Final POS PROJECTS\udPosSettings\udPosSettings\obj\Release\udPosSettings.exe
 D:\01 RRG\02 Project Work\10 Pharma N\Final POS PROJECTS\udPosSettings\udPosSettings\obj\Release\udPosSettings.pdb
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe.config
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\bin\Release\udPosSettings.pdb
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.csprojResolveAssemblyReference.cache
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.udPosSettings.resources
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.Properties.Resources.resources
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.csproj.GenerateResource.Cache
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.exe
+E:\Prajakta\Projects\Installer ERP 2.1.0.0\udPosSettings\udPosSettings\obj\Release\udPosSettings.pdb
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe.config
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\bin\Release\udPosSettings.exe
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\bin\Release\udPosSettings.pdb
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\bin\Release\DataAccess-Net.dll
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\bin\Release\uBaseForm.dll
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\bin\Release\udSelectPop.dll
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\obj\Release\udPosSettings.csprojResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\obj\Release\udPosSettings.udPosSettings.resources
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\obj\Release\udPosSettings.Properties.Resources.resources
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\obj\Release\udPosSettings.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\obj\Release\udPosSettings.exe
+D:\SVN Development\Dotnet\udPosSettings\udPosSettings\obj\Release\udPosSettings.pdb

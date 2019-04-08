@@ -1,0 +1,16 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Debug\udManufacturerMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Debug\udManufacturerMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Debug\udManufacturerMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.csprojResolveAssemblyReference.cache
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udManufacturerMast\bin\Debug\udManufacturerMast.exe.config
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.exe
+C:\Users\Rupesh\Desktop\markating comapny master\udManufacturerMast\udManufacturerMast\obj\Debug\udManufacturerMast.pdb

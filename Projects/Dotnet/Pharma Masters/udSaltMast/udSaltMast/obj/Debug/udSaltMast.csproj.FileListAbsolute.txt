@@ -1,0 +1,16 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Debug\udSaltMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Debug\udSaltMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Debug\udSaltMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Debug\udSaltMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Debug\udSaltMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Debug\udSaltMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Debug\udSaltMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Debug\udSaltMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Debug\udSaltMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udSaltMast\udSaltMast\obj\Debug\udSaltMast.pdb
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\bin\Debug\udSaltMast.exe.config
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Debug\udSaltMast.exe
+E:\SVNProjects\Marg Pharma\From Rupesh G\udSaltMast\udSaltMast\obj\Debug\udSaltMast.pdb

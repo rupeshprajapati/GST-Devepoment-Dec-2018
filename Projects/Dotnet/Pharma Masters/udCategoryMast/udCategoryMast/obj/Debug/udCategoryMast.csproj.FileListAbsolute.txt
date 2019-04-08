@@ -1,0 +1,12 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\bin\Debug\udCategoryMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\bin\Debug\udCategoryMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\bin\Debug\udCategoryMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\obj\Debug\udCategoryMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\obj\Debug\udCategoryMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\obj\Debug\udCategoryMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\obj\Debug\udCategoryMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\obj\Debug\udCategoryMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udCategoryMast\udCategoryMast\obj\Debug\udCategoryMast.pdb

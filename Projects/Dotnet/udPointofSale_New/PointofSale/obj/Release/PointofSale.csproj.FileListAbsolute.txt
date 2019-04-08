@@ -1,0 +1,209 @@
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\udPointofSale.exe
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\udPointofSale.pdb
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\dataaccess-net.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\udclsdgvnumericcolumn.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\udreportlist.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\udselectpop.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\uNumericTextBox.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\udDataTableQuery.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\udCrViewer.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Release\uBaseForm.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\ResolveAssemblyReference.cache
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\udPointofSale.exe.licenses
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\udPointofSale.exe
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Release\udPointofSale.pdb
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\udPointofSale.exe
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\udPointofSale.pdb
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\dataaccess-net.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\udclsdgvnumericcolumn.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\udreportlist.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\udselectpop.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\uNumericTextBox.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\udDataTableQuery.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\udCrViewer.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\bin\Release\uBaseForm.dll
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\ResolveAssemblyReference.cache
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\udPointofSale.exe.licenses
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\udPointofSale.exe
+D:\Development\Point of Sale\udPointofSale with New Changes\PointofSale\obj\Release\udPointofSale.pdb
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udPointofSale.exe
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udPointofSale.pdb
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\dataaccess-net.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udAdditionalInfo.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udclsdgvnumericcolumn.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udreportlist.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udselectpop.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\uNumericTextBox.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udDataTableQuery.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udCrViewer.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\uBaseForm.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\ResolveAssemblyReference.cache
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\udPointofSale.exe.licenses
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\udPointofSale.exe
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\udPointofSale.pdb
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udPointofSale.exe
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udPointofSale.pdb
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\dataaccess-net.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udAdditionalInfo.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udclsdgvnumericcolumn.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udreportlist.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udselectpop.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\uNumericTextBox.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udDataTableQuery.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\udCrViewer.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Release\uBaseForm.dll
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\udPointofSale.exe
+D:\1 Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Release\udPointofSale.pdb
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\bin\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\bin\Release\udPointofSale.pdb
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\bin\Release\udAdditionalInfo.dll
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\bin\Release\udSelectPop.dll
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\bin\Release\udSelectPop.pdb
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\obj\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-26654\PointofSale\obj\Release\udPointofSale.pdb
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\bin\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\bin\Release\udPointofSale.pdb
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\bin\Release\udAdditionalInfo.dll
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\bin\Release\udEvaluate.dll
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\bin\Release\udEvaluate.pdb
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\bin\Release\udEvaluate.xml
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\PointofSale.csprojResolveAssemblyReference.cache
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale\Working Folder for Bug-27503\PointofSale\obj\Release\udPointofSale.pdb
+E:\Prajakta\Projects\udPointofSale\PointofSale\bin\Release\udPointofSale.exe
+E:\Prajakta\Projects\udPointofSale\PointofSale\bin\Release\udPointofSale.pdb
+E:\Prajakta\Projects\udPointofSale\PointofSale\bin\Release\udAdditionalInfo.dll
+E:\Prajakta\Projects\udPointofSale\PointofSale\bin\Release\udEvaluate.dll
+E:\Prajakta\Projects\udPointofSale\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+E:\Prajakta\Projects\udPointofSale\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+E:\Prajakta\Projects\udPointofSale\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+E:\Prajakta\Projects\udPointofSale\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+E:\Prajakta\Projects\udPointofSale\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+E:\Prajakta\Projects\udPointofSale\PointofSale\obj\Release\udPointofSale.exe
+E:\Prajakta\Projects\udPointofSale\PointofSale\obj\Release\udPointofSale.pdb
+F:\Sachin\udPointofSale\PointofSale\bin\Release\udPointofSale.exe
+F:\Sachin\udPointofSale\PointofSale\bin\Release\udPointofSale.pdb
+F:\Sachin\udPointofSale\PointofSale\bin\Release\udEvaluate.dll
+F:\Sachin\udPointofSale\PointofSale\bin\Release\udSelectPop.dll
+F:\Sachin\udPointofSale\PointofSale\obj\Release\PointofSale.csprojResolveAssemblyReference.cache
+F:\Sachin\udPointofSale\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+F:\Sachin\udPointofSale\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+F:\Sachin\udPointofSale\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+F:\Sachin\udPointofSale\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+F:\Sachin\udPointofSale\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+F:\Sachin\udPointofSale\PointofSale\obj\Release\udPointofSale.exe
+F:\Sachin\udPointofSale\PointofSale\obj\Release\udPointofSale.pdb
+D:\sachin S\udPointofSale_New\PointofSale\bin\Release\udPointofSale.exe
+D:\sachin S\udPointofSale_New\PointofSale\bin\Release\udPointofSale.pdb
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\PointofSale.csprojResolveAssemblyReference.cache
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\udPointofSale.exe
+D:\sachin S\udPointofSale_New\PointofSale\obj\Release\udPointofSale.pdb
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udPointofSale.pdb
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udAdditionalInfo.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udEvaluate.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udReportList.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udSelectPop.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\uBaseForm.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udCrViewer.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\udDataTableQuery.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\bin\Release\stdole.dll
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\obj\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale_New\PointofSale\obj\Release\udPointofSale.pdb
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\bin\Release\udPointofSale.exe
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\bin\Release\udPointofSale.pdb
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\PointofSale.csprojResolveAssemblyReference.cache
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\udPointofSale.exe
+C:\Users\Rupesh\Desktop\POS PROJECTS\Working Folder for Bug-31756\Point of Sale\PointofSale\obj\Release\udPointofSale.pdb
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\udPointofSale.exe
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\udPointofSale.pdb
+D:\SVNGST\udPointofSale_New\PointofSale\bin\Release\udPointofSale.exe
+D:\SVNGST\udPointofSale_New\PointofSale\bin\Release\udPointofSale.pdb
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.csprojResolveAssemblyReference.cache
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.frmLastDeal.resources
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPointofSaleNew.resources
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\SVNGST\udPointofSale_New\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\SVNGST\udPointofSale_New\PointofSale\bin\Release\udSelectPop.dll
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\udPointofSale.exe
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\udPointofSale.pdb
+E:\Shrikant\pos\udPointofSale_New\PointofSale\bin\Release\udPointofSale.exe
+E:\Shrikant\pos\udPointofSale_New\PointofSale\bin\Release\udPointofSale.pdb
+E:\Shrikant\pos\udPointofSale_New\PointofSale\bin\Release\udSelectPop.dll
+E:\Shrikant\pos\udPointofSale_New\PointofSale\bin\Release\udSelectPop.pdb
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.csprojResolveAssemblyReference.cache
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.frmLastDeal.resources
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPointofSaleNew.resources
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+E:\Shrikant\pos\udPointofSale_New\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\SVNGST\udPointofSale_New\PointofSale\bin\Release\udSelectPop.pdb
+E:\Shrikant\pos\udPointofSale_New\PointofSale\bin\Release\udPointofSale.exe.config
+D:\SVNGST\udPointofSale_New\PointofSale\bin\Release\udPointofSale.exe.config
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\bin\Release\udPointofSale.exe.config
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\bin\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\bin\Release\udPointofSale.pdb
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\bin\Release\udAdditionalInfo.dll
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\bin\Release\udclsDGVDateTimePicker.dll
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\bin\Release\udSelectPop.dll
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.csprojResolveAssemblyReference.cache
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.frmLastDeal.resources
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.Properties.Resources.resources
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.udFrmPaymentScreen.resources
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.udFrmPointofSale.resources
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.udFrmPointofSaleNew.resources
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.udFrmPOSLoginSettings.resources
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\PointofSale.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\udPointofSale.exe
+D:\1 Development\Dotnet\udPointofSale_New\Working Folder for Bug-31756\PointofSale\obj\Release\udPointofSale.pdb

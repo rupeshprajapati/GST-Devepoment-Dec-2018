@@ -1,0 +1,45 @@
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.FilterForm.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.FilterForm.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.csproj.GenerateResource.Cache
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe.config
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.exe
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.pdb
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.pdb
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.csprojResolveAssemblyReference.cache
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.FilterForm.resources
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Form1.resources
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Properties.Resources.resources
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udBarcodePRN.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.FilterForm.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Debug\udBarcodePRN.pdb

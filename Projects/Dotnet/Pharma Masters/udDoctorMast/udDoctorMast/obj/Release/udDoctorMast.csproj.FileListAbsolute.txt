@@ -1,0 +1,12 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\bin\Release\udDoctorMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\bin\Release\udDoctorMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\bin\Release\udDoctorMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\obj\Release\udDoctorMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\obj\Release\udDoctorMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\obj\Release\udDoctorMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\obj\Release\udDoctorMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\obj\Release\udDoctorMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udDoctorMast\udDoctorMast\obj\Release\udDoctorMast.pdb

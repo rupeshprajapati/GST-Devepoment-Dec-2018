@@ -1,0 +1,33 @@
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.pdb
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.exe.config
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.exe
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.pdb
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.exe
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.pdb
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.csprojResolveAssemblyReference.cache
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.Form1.resources
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.Properties.Resources.resources
+C:\Users\Rupesh\Desktop\HomeWork\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udBarcodePrinting.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Debug\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.Form2.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Debug\udBarcodePrinting.pdb

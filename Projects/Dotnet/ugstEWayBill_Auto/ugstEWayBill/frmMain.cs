@@ -531,10 +531,12 @@ namespace ugstEWayBill
         {
 
         }
-        private void Generate_EWB_Json(string vEntry_Ty, string vInv_No, string vInvDate, ref StringBuilder JsonString)
+        //private void Generate_EWB_Json(string vEntry_Ty, string vInv_No, string vInvDate, ref StringBuilder JsonString)  //Commented by Priyanka B on 18022019 for Bug-31844
+            private void Generate_EWB_Json(string vEntry_Ty, string vInv_No, string vInvDate, ref StringBuilder JsonString,int vTran_cd)  //Modified by Priyanka B on 18022019 for Bug-31844
         {
             DataTable tblMain;
-            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Main_API] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'," + this.pCompId.ToString().Trim();
+            //vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Main_API] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'," + this.pCompId.ToString().Trim();  //Commented by Priyanka B on 18022019 for Bug-31844
+            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Main_API] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'," + this.pCompId.ToString().Trim() + "," + vTran_cd; //Modified by Priyanka B on 18022019 for Bug-31844
             //tblMain = oDataAccess.GetDataTable(vSqlStr, null, 25);
             SqlConnection conn = new SqlConnection(sqlconnstr);
             SqlDataAdapter lda = new SqlDataAdapter(vSqlStr, conn);
@@ -596,7 +598,8 @@ namespace ugstEWayBill
 
             vIgnoreColumn = "<itemNo>";
             DataTable tblItem;
-            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Item_API] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate + "'";
+            //vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Item_API] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate + "'";  //Commented by Priyanka B on 18022019 for Bug-31844
+            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Item_API] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate + "'," + vTran_cd;  //Modified by Priyanka B on 18022019 for Bug-31844
             //tblItem = oDataAccess.GetDataTable(vSqlStr, null, 25);
             lda = new SqlDataAdapter(vSqlStr, conn);
             ldt = new DataTable();
@@ -669,10 +672,12 @@ namespace ugstEWayBill
 
         }
 
-        private void mthGenJson(string vEntry_Ty, string vInv_No, string vInvDate, ref StringBuilder JsonString)
+        //private void mthGenJson(string vEntry_Ty, string vInv_No, string vInvDate, ref StringBuilder JsonString)  //Commented by Priyanka B on 14022019 for Bug-31844
+            private void mthGenJson(string vEntry_Ty, string vInv_No, string vInvDate, ref StringBuilder JsonString,int vTran_cd)  //Modified by Priyanka B on 14022019 for Bug-31844
         {
             DataTable tblMain;
-            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Main] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'," + this.pCompId.ToString().Trim();
+            //vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Main] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'," + this.pCompId.ToString().Trim();  //Commented by Priyanka B on 14022019 for Bug-31844
+            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Main] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'," + this.pCompId.ToString().Trim() + "," + vTran_cd;  //Modified by Priyanka B on 14022019 for Bug-31844
 
             //tblMain = oDataAccess.GetDataTable(vSqlStr, null, 25);
             SqlConnection conn = new SqlConnection(sqlconnstr);
@@ -734,7 +739,8 @@ namespace ugstEWayBill
 
             }
             DataTable tblItem;
-            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Item] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'";
+            //vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Item] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'";  //Commented by Priyanka B on 14022019 for Bug-31844
+            vSqlStr = "Execute [USP_Ent_eWayBill_JsonDet_Item] '" + vEntry_Ty + "','" + vInv_No.Trim() + "','" + vInvDate.Trim() + "'" + "," + vTran_cd;  //Modified by Priyanka B on 14022019 for Bug-31844
             //tblItem = oDataAccess.GetDataTable(vSqlStr, null, 25);
             lda = new SqlDataAdapter(vSqlStr, conn);
             ldt = new DataTable();
@@ -1229,6 +1235,7 @@ namespace ugstEWayBill
             {
                 if (selectedReccnt > 0)
                 {
+                    
                     string v = "";
                     int vSelectedRec = 0;
                     StringBuilder JsonString = new StringBuilder();
@@ -1247,7 +1254,9 @@ namespace ugstEWayBill
                             if (vErrMsg == "")
                             {
                                 JsonString.Append("{\n");
-                                this.mthGenJson(this.txtTrnName.Text.ToString().Trim(), dr["DocNo"].ToString(), Convert.ToDateTime(dr["DocDt"]).ToString("MM/dd/yyyy"), ref JsonString);
+                                //this.mthGenJson(this.txtTrnName.Text.ToString().Trim(), dr["DocNo"].ToString(), Convert.ToDateTime(dr["DocDt"]).ToString("MM/dd/yyyy"), ref JsonString);  //Commented by Priyanka B on 14022019 for Bug-31844
+                                this.mthGenJson(this.txtTrnName.Text.ToString().Trim(), dr["DocNo"].ToString(), Convert.ToDateTime(dr["DocDt"]).ToString("MM/dd/yyyy"), ref JsonString, Int32.Parse(dr["Tran_cd"].ToString()));  //Commented by Priyanka B on 14022019 for Bug-31844
+                                                                
                                 JsonString.Append("\n},\n");
                             }
                             else
@@ -1351,11 +1360,18 @@ namespace ugstEWayBill
                 {
                     vErrMsg = vErrMsg + "Please enter Vehicle Type in Additional Info/Invoice Details in Invoice/Transaction number :" + dr["docNo"].ToString() + "\n";
                 }
+                // Added by Shrikant S. on 01/02/2019 for Auto updater 2.0.2       //Start 
+                if (dr["U_VehNo"].ToString().Trim() == "")
+                {
+                    vErrMsg = vErrMsg + "Please Enter Vehicle Number in " + dr["docNo"].ToString() + "\n";
+                }
+                // Added by Shrikant S. on 01/02/2019 for Auto updater 2.0.2       //End
             }
             if (dr["mainHsnCode"].ToString().Trim().Length <= 0)
             {
                 vErrMsg = vErrMsg + "Please tick to is Main HSN checkbox for Main HSN code in Additional Info/Invoice Details in Invoice/Transaction number :" + dr["docNo"].ToString() + "\n";
             }
+            
             // Added by Shrikant S. on 21/05/2018 for Bug-31516     // End
 
         }
@@ -1621,7 +1637,8 @@ namespace ugstEWayBill
                 if (vErrMsg == "")
                 {
                     JsonString.Append("{\n");
-                    this.Generate_EWB_Json(this.txtTrnName.Text.ToString().Trim(), row["DocNo"].ToString(), Convert.ToDateTime(row["DocDt"]).ToString("MM/dd/yyyy"), ref JsonString);
+                    //this.Generate_EWB_Json(this.txtTrnName.Text.ToString().Trim(), row["DocNo"].ToString(), Convert.ToDateTime(row["DocDt"]).ToString("MM/dd/yyyy"), ref JsonString);  //Commented by Priyanka B on 18022019 for Bug-31844
+                    this.Generate_EWB_Json(this.txtTrnName.Text.ToString().Trim(), row["DocNo"].ToString(), Convert.ToDateTime(row["DocDt"]).ToString("MM/dd/yyyy"), ref JsonString, Int32.Parse(row["Tran_cd"].ToString()));  //Modified by Priyanka B on 18022019 for Bug-31844
                     JsonString.Append("\n}");
                 }
                 else

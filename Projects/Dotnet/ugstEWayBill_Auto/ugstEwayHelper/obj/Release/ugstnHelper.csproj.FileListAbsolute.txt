@@ -20,3 +20,8 @@ D:\EWay\API\ugstEWayBill_Final_new\ugstEwayHelper\bin\Release\Newtonsoft.Json.dl
 D:\EWay\API\ugstEWayBill_Final_new\ugstEwayHelper\obj\Release\ugstnHelper.csprojResolveAssemblyReference.cache
 D:\EWay\API\ugstEWayBill_Final_new\ugstEwayHelper\obj\Release\ugstnHelper.dll
 D:\EWay\API\ugstEWayBill_Final_new\ugstEwayHelper\obj\Release\ugstnHelper.pdb
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEwayHelper\bin\Release\ugstnHelper.dll
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEwayHelper\bin\Release\ugstnHelper.pdb
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEwayHelper\obj\Release\ugstnHelper.csprojResolveAssemblyReference.cache
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEwayHelper\obj\Release\ugstnHelper.dll
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEwayHelper\obj\Release\ugstnHelper.pdb

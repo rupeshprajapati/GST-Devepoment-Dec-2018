@@ -91,7 +91,8 @@ namespace Hsnmaster
         private void GetChildRecords(string keyValue)
         {
             childTbl.Rows.Clear();
-            string strSQL = "select * From hsncodemast Where Hsncode+'-'+state_code='" + keyValue + "' order by Activefrom";
+            //string strSQL = "select * From hsncodemast Where Hsncode+'-'+state_code='" + keyValue + "' order by Activefrom";      //Commented by Shrikant S. on 22/01/2019 for Installer 2.0.0   
+            string strSQL = "select * From hsncodemast Where Hsncode+'-'+state_code+'-'+convert(varchar(10),schcode)='" + keyValue + "' order by Activefrom";        //Added by Shrikant S. on 22/01/2019 for Installer 2.0.0   
             childTbl = oDataAccess.GetDataSet(strSQL, null, 20).Tables[0];
             this.dgvGSTRate.RefreshEdit();
             this.dgvGSTRate.Refresh();
@@ -491,7 +492,8 @@ namespace Hsnmaster
             //if (dsMain.Tables[0].Rows.Count > 0)
             //    vMainFldVal = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
 
-            SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code='" + cond + "'";
+            //SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code='" + cond + "'";        //Commented by Shrikant S. on 22/01/2019
+            SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code+'-'+convert(varchar(10),schcode)='" + cond + "'";          //Added by Shrikant S. on 22/01/2019
             dsMain = oDataAccess.GetDataSet(SqlStr, null, 20);
             this.mthView();
             this.mthChkNavigationButton();
@@ -511,7 +513,8 @@ namespace Hsnmaster
             string keyValue = string.Empty;
             if (dsMain.Tables[0].Rows.Count > 0)
             {
-                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
+                //keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();      //Commented by Shrikant S. on 22/01/2019            
+                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString()+"-"+ dsMain.Tables[0].Rows[0]["schcode"].ToString();        //Added by Shrikant S. on 22/01/2019     
             }
 
             this.GetChildRecords(keyValue);
@@ -526,7 +529,8 @@ namespace Hsnmaster
                 vMainFldVal = dsMain.Tables[0].Rows[0]["Recid"].ToString();
             }
             //vMainFldVal = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
-            SqlStr = "Select top 1 * from hsncode_vw Where hsncode+'-'+state_code=(select Top 1 hsncode+'-'+state_code  from Hsncodemast where Recid <" + vMainFldVal + " order by " + vMainField + " desc)";
+            //SqlStr = "Select top 1 * from hsncode_vw Where hsncode+'-'+state_code=(select Top 1 hsncode+'-'+state_code  from Hsncodemast where Recid <" + vMainFldVal + " order by " + vMainField + " desc)";         //Commented by Shrikant S. on 22/01/2019
+            SqlStr = "Select top 1 * from hsncode_vw Where hsncode+'-'+state_code+'-'+convert(varchar(10),schcode)=(select Top 1 hsncode+'-'+state_code+'-'+convert(varchar(10),schcode)  from Hsncodemast where Recid <" + vMainFldVal + " order by " + vMainField + " desc)";           //Added by Shrikant S. on 22/01/2019
 
             //SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code <'" + vMainFldVal + "' order by " + vMainField + " desc";
             //SqlStr = "Select top 1 * from " + vMainTblNm + " Where Recid <" + vMainFldVal + " order by " + vMainField + " desc";
@@ -535,7 +539,8 @@ namespace Hsnmaster
             string keyValue = string.Empty;
             if (dsMain.Tables[0].Rows.Count > 0)
             {
-                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
+                //keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();      //Commented by Shrikant S. on 22/01/2019 
+                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString() + "-" + dsMain.Tables[0].Rows[0]["schcode"].ToString();        //Added by Shrikant S. on 22/01/2019     
             }
 
             this.mthView();
@@ -558,7 +563,8 @@ namespace Hsnmaster
             string keyValue = string.Empty;
             if (dsMain.Tables[0].Rows.Count > 0)
             {
-                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
+                //keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();      //Commented by Shrikant S. on 22/01/2019 
+                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString() + "-" + dsMain.Tables[0].Rows[0]["schcode"].ToString();        //Added by Shrikant S. on 22/01/2019 
             }
             this.GetChildRecords(keyValue);
             this.AssignSourceToGrid();
@@ -579,7 +585,8 @@ namespace Hsnmaster
             else
                 this.mthEnableDisableFormControls();
 
-            SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code in (Select Top 1 hsncode+'-'+state_code from " + vMainTblNm + " Order by hsncode desc,state_code desc )";
+            //SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code in (Select Top 1 hsncode+'-'+state_code from " + vMainTblNm + " Order by hsncode desc,state_code desc )";       //Commented by Shrikant S. on 22/01/2019
+            SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code+'-'+convert(varchar(10),schcode) in (Select Top 1 hsncode+'-'+state_code+'-'+convert(varchar(10),schcode) from " + vMainTblNm + " Order by hsncode desc,state_code desc )";         //Added by Shrikant S. on 22/01/2019
             dsMain = oDataAccess.GetDataSet(SqlStr, null, 20);
 
             this.mthView();
@@ -587,7 +594,8 @@ namespace Hsnmaster
             string keyValue = string.Empty;
 
             if (dsMain.Tables[0].Rows.Count > 0)
-                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
+                keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString() + "-" + dsMain.Tables[0].Rows[0]["schcode"].ToString();     //Added by Shrikant S. on 22/01/2019    
+            //keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();      //Commented by Shrikant S. on 22/01/2019 
 
             this.GetChildRecords(keyValue);
 
@@ -747,11 +755,13 @@ namespace Hsnmaster
                                             item["Hsncode"] = this.txtHSNCode.Text;
                                             item["State_code"] = Stcode;
                                             //SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted)";  //Commented by Priyanka B on 28122017 for Bug-30849
-                                            SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport)";  //Modified by Priyanka B on 28122017 for Bug-30849
+                                            //SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport)";  //Modified by Priyanka B on 28122017 for Bug-30849      //Commented by Shrikant S. on 22/01/2019 
+                                            SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport,Schcode)";    //Added by Shrikant S. on 22/01/2019 
                                             SqlStr = SqlStr + " Values ('" + Convert.ToString(item["Hsncode"]) + "','" + Convert.ToString(item["State_code"]) + "',"
                                                 + Convert.ToString(item["SGSTPer"]) + "," + Convert.ToString(item["CGSTPer"]) + "," + Convert.ToString(item["IGSTPer"])
                                                     + ",'" + Convert.ToDateTime(item["Activefrom"]).ToString("MM/dd/yyyy") + "'," + Convert.ToString(item["hsnid"]) + ",'" + Convert.ToBoolean(item["exempted"])
-                                                    + "','','')";  //Modified by Priyanka B on 28122017 for Bug-30849
+                                                    + "','','',"+ Convert.ToString(item["schcode"]) + ")";  //Added by Shrikant S. on 22/01/2019 
+                                            //+"','','')";  //Modified by Priyanka B on 28122017 for Bug-30849      //Commented by Shrikant S. on 22/01/2019 
                                             //+ "')";  //Commented by Priyanka B on 28122017 for Bug-30849
                                             updated = oDataAccess.ExecuteSQLStatement(SqlStr, null, 20, false);
                                             item["PrimaryId"] = updated;
@@ -780,6 +790,7 @@ namespace Hsnmaster
                                                     + "',SGSTPer=" + Convert.ToString(item["SGSTPer"]) + ",CGSTPer=" + Convert.ToString(item["CGSTPer"]) + ",IGSTPer=" + Convert.ToString(item["IGSTPer"])
                                                     + ",Activefrom='" + Convert.ToDateTime(item["Activefrom"]).ToString("MM/dd/yyyy") + "',hsnid=" + Convert.ToString(item["hsnid"]) + ",exempted='" + Convert.ToBoolean(item["exempted"]) + "'"
                                                     + ",DataExport='',DataImport=''"  //Added by Priyanka B on 28122017 for Bug-30849
+                                                    +",schcode=" + Convert.ToString(item["SGSTPer"])            //Added by Shrikant S. on 22/01/2019 
                                                     + " Where PrimaryId=" + DupliChk;
                                                     updated = oDataAccess.ExecuteSQLStatement(SqlStr, null, 20, true);
                                                 }
@@ -789,11 +800,13 @@ namespace Hsnmaster
                                                     item["Hsncode"] = this.txtHSNCode.Text;
                                                     item["State_code"] = Stcode;
                                                     //SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted)";   //Commented by Priyanka B on 28122017 for Bug-30849
-                                                    SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport)";  //Modified by Priyanka B on 28122017 for Bug-30849
+                                                    //SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport)";  //Modified by Priyanka B on 28122017 for Bug-30849      //Commented by Shrikant S. on 22/01/2019 
+                                                    SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport,Schcode)";        //Added by Shrikant S. on 22/01/2019 
                                                     SqlStr = SqlStr + " Values ('" + Convert.ToString(item["Hsncode"]) + "','" + Convert.ToString(item["State_code"]) + "',"
                                                         + Convert.ToString(item["SGSTPer"]) + "," + Convert.ToString(item["CGSTPer"]) + "," + Convert.ToString(item["IGSTPer"])
                                                             + ",'" + Convert.ToDateTime(item["Activefrom"]).ToString("MM/dd/yyyy") + "'," + Convert.ToString(item["hsnid"]) + ",'" + Convert.ToBoolean(item["exempted"])
-                                                    + "','','')";  //Modified by Priyanka B on 28122017 for Bug-30849
+                                                    + "','','',"+ Convert.ToString(item["schcode"]) + ")";                               //Added by Shrikant S. on 22/01/2019 
+                                                    //+"','','')";  //Modified by Priyanka B on 28122017 for Bug-30849          //Commented by Shrikant S. on 22/01/2019 
                                                     //+"')";  //Commented by Priyanka B on 28122017 for Bug-30849
                                                     updated = oDataAccess.ExecuteSQLStatement(SqlStr, null, 20, false);
                                                     item["PrimaryId"] = updated;
@@ -825,12 +838,14 @@ namespace Hsnmaster
                                         item["Hsncode"] = this.txtHSNCode.Text;
                                         item["State_code"] = Stcode;
                                         //SqlStr = SqlStr + "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted)";   //Commented by Priyanka B on 28122017 for Bug-30849
-                                        SqlStr = "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport)";   //Modified by Priyanka B on 28122017 for Bug-30849
+                                        //SqlStr = "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport)";   //Modified by Priyanka B on 28122017 for Bug-30849      //Commented by Shrikant S. on 22/01/2019 
+                                        SqlStr = "Set dateformat mdy Insert Into Hsncodemast (HsnCode,State_code,SGSTPer,CGSTPer,IGSTPer,Activefrom,hsnid,exempted,DataImport,DataExport,schcode)";         //Added by Shrikant S. on 22/01/2019 
                                         SqlStr = SqlStr + " Values ('" + Convert.ToString(item["Hsncode"]) + "','" + Convert.ToString(item["State_code"]) + "',"
                                             + Convert.ToString(item["SGSTPer"]) + "," + Convert.ToString(item["CGSTPer"]) + "," + Convert.ToString(item["IGSTPer"])
                                                 + ",'" + Convert.ToDateTime(item["Activefrom"]).ToString("MM/dd/yyyy") + "'," + Convert.ToString(item["hsnid"]) + ",'" + Convert.ToBoolean(item["exempted"])
-                                                + "','','')";  //Modified by Priyanka B on 28122017 for Bug-30849
-                                                               //+"')";  //Commented by Priyanka B on 28122017 for Bug-30849
+                                                + "','','',"+ Convert.ToString(item["schcode"]) + ")";           //Added by Shrikant S. on 22/01/2019 
+                                                                        //+"','','')";  //Modified by Priyanka B on 28122017 for Bug-30849      //Commented by Shrikant S. on 22/01/2019 
+                                                                        //+"')";  //Commented by Priyanka B on 28122017 for Bug-30849
                                         updated = oDataAccess.ExecuteSQLStatement(SqlStr, null, 20, false);
                                         item["PrimaryId"] = updated;
                                         SqlStr = " Update Hsn_master set DataExport='',DataImport='' Where Hsn_Code='" + Convert.ToString(item["Hsncode"]) + "' and hsn_id=" + Convert.ToString(item["hsnid"]);  //Added by Priyanka B on 28122017 for Bug-30849
@@ -848,6 +863,7 @@ namespace Hsnmaster
                                             + "',SGSTPer=" + Convert.ToString(item["SGSTPer"]) + ",CGSTPer=" + Convert.ToString(item["CGSTPer"]) + ",IGSTPer=" + Convert.ToString(item["IGSTPer"])
                                             + ",Activefrom='" + Convert.ToDateTime(item["Activefrom"]).ToString("MM/dd/yyyy") + "',hsnid=" + Convert.ToString(item["hsnid"]) + ",exempted='" + Convert.ToBoolean(item["exempted"]) + "'"
                                             + ",DataExport='',DataImport=''"  //Added by Priyanka B on 28122017 for Bug-30849
+                                            +",schcode=" + Convert.ToString(item["schcode"])            //Added by Shrikant S. on 22/01/2019
                                             + " Where PrimaryId=" + DupliChk;
                                             SqlStr = SqlStr + " Update Hsn_master set DataExport='',DataImport='' Where Hsn_Code='" + Convert.ToString(item["Hsncode"]) + "' and hsn_id=" + Convert.ToString(item["hsnid"]);  //Added by Priyanka B on 28122017 for Bug-30849
                                             updated = oDataAccess.ExecuteSQLStatement(SqlStr, null, 20, true);
@@ -902,6 +918,7 @@ namespace Hsnmaster
                                 + "',SGSTPer=" + Convert.ToString(item["SGSTPer"]) + ",CGSTPer=" + Convert.ToString(item["CGSTPer"]) + ",IGSTPer=" + Convert.ToString(item["IGSTPer"])
                                 + ",Activefrom='" + Convert.ToDateTime(item["Activefrom"]).ToString("MM/dd/yyyy") + "',hsnid=" + Convert.ToString(item["hsnid"]) + ",exempted='" + Convert.ToBoolean(item["exempted"]) + "'"
                                 + ",DataExport='',DataImport=''"  //Added by Priyanka B on 28122017 for Bug-30849
+                                + ",schcode=" + Convert.ToString(item["schcode"])           //Added by Shrikant S. on 22/01/2019
                                 + " Where PrimaryId=" + Convert.ToString(item["PrimaryId"]);
                             SqlStr = SqlStr + " Update Hsn_master set DataExport='',DataImport='' Where Hsn_Code='" + Convert.ToString(item["Hsncode"]) + "' and hsn_id=" + Convert.ToString(item["hsnid"]);  //Added by Priyanka B on 28122017 for Bug-30849
                             updated = oDataAccess.ExecuteSQLStatement(SqlStr, null, 20, true);
@@ -996,12 +1013,14 @@ namespace Hsnmaster
             //}
             if (this.pAddMode || this.pEditMode)
             {
-                SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code in (Select Top 1 hsncode+'-'+state_code from " + vMainTblNm + " Order by hsncode desc,state_code desc )";
+                //SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code in (Select Top 1 hsncode+'-'+state_code from " + vMainTblNm + " Order by hsncode desc,state_code desc )";       //Commented by Shrikant S. on 22/01/2019 
+                SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code+'-'+convert(varchar(10),schcode) in (Select Top 1 hsncode+'-'+state_code+'-'+convert(varchar(10),schcode) from " + vMainTblNm + " Order by hsncode desc,state_code desc )";         //Added by Shrikant S. on 22/01/2019 
                 dsMain = oDataAccess.GetDataSet(SqlStr, null, 20);
 
                 if (dsMain.Tables[0].Rows.Count > 0)
                 {
-                    keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
+                    //keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();      //Commented by Shrikant S. on 22/01/2019 
+                    keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString() + "-" + dsMain.Tables[0].Rows[0]["schcode"].ToString();        //Added by Shrikant S. on 22/01/2019 
                 }
             }
             this.pAddMode = false;
@@ -1035,10 +1054,12 @@ namespace Hsnmaster
 
                     vMainFldVal = string.Empty;
                     if (dsMain.Tables[0].Rows.Count > 0)
-                        vMainFldVal = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
+                        vMainFldVal = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString() + "-" + dsMain.Tables[0].Rows[0]["schcode"].ToString();     //Added by Shrikant S. on 22/01/2019
+                    //vMainFldVal = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();       //Commented by Shrikant S. on 22/01/2019
 
 
-                    vDelString = "Delete from Hsncodemast  Where  hsncode+'-'+state_code='" + this.txtHSNCode.Text.Trim() + '-' + this.txtStateCode.Text.Trim() + "'";
+                    //vDelString = "Delete from Hsncodemast  Where  hsncode+'-'+state_code='" + this.txtHSNCode.Text.Trim() + '-' + this.txtStateCode.Text.Trim() + "'";        //Commented by Shrikant S. on 22/01/2019 
+                    vDelString = "Delete from Hsncodemast  Where  hsncode+'-'+state_code+'-'+convert(varchar(10),schcode)='" + this.txtHSNCode.Text.Trim() + '-' + this.txtStateCode.Text.Trim() +'-' +Convert.ToString(dsMain.Tables[0].Rows[0]["schcode"])+ "'";          //Added by Shrikant S. on 22/01/2019 
                     oDataAccess.ExecuteSQLStatement(vDelString, null, 20, true);
                     this.dsMain.Tables[0].Rows[0].Delete();
                     this.dsMain.Tables[0].AcceptChanges();
@@ -1079,14 +1100,15 @@ namespace Hsnmaster
             {
                 string VForText = string.Empty, vSearchCol = string.Empty, strSQL = string.Empty, Vstr = string.Empty, vColExclude = string.Empty, vDisplayColumnList = string.Empty, vReturnCol = string.Empty;
                 DataSet tDs = new DataSet();
-                SqlStr = "Select HSN_CODE,HSN_Desc,hsn_id=CAST(hsn_id AS VARCHAR(10)) from hsn_master Where Isactive=1 and LEN(RTRIM(hsn_code)) in (2,4,6,8)  order by HSN_CODE,HSN_Desc";
+                SqlStr = "Select HSN_CODE,schcode=CAST(schcode AS VARCHAR(10)),HSN_Desc,hsn_id=CAST(hsn_id AS VARCHAR(10)) from hsn_master Where Isactive=1 and LEN(RTRIM(hsn_code)) in (2,4,6,8)  order by HSN_CODE,HSN_Desc";
 
                 tDs = oDataAccess.GetDataSet(SqlStr, null, 20);
                 DataView dvw = tDs.Tables[0].DefaultView;
                 VForText = "Select HSN Code";
                 vSearchCol = "HSN_CODE";
-                vDisplayColumnList = "HSN_CODE:HSN Name,HSN_Desc:Description";
-                vReturnCol = "HSN_CODE,hsn_id";
+                vDisplayColumnList = "HSN_CODE:HSN Name,schcode:Desc. Code,HSN_Desc:Description";
+                //vReturnCol = "HSN_CODE,hsn_id";       //Commented by Shrikant S. on 22/01/2019
+                vReturnCol = "HSN_CODE,hsn_id,schcode";         //Added by Shrikant S. on 22/01/2019
                 udSelectPop.SELECTPOPUP oSelectPop = new udSelectPop.SELECTPOPUP();
                 oSelectPop.pdataview = dvw;
                 oSelectPop.pformtext = VForText;
@@ -1102,6 +1124,7 @@ namespace Hsnmaster
                     this.txtHSNCode.Text = oSelectPop.pReturnArray[0];
                     childTbl.Rows[0]["hsnid"] = Convert.ToInt32(oSelectPop.pReturnArray[1]);
                     childTbl.Rows[0]["hsncode"] = oSelectPop.pReturnArray[0];
+                    childTbl.Rows[0]["schcode"] =Convert.ToInt32(oSelectPop.pReturnArray[2]);       //Added by Shrikant S. on 22/01/2019
                 }
             }
 
@@ -1110,15 +1133,16 @@ namespace Hsnmaster
                 string VForText = string.Empty, vSearchCol = string.Empty, strSQL = string.Empty, Vstr = string.Empty, vColExclude = string.Empty, vDisplayColumnList = string.Empty, vReturnCol = string.Empty;
                 DataSet tDs = new DataSet();
                 //SqlStr = "Select a.HSNCODE,a.state_code,b.state,c.HSN_Desc from Hsncode_vw a Inner join State b on (a.state_code=b.gst_state_code) inner join hsn_master c on c.HSN_Code=a.HSNCODE Order by a.HSNCode,b.State";
-                SqlStr = "select  distinct a.HSNCode, a.state_code,b.State,c.HSN_Desc,a.exempted from HSNCODEMAST a, STATE b ,HSN_Master c Where a.hsnid = c.hsn_id and a.State_code = b.Gst_State_Code and  c.Isactive=1 and LEN(RTRIM(c.hsn_code)) in (2,4,6,8) ";
+                //SqlStr = "select  distinct a.HSNCode, a.state_code,b.State,c.HSN_Desc,a.exempted from HSNCODEMAST a, STATE b ,HSN_Master c Where a.hsnid = c.hsn_id and a.State_code = b.Gst_State_Code and  c.Isactive=1 and LEN(RTRIM(c.hsn_code)) in (2,4,6,8) ";          //Commented by Shrikant S. on 22/01/2019 
+                SqlStr = "select  distinct a.HSNCode, a.state_code,b.State,c.HSN_Desc,a.exempted,a.schcode from HSNCODEMAST a, STATE b ,HSN_Master c Where a.hsnid = c.hsn_id and a.State_code = b.Gst_State_Code and  c.Isactive=1 and LEN(RTRIM(c.hsn_code)) in (2,4,6,8) ";            //Added by Shrikant S. on 22/01/2019 
                 tDs = oDataAccess.GetDataSet(SqlStr, null, 20);
 
                 DataView dvw = tDs.Tables[0].DefaultView;
 
                 VForText = "Select HSN Code";
                 vSearchCol = "HSNCode";
-                vDisplayColumnList = "HSNCode:HSN Name,State_code:State Code,State:State,HSN_Desc: HSN Discription,exempted:Exempted";
-                vReturnCol = "HSNCode,state_code,State";
+                vDisplayColumnList = "HSNCode:HSN Name,State_code:State Code,State:State,schcode:Desc. Code,HSN_Desc: HSN Discription,exempted:Exempted";
+                vReturnCol = "HSNCode,state_code,State,schcode";
                 udSelectPop.SELECTPOPUP oSelectPop = new udSelectPop.SELECTPOPUP();
                 oSelectPop.pdataview = dvw;
                 oSelectPop.pformtext = VForText;
@@ -1130,19 +1154,20 @@ namespace Hsnmaster
                 oSelectPop.ShowDialog();
                 //vMainFldVal = dsMain.Tables[0].Rows[0]["GradeNm"].ToString().Trim();
 
-
+                string schcode = string.Empty;                  //Added by Shrikant S. on 22/01/2019 
                 if (oSelectPop.pReturnArray != null)
                 {
                     this.txtHSNCode.Text = oSelectPop.pReturnArray[0];
                     this.txtStateCode.Text = oSelectPop.pReturnArray[1];
-
+                    schcode= oSelectPop.pReturnArray[3];                        //Added by Shrikant S. on 22/01/2019 
                     //this.txtState.Text = oSelectPop.pReturnArray[2];
                     //vMainFldVal = this.txtGradeName.Text.Trim();
                     //SqlStr = "Select top 1 * from " + vMainTblNm + " Where GradeNm='" + vMainFldVal + "' order by " + vMainField;
                     //dsMain = oDataAccess.GetDataSet(SqlStr, null, 20);
 
                 }
-                GoToRecord(this.txtHSNCode.Text.Trim() + "-" + this.txtStateCode.Text.Trim());
+                //GoToRecord(this.txtHSNCode.Text.Trim() + "-" + this.txtStateCode.Text.Trim());            //Commented by Shrikant S. on 22/01/2019 
+                GoToRecord(this.txtHSNCode.Text.Trim() + "-" + this.txtStateCode.Text.Trim()+(schcode.Length>0?"-"+ schcode:""));              //Added by Shrikant S. on 22/01/2019 
                 this.dgvGSTRate.DataSource = null;
                 this.AssignSourceToGrid();
                 this.mthView();
@@ -1415,12 +1440,14 @@ namespace Hsnmaster
             //}
             if (this.pAddMode || this.pEditMode)
             {
-                SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code in (Select Top 1 hsncode+'-'+state_code from " + vMainTblNm + " Order by hsncode desc,state_code desc )";
+                //SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code in (Select Top 1 hsncode+'-'+state_code from " + vMainTblNm + " Order by hsncode desc,state_code desc )";       //Commented by Shrikant S. on 22/01/2019 
+                SqlStr = "Select top 1 * from " + vMainTblNm + " Where hsncode+'-'+state_code+'-'+convert(varchar(10),schcode) in (Select Top 1 hsncode+'-'+state_code+'-'+convert(varchar(10),schcode) from " + vMainTblNm + " Order by hsncode desc,state_code desc )";         //Added by Shrikant S. on 22/01/2019 
                 dsMain = oDataAccess.GetDataSet(SqlStr, null, 20);
 
                 if (dsMain.Tables[0].Rows.Count > 0)
                 {
-                    keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();
+                    //keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString();      //Commented by Shrikant S. on 22/01/2019   
+                    keyValue = dsMain.Tables[0].Rows[0]["hsncode"].ToString() + "-" + dsMain.Tables[0].Rows[0]["state_code"].ToString() + "-" +Convert.ToString(dsMain.Tables[0].Rows[0]["schcode"]);        //Added by Shrikant S. on 22/01/2019 
                 }
             }
             this.pAddMode = false;

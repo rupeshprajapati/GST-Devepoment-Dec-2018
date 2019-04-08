@@ -121,3 +121,16 @@ E:\Prajakta\Projects\Installer ERP 2.1.0.0\udCashHandover\udCashHandover\obj\Rel
 E:\Prajakta\Projects\Installer ERP 2.1.0.0\udCashHandover\udCashHandover\bin\Release\Interop.ueconnect.dll
 E:\Prajakta\Projects\Installer ERP 2.1.0.0\udCashHandover\udCashHandover\obj\Release\Interop.ueconnect.dll
 E:\Prajakta\Projects\Installer ERP 2.1.0.0\udCashHandover\udCashHandover\obj\Release\udCashHandover.csproj.ResolveComReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\bin\Release\udCashHandover.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\bin\Release\udCashHandover.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\bin\Release\udCashHandover.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\bin\Release\uNumericTextBox.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\bin\Release\Interop.ueconnect.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\udCashHandover.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\Interop.ueconnect.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\udCashHandover.csproj.ResolveComReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\udCashHandover.udCashHandov.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\udCashHandover.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\udCashHandover.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\udCashHandover.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Cashout 15122018\udCashHandover\udCashHandover\obj\Release\udCashHandover.pdb

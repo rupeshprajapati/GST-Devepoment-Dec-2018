@@ -1,0 +1,22 @@
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Release\udBatchMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Release\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Release\udBatchMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Release\udBatchMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Release\udBatchMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Release\udBatchMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Release\udBatchMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Release\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\udBatchMast\udBatchMast\obj\Release\udBatchMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\bin\Release\udBatchMast.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\bin\Release\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\bin\Release\udBatchMast.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Release\udBatchMast.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Release\udBatchMast.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Release\udBatchMast.Form_upload.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Release\udBatchMast.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Release\udBatchMast.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Release\udBatchMast.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN Project\udBatchMast\udBatchMast\obj\Release\udBatchMast.pdb

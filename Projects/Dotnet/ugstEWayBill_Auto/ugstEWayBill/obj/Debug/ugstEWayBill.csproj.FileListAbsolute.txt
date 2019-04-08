@@ -142,7 +142,6 @@ D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Debug\uBaseForm.dll
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Debug\Udyog.Library.Common.dll
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Debug\Udyog.QRCode.dll
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Debug\ugstnHelper.dll
-D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Debug\Udyog.QRCode.pdb
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Debug\ugstnHelper.pdb
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Debug\ugstEWayBill.exe
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\obj\Debug\ugstEWayBill.pdb

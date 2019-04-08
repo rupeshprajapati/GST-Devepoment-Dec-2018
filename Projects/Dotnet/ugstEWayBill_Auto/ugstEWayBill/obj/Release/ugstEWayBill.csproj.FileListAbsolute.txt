@@ -138,7 +138,6 @@ D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Microsoft.Office.Interop.Ou
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.ReportSource.dll
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\stdole.dll
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\office.dll
-D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.QRCode.pdb
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.pdb
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.CrystalReports.Engine.xml
 D:\SVNGST\ugstEWayBill_Auto\ugstEWayBill\bin\Release\CrystalDecisions.Windows.Forms.xml
@@ -174,3 +173,15 @@ D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstE
 D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
 D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.exe
 D:\01 RRG\01 Bug Work\09 Bug 31844\SVN Download 12122018\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.pdb
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe.config
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.exe
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstEWayBill.pdb
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\bin\Release\Udyog.Library.Common.dll
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.dll
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\bin\Release\ugstnHelper.pdb
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csprojResolveAssemblyReference.cache
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.frmMain.resources
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.Properties.Resources.resources
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.csproj.GenerateResource.Cache
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.exe
+E:\SVNProjects\Bug-31844\ugstEWayBill_Auto\ugstEWayBill\obj\Release\ugstEWayBill.pdb

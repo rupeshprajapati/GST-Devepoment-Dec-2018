@@ -1,0 +1,23 @@
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Release\udBarcodePRN.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Release\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Release\udBarcodePRN.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.FilterForm.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.pdb
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\bin\Release\udBarcodePRN.exe.config
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.exe
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.pdb
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\bin\Release\udBarcodePRN.exe
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\bin\Release\udBarcodePRN.pdb
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.csprojResolveAssemblyReference.cache
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.FilterForm.resources
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.Form1.resources
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.Properties.Resources.resources
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePRN\udBarcodePRN\obj\Release\udBarcodePRN.csproj.GenerateResource.Cache

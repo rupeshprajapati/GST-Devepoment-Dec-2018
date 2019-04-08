@@ -1,0 +1,51 @@
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Release\DataAccess-Net.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Release\uBaseForm.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\bin\Release\udSelectPop.dll
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csprojResolveAssemblyReference.cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form2.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\Bar Tender\HomeWork2\Final Project Barcode\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.pdb
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe.config
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.exe
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.pdb
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.pdb
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csprojResolveAssemblyReference.cache
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form1.resources
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form2.resources
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Properties.Resources.resources
+E:\SVNProjects\Bug-32062 Installer 2.1.0\PRN Barcode Print\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe.config
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.exe
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.pdb
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.pdb
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csprojResolveAssemblyReference.cache
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form1.resources
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form2.resources
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Properties.Resources.resources
+D:\SVNGST\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe.config
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.pdb
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form1.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form2.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Properties.Resources.resources
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.exe
+D:\01 RRG\02 Project Work\10 Pharma N\SVN 23012019\Work\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.pdb
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe.config
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.exe
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\bin\Release\udBarcodePrinting.pdb
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form1.resources
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Form2.resources
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.Properties.Resources.resources
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.csproj.GenerateResource.Cache
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.exe
+D:\svn\PRNPRINT23032019\udBarcodePrinting\udBarcodePrinting\obj\Release\udBarcodePrinting.pdb

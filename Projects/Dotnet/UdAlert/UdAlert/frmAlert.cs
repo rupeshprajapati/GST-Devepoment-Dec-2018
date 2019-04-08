@@ -27,6 +27,7 @@ namespace UdAlert
         public frmAlert(string[] args)
         {
             InitializeComponent();
+           
             this.pFrmCaption = "Alert Form";
             this.pCompId = Convert.ToInt16(args[0]);
             this.pComDbnm = args[1];

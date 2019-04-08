@@ -99,7 +99,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::udTaxillaInfo.Properties.Resources.logo_udyog1;
+            this.pictureBox1.Image = global::udTaxillaInfo.Properties.Resources.logo_udyog;
             this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(280, 93);
